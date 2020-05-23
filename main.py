@@ -3,15 +3,28 @@ from Bio import AlignIO
 import csv
 import glob
 
-tmp = {'name': [], 'pos' : [], 'ref' : [], 'seq' : []}
+s = ""
+r = ""
+c = []
 
 for f in glob.glob('Results/Kalign/*.fasta'):
     aln = list(AlignIO.read(open(f), "fasta"))
     for i in range(1, len(aln)):
-        print("sequence : " + aln[i].id, file=open("kalign-output.txt", "a"))
+        # print("sequence : " + aln[i].id, file=open("kalign-output.txt", "a"))
         for j in range(len(aln[i].seq)):
             if aln[i].seq[j].upper() != aln[0].seq[j].upper():
-                print("  position : " + str(j) + " reference : " + aln[0].seq[j] + " sequence : " + aln[i].seq[j], file=open("kalign-output.txt", "a")) 
+                s += aln[i].seq[j]
+                r += aln[0].seq[j]
+            else:
+                if s != "" and r != "":
+                    element =  [aln[i].id, j, r, s]
+                    c.append(element)
+                    s = ""
+                    r = ""
+
+with open('prova.txt', 'w') as f:
+    for item in c:
+        f.write("%s\n" % item)        
 
 """
 for f in glob.glob('Results/Clustal Omega/*.fasta'):
