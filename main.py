@@ -6,6 +6,7 @@ import glob
 s = ""
 r = ""
 c = []
+l = 0
 
 for f in glob.glob('Results/Kalign/*.fasta'):
     aln = list(AlignIO.read(open(f), "fasta"))
@@ -15,9 +16,10 @@ for f in glob.glob('Results/Kalign/*.fasta'):
             if aln[i].seq[j].upper() != aln[0].seq[j].upper():
                 s += aln[i].seq[j]
                 r += aln[0].seq[j]
+                l += 1
             else:
                 if s != "" and r != "":
-                    element =  [aln[i].id, j, r, s]
+                    element =  [aln[i].id, j - l, r, s]
                     c.append(element)
                     s = ""
                     r = ""
