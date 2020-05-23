@@ -26,7 +26,7 @@ with open('prova.txt', 'w') as f:
     for item in c:
         f.write("%s\n" % item)        
 
-"""
+
 for f in glob.glob('Results/Clustal Omega/*.fasta'):
     aln = list(AlignIO.read(open(f), "fasta"))
     for i in range(1, len(aln)):
@@ -34,9 +34,9 @@ for f in glob.glob('Results/Clustal Omega/*.fasta'):
         for j in range(len(aln[i].seq)):
             if aln[i].seq[j].upper() != aln[0].seq[j].upper():
                 print("  position : " + str(j) + " reference base: " + aln[0].seq[j] + " sequence base: " + aln[i].seq[j], file=open("clustalomega-output.txt", "a")) 
-"""
 
-"""
+
+
 for f in glob.glob('Results/MAFFT/*.fasta'):
     aln = list(AlignIO.read(open(f), "fasta"))
     for i in range(1, len(aln)):
@@ -44,8 +44,8 @@ for f in glob.glob('Results/MAFFT/*.fasta'):
         for j in range(len(aln[i].seq)):
             if aln[i].seq[j].upper() != aln[0].seq[j].upper():
                 print("  position : " + str(j) + " reference base: " + aln[0].seq[j] + " sequence base: " + aln[i].seq[j], file=open("mafft-output.txt", "a")) 
-"""
 
+"""
 # horizontal alignment
 haln = list(AlignIO.read("Results/Horizontal/aln-kalign-horizontal.fasta", "fasta"))
 for i in range(1, len(haln)):
@@ -53,3 +53,4 @@ for i in range(1, len(haln)):
     for j in range(len(haln[i].seq)):
         if haln[i].seq[j].upper() != haln[0].seq[j].upper():
             print("  position : " + str(j) + " reference base: " + haln[0].seq[j] + " sequence base: " + haln[i].seq[j], file=open("kalign-horizontal-output.txt", "a")) 
+"""
