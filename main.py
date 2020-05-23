@@ -1,16 +1,18 @@
 import Bio
 from Bio import AlignIO
 import csv
+import glob
 
-
-italy = list(AlignIO.read(open("Results/Kalign/aln-italy.fasta"), "fasta"))
+fasta_list = glob()
+italy = list(AlignIO.read(open("Results/Clustal Omega/italy.fa"), "fasta"))
 
 for i in range(1, len(italy)):
     for j in range(len(italy[i].seq)):
        if italy[i].seq[j] != italy[0].seq[j]:
                 print("ITALY \n" + "sequence : " + italy[i].id.partition("|")[2] + "  position : " + str(j) +
                     " reference base: " + italy[0].seq[j] + " sequence base: " + italy[i].seq[j], file=open("output.txt", "a")) 
-                
+
+"""               
 ny = list(AlignIO.read(open("Results/Kalign/aln-newyork.fasta"), "fasta"))
 
 for i in range(1, len(ny)):
@@ -34,7 +36,9 @@ for i in range(1, len(spain)):
        if spain[i].seq[j] != spain[0].seq[j]:
                 print("SPAIN \n" + "sequence : " + spain[i].id.partition("|")[2] + "  position : " + str(j) +
                     " reference base: " + spain[0].seq[j] + " sequence base: " + spain[i].seq[j], file=open("output.txt", "a")) 
-   
+
+"""
+
 """           
 with open('results-italy.csv', 'w+', newline='') as csvfile:
     fields = ['seq name', 'pos', 'ref base', 'seq ref']
