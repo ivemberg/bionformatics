@@ -10,9 +10,11 @@ l = 0
 
 for f in glob.glob('Results/Kalign/*.fasta'):
     aln = list(AlignIO.read(open(f), "fasta"))
-    for i in range(1, len(aln)):
-        # print("sequence : " + aln[i].id, file=open("kalign-output.txt", "a"))
+    print(aln[4].seq, file=open("ciccio.txt", "a"))
+    """for i in range(1, len(aln)):
+         
         for j in range(len(aln[i].seq)):
+            
             if aln[i].seq[j].upper() != aln[0].seq[j].upper():
                 s += aln[i].seq[j]
                 r += aln[0].seq[j]
@@ -23,6 +25,7 @@ for f in glob.glob('Results/Kalign/*.fasta'):
                     c.append(element)
                     s = ""
                     r = ""
+                    l=0 """
 
 with open('prova.txt', 'w') as f:
     for item in c:
