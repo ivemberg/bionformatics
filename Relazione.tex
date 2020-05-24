@@ -30,12 +30,19 @@ L'obiettivo del nostro progetto è diviso in due parti: \\
 	-nella seconda parte, invece, abbiamo voluto eseguire un confronto orizzontale tra le utlimissime sequenze raccolte dei vari paesi in modo da poter visualizzare la presenza di eventuali mutazioni, sia con la sequenza di riferimento sia tra di loro. 
 
 \section*{Scelta delle sequenze}
-Le seqeunze sono state prese da gsaid
+Le seqeunze sono state prese dal sito Gsaid. Per ogni paese abbiamo preso solo sequenze complete e su pazienti tutti di genere maschile, inoltre abbiamo cercato di seguire una linea temporale che partisse dalla prima sequenza presente nel database all'ultima, con in mezzo sequenze che si distanziavano tra di loro di una settimana. \\
+Per quanto riguarda, invece, la scelta dei paesi Italia, NY, Spagna e Russia è stata dettata dal fatto che risultavano essere tra i paesi più colpiti dal virus e quindi li abbiamo ritenuti interessanti da analizzare.\\
+%Sarebbe interessante mettere una classifica no??
 
 \section*{Scelta dei tool}
+Tra i tool messi a disposizione abbiamo scelto di utilizzare. Clustal Omega, Kalign e MAFFT.\\
+Abbiamo scelto Clustal Omega poichè sfrutta il modello probabilistico Profilo HMM (Hidden Markov Model), il quale è in grado di incapsulare i cambiamenti evolutivi che si sono verificati in una serie di sequenze correlate. Per fare questo il modello va a studiare le informazioni specifiche di ogni amminoacido conservato nella colonna di allineamento. Inoltre questo tool risultava utile per sequenze molto lunghe.\\
+Kalign è stato scelto poichè è un tool che si concentra sulle regioni locali e lavoro molto velocemtne. Questo ci sembrava perfetto per il tipo di analisi sui precisi stati che volevamo svolgere.\\
+Infine abbiamo scelto MAFFT poichè attraverso l'algoritmo della trasformata di Fourier veloce ottimizza gli allineamenti proteici in base alle proprietà fisiche degli aminoacidi, utilizzando sia un allineamento progressivo che iterativo. Anche esso risulta essere ottimale per sequenze di lunghezza medio-grandi.
+%Qua parliamo del codice ma aspetterei che sia completo e correto per descriverlo.
 
 \section*{Risultati ottenuti}
 
-
+%Dobbiamo allegare in qualche modo il file di output ottenuto. Più ovviamento un commento sul risultato
 
 \end{document}
