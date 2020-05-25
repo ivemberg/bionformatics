@@ -4,25 +4,82 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage[utf8]{inputenc}
+\usepackage{etoolbox}
+\renewcommand*\contentsname{Indice}
 
-\title{Bioinformatica} 
-\author{Alberici Federico - 808058, \\ Bettini Ivo Junior - 806878, \\ Traversa Silvia - 816435}
-\date{}
+\makeatletter
+\patchcmd\l@section{%
+  \nobreak\hfil\nobreak
+}{%
+  \nobreak
+  \leaders\hbox{%
+    $\m@th \mkern \@dotsep mu\hbox{.}\mkern \@dotsep mu$%
+  }%
+  \hfill
+  \nobreak
+}{}{\errmessage{\noexpand\l@section could not be patched}}
+\makeatother
+
+\setcounter{secnumdepth}{0}
 
 \begin{document}
 
-\maketitle 
-% \tableofcontents mettiamo l'indice?
+\begin{titlepage}
+\noindent
+    \vspace*{5mm}
+	\begin{minipage}[t]{0.15\textwidth}
+	    \vspace*{5mm}
+		\vspace{-3.5mm}{\includegraphics{img/logo_bicocca.png}}
+	\end{minipage}
+	\hspace{1cm}
+	\begin{minipage}[t]{0.90\textwidth}
+	      \vspace*{5mm}
+		{
+			{\textsc{Università degli Studi di Milano - Bicocca} } \\
+			\textbf{Scuola di Scienze} \\
+			\textbf{Dipartimento di Informatica, Sistemistica e Comunicazione} \\
+			\textbf{Corso di Laurea Magistrale in Informatica} \\
+			\par
+		}
+	\end{minipage}
+	
+	\vspace{42mm}
+
+\begin{center}
+    {\LARGE{
+    
+            \textbf{Bioinformatica\\ }
+    }}        
+\end{center}
+
+\vspace{40mm}
+	
+	
+	\begin{flushright}
+		\large{Alberici Federico - 808058\\} 
+		\large{Bettini Ivo Junior - 806878\\} 
+		\large{Traversa Silvia - 816435} 
+	\end{flushright}
+	
+	\vspace{15mm}
+	\begin{center}
+		{\large{\bf Anno Accademico 2019 - 2020}}
+	\end{center}
+
+
+\end{titlepage}
+
+\tableofcontents
 
 \newpage
 
-\section*{SARS-CoV-2}
+\section{SARS-CoV-2}
 I coronavirus sono una famiglia di virus RNA a filamento positivo con aspetto simile a una corona se esaminati al microscopio elettronico (da cui il nome) e noti per causare malattie che vanno dal comune raffreddore a patologie più gravi come la Sindrome respiratoria mediorientale (MERS) o la Sindrome respiratoria acuta grave (SARS). \\
 Nel Dicembre 2019 a Wuhan, in Cina, è stato isolato un nuovo ceppo di coronavirus, denominato SARS-CoV-2 (\textit{Severe Acute Respiratory Syndrome - Coronavirus - 2}), la cui sequenza virale ha un'omologia del 76\% con il virus che causò la pandemia della Sars nel 2002.La malattia respiratoria causata da questo nuovo coronavirus è stata chiamata COVID-19.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.3\linewidth]{nCov.png}
+\includegraphics[width=.3\linewidth]{img/nCov.png}
 \caption{\textit{L’illustrazione, creata dai Centers for Disease Control and Prevention (CDC) statunitense, rivela la morfologia ultrastrutturale del SARS-CoV-2}}
 \label{fig:1}
 \end{figure}
@@ -38,7 +95,7 @@ Al 25 maggio 2020, ci sono stati 5.428.605 casi confermati totali di infezione d
 
 \newpage
 
-\section*{Obiettivo del progetto}
+\section{Obiettivo del progetto}
 L'obiettivo del nostro progetto è individuare inizialmente, attraverso uno studio verticale in alcuni paesi, eventuali mutazioni avvenute dunque in una determinato lugo e, successivamente, confrontare il virus presente nel periodo corrente in diversi paesi nel mondo. \\
 Più precisamente: %mi sa da scrivere un po' meglio
 \begin{itemize}
@@ -46,7 +103,7 @@ Più precisamente: %mi sa da scrivere un po' meglio
 \item nella seconda parte, invece, effettuiamo un confronto orizzontale tra le ultime sequenze raccolte dei vari paesi scelti, in modo da poter individuare la presenza di eventuali mutazioni nello stato corrente del virus, sempre tenedo come riferimanto la prima sequenze presente nella banca dati. 
 \end{itemize}
 
-\section*{Scelta delle sequenze}
+\section{Sequenze}
 Abbiamo deciso di selezionare alcuni dei paesi con il più alto numero di casi di COVID-19, ossia Stati Uniti (per il quale ci siamo concentrati su uno degli stati a sua volta più colpito, quello di New York), Russia,  Spagna e Italia. I casi, al 25 Maggio 2020, sono riportati nella tabella seguente:
 
 \begin{table}[H]
@@ -62,16 +119,84 @@ Abbiamo deciso di selezionare alcuni dei paesi con il più alto numero di casi d
 
 Le sequenze analizzate sono state prese dal sito GISAID. Per ogni paese abbiamo preso solo sequenze complete (con più di 29000 basi) e su pazienti tutti di sesso maschile. Abbiamo cercato inoltre di seguire una linea temporale che partisse dalla prima sequenza presente nel database fino all'ultima, con in mezzo sequenze che si distanziavano tra di loro di una settimana.
 
-\section*{Scelta dei tool}
+\section{Tool}
 Tra i tool messi a disposizione abbiamo scelto di utilizzare Clustal Omega, Kalign e MAFFT.\\
 Abbiamo scelto Clustal Omega poichè sfrutta il modello probabilistico Profilo HMM (Hidden Markov Model), il quale è in grado di incapsulare i cambiamenti evolutivi che si sono verificati in una serie di sequenze correlate ed inoltre questo tool risultava ottimale per sequenze molto lunghe.\\
 Kalign è stato scelto poichè è un tool che si concentra sulle regioni locali e lavora molto velocemente, motivo per il quale ci sembrava particolarmente adatto per le analisi sui singoli stati che volevamo svolgere.\\
 Infine abbiamo scelto MAFFT poichè attraverso l'algoritmo della trasformata di Fourier veloce ottimizza gli allineamenti proteici in base alle proprietà fisiche degli aminoacidi, utilizzando sia un allineamento progressivo che iterativo. Anche esso risulta essere ottimale per sequenze di lunghezza medio-grandi. %% non va bene perché noi non facciamo allineamenti proteici
 
-%Qua parliamo del codice ma aspetterei che sia completo e correto per descriverlo.
+\section{Analisi verticale}
 
-\section*{Risultati ottenuti}
+\subsection{New York (USA)}
 
+\subsection{Russia}
+
+\subsection{Italia}
+
+\begin{verbatim}
+'1_hCoV-19/Italy/SPL1/2020|EPI_ISL_412974|2020-01-29/1-29903'	11083	1	 'G'	 'T'
+'1_hCoV-19/Italy/SPL1/2020|EPI_ISL_412974|2020-01-29/1-29903'	26144	1	 'G'	 'T'
+'2_hCoV-19/Italy/CDG1/2020|EPI_ISL_412973|2020-02-20/1-29903'	241	1	 'C'	 'T'
+'2_hCoV-19/Italy/CDG1/2020|EPI_ISL_412973|2020-02-20/1-29903'	3037	1	 'C'	 'T'
+'2_hCoV-19/Italy/CDG1/2020|EPI_ISL_412973|2020-02-20/1-29903'	14408	1	 'C'	 'T'
+'2_hCoV-19/Italy/CDG1/2020|EPI_ISL_412973|2020-02-20/1-29903'	23403	1	 'A'	 'G'
+'2_hCoV-19/Italy/CDG1/2020|EPI_ISL_412973|2020-02-20/1-29903'	29867	2	 'TG'	 'NN'
+'3_hCoV-19/Italy/FVG-ICGEB_S9/2020|EPI_ISL_417423|2020-03-01/1-29891'	0	1	 '-'	 'G'
+'3_hCoV-19/Italy/FVG-ICGEB_S9/2020|EPI_ISL_417423|2020-03-01/1-29891'	241	1	 'C'	 'T'
+'3_hCoV-19/Italy/FVG-ICGEB_S9/2020|EPI_ISL_417423|2020-03-01/1-29891'	3037	1	 'C'	 'T'
+'3_hCoV-19/Italy/FVG-ICGEB_S9/2020|EPI_ISL_417423|2020-03-01/1-29891'	14408	1	 'C'	 'T'
+'3_hCoV-19/Italy/FVG-ICGEB_S9/2020|EPI_ISL_417423|2020-03-01/1-29891'	23403	1	 'A'	 'G'
+'3_hCoV-19/Italy/FVG-ICGEB_S9/2020|EPI_ISL_417423|2020-03-01/1-29891'	29879	13	 'AAAAAAAAAAAAA'	 '-------------'
+'4_hCoV-19/Italy/TE4880/2020|EPI_ISL_418256|2020-03-14/1-29898'	42	1	 'T'	 'Y'
+'4_hCoV-19/Italy/TE4880/2020|EPI_ISL_418256|2020-03-14/1-29898'	44	2	 'CG'	 'NN'
+'4_hCoV-19/Italy/TE4880/2020|EPI_ISL_418256|2020-03-14/1-29898'	241	1	 'C'	 'T'
+'4_hCoV-19/Italy/TE4880/2020|EPI_ISL_418256|2020-03-14/1-29898'	3037	1	 'C'	 'T'
+'4_hCoV-19/Italy/TE4880/2020|EPI_ISL_418256|2020-03-14/1-29898'	14408	1	 'C'	 'T'
+'4_hCoV-19/Italy/TE4880/2020|EPI_ISL_418256|2020-03-14/1-29898'	23403	1	 'A'	 'G'
+'4_hCoV-19/Italy/TE4880/2020|EPI_ISL_418256|2020-03-14/1-29898'	28881	3	 'GGG'	 'AAC'
+'4_hCoV-19/Italy/TE4880/2020|EPI_ISL_418256|2020-03-14/1-29898'	29879	5	 'AAAAA'	 '-----'
+'5_hCoV-19/Italy/INMI6/2020|EPI_ISL_419254|2020-03-23/1-29834'	1	25	 'ATTAAAGGTTTATACCTTCCCAGGT'	 '-------------------------'
+'5_hCoV-19/Italy/INMI6/2020|EPI_ISL_419254|2020-03-23/1-29834'	241	1	 'C'	 'T'
+'5_hCoV-19/Italy/INMI6/2020|EPI_ISL_419254|2020-03-23/1-29834'	3037	1	 'C'	 'T'
+'5_hCoV-19/Italy/INMI6/2020|EPI_ISL_419254|2020-03-23/1-29834'	14408	1	 'C'	 'T'
+'5_hCoV-19/Italy/INMI6/2020|EPI_ISL_419254|2020-03-23/1-29834'	23403	1	 'A'	 'G'
+'5_hCoV-19/Italy/INMI6/2020|EPI_ISL_419254|2020-03-23/1-29834'	29859	44	 'AGGAGAATGACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'	 '--------------------------------------------'
+'6_hCoV-19/Italy/FVG-ICGEB_S18/2020|EPI_ISL_428854|2020-03-30/1-29899'	241	1	 'C'	 'T'
+'6_hCoV-19/Italy/FVG-ICGEB_S18/2020|EPI_ISL_428854|2020-03-30/1-29899'	3037	1	 'C'	 'T'
+'6_hCoV-19/Italy/FVG-ICGEB_S18/2020|EPI_ISL_428854|2020-03-30/1-29899'	14408	1	 'C'	 'T'
+'6_hCoV-19/Italy/FVG-ICGEB_S18/2020|EPI_ISL_428854|2020-03-30/1-29899'	23403	1	 'A'	 'G'
+'6_hCoV-19/Italy/FVG-ICGEB_S18/2020|EPI_ISL_428854|2020-03-30/1-29899'	29009	1	 'G'	 'A'
+'6_hCoV-19/Italy/FVG-ICGEB_S18/2020|EPI_ISL_428854|2020-03-30/1-29899'	29879	4	 'AAAA'	 '----'
+'7_hCoV-19/Italy/TE13858/2020|EPI_ISL_435152|2020-04-09/1-29878'	1	37	 'ATTAAAGGTTTATACCTTCCCAGGTAACAAACCAACC'	 'NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN'
+'7_hCoV-19/Italy/TE13858/2020|EPI_ISL_435152|2020-04-09/1-29878'	241	1	 'C'	 'T'
+'7_hCoV-19/Italy/TE13858/2020|EPI_ISL_435152|2020-04-09/1-29878'	3037	1	 'C'	 'T'
+'7_hCoV-19/Italy/TE13858/2020|EPI_ISL_435152|2020-04-09/1-29878'	5986	1	 'C'	 'T'
+'7_hCoV-19/Italy/TE13858/2020|EPI_ISL_435152|2020-04-09/1-29878'	6866	1	 'A'	 'W'
+'7_hCoV-19/Italy/TE13858/2020|EPI_ISL_435152|2020-04-09/1-29878'	6869	1	 'A'	 'W'
+'7_hCoV-19/Italy/TE13858/2020|EPI_ISL_435152|2020-04-09/1-29878'	14408	1	 'C'	 'T'
+'7_hCoV-19/Italy/TE13858/2020|EPI_ISL_435152|2020-04-09/1-29878'	23403	1	 'A'	 'G'
+'7_hCoV-19/Italy/TE13858/2020|EPI_ISL_435152|2020-04-09/1-29878'	28881	3	 'GGG'	 'AAC'
+'7_hCoV-19/Italy/TE13858/2020|EPI_ISL_435152|2020-04-09/1-29878'	29701	1	 'G'	 'T'
+'7_hCoV-19/Italy/TE13858/2020|EPI_ISL_435152|2020-04-09/1-29878'	29878	25	 'AAAAAAAAAAAAAAAAAAAAAAAAA'	 '-------------------------'
+'8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873'	1	9	 'ATTAAAGGT'	 'NNNNNNNNN'
+'8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873'	31	1	 'A'	 'G'
+'8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873'	241	1	 'C'	 'T'
+'8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873'	3037	1	 'C'	 'T'
+'8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873'	3045	1	 'C'	 'T'
+'8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873'	6449	1	 'C'	 'T'
+'8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873'	6863	1	 'A'	 'M'
+'8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873'	6866	1	 'A'	 'W'
+'8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873'	6869	1	 'A'	 'W'
+'8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873'	14408	1	 'C'	 'T'
+'8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873'	19677	1	 'G'	 'R'
+'8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873'	21627	1	 'C'	 'Y'
+'8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873'	23403	1	 'A'	 'G'
+'8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873'	25459	1	 'G'	 'K'
+'8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873'	28881	3	 'GGG'	 'AAC'
+'8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873'	29873	30	 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'	 '------------------------------'
+\end{verbatim}
+
+\subsection{Spagna}
 %Dobbiamo allegare in qualche modo il file di output ottenuto. Più ovviamento un commento sul risultato
 
 \end{document}

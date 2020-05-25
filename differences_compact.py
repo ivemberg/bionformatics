@@ -11,20 +11,27 @@ k = []
 for f in glob.glob('Results/Kalign/*.fasta'):
     aln = list(AlignIO.read(open(f), "fasta"))
     for i in range(1, len(aln)):
+        print("sequence : " + aln[i].id, file=open("Seq_differences/compact/kalign-output.txt", "a"))
         for j in range(len(aln[i].seq)):
             if aln[i].seq[j].upper() != aln[0].seq[j].upper():
                 s += aln[i].seq[j]
                 r += aln[0].seq[j]
                 l += 1
+                if (j == len(aln[i].seq)-1):
+                    element =  [aln[i].id, j - l, l, r, s]
+                    k.append(element)
+                    s = ""
+                    r = ""
+                    l = 0
             else:
                 if s != "" and r != "":
-                    element =  [aln[i].id, j - l, r, s]
+                    element =  [aln[i].id, j - l, l, r, s]
                     k.append(element)
                     s = ""
                     r = ""
                     l = 0
 
-with open('Seq_differences/full/kalign-compact-output.txt', 'w') as f:
+with open('Seq_differences/compact/kalign-compact-output.txt', 'w') as f:
     for item in k:
         f.write("%s\n" % item)        
 
@@ -40,15 +47,21 @@ for f in glob.glob('Results/Clustal Omega/*.fasta'):
                 s += aln[i].seq[j]
                 r += aln[0].seq[j]
                 l += 1
+                if (j == len(aln[i].seq)-1):
+                    element =  [aln[i].id, j - l, l, r, s]
+                    c.append(element)
+                    s = ""
+                    r = ""
+                    l = 0
             else:
                 if s != "" and r != "":
-                    element =  [aln[i].id, j - l, r, s]
+                    element =  [aln[i].id, j - l, l, r, s]
                     c.append(element)
                     s = ""
                     r = ""
                     l = 0
 
-with open('Seq_differences/full/clustal-omega-compact-output.txt', 'w') as f:
+with open('Seq_differences/compact/clustal-compact-output.txt', 'w') as f:
     for item in c:
         f.write("%s\n" % item)       
 
@@ -64,15 +77,21 @@ for f in glob.glob('Results/MAFFT/*.fasta'):
                 s += aln[i].seq[j]
                 r += aln[0].seq[j]
                 l += 1
+                if (j == len(aln[i].seq)-1):
+                    element =  [aln[i].id, j - l, l, r, s]
+                    m.append(element)
+                    s = ""
+                    r = ""
+                    l = 0
             else:
                 if s != "" and r != "":
-                    element =  [aln[i].id, j - l, r, s]
+                    element =  [aln[i].id, j - l, l, r, s]
                     m.append(element)
                     s = ""
                     r = ""
                     l = 0
 
-with open('Seq_differences/full/MAFFT-compact-output.txt', 'w') as f:
+with open('Seq_differences/compact/MAFFT-compact-output.txt', 'w') as f:
     for item in m:
         f.write("%s\n" % item)    
 
@@ -87,15 +106,21 @@ for i in range(1, len(haln)):
                 s += haln[i].seq[j]
                 r += haln[0].seq[j]
                 l += 1
+                if (j == len(haln[i].seq)-1):
+                    element =  [haln[i].id, j - l, l, r, s]
+                    hk.append(element)
+                    s = ""
+                    r = ""
+                    l = 0
             else:
                 if s != "" and r != "":
-                    element =  [haln[i].id, j - l, r, s]
+                    element =  [haln[i].id, j - l, l, r, s]
                     hk.append(element)
                     s = ""
                     r = ""
                     l = 0
 
-with open('Seq_differences/full/kalign-compact-horizontal-output.txt', 'w') as f:
+with open('Seq_differences/compact/kalign-compact-horizontal-output.txt', 'w') as f:
     for item in hk:
         f.write("%s\n" % item)   
 
@@ -110,15 +135,21 @@ for i in range(1, len(haln)):
                 s += haln[i].seq[j]
                 r += haln[0].seq[j]
                 l += 1
+                if (j == len(haln[i].seq)-1):
+                    element =  [haln[i].id, j - l, l, r, s]
+                    hc.append(element)
+                    s = ""
+                    r = ""
+                    l = 0
             else:
                 if s != "" and r != "":
-                    element =  [haln[i].id, j - l, r, s]
+                    element =  [haln[i].id, j - l, l, r, s]
                     hc.append(element)
                     s = ""
                     r = ""
                     l = 0
 
-with open('Seq_differences/full/clustal-compact-horizontal-output.txt', 'w') as f:
+with open('Seq_differences/compact/clustal-compact-horizontal-output.txt', 'w') as f:
     for item in hc:
         f.write("%s\n" % item)  
 
@@ -133,6 +164,12 @@ for i in range(1, len(haln)):
                 s += haln[i].seq[j]
                 r += haln[0].seq[j]
                 l += 1
+                if (j == len(haln[i].seq)-1):
+                    element =  [haln[i].id, j - l, l, r, s]
+                    hm.append(element)
+                    s = ""
+                    r = ""
+                    l = 0
             else:
                 if s != "" and r != "":
                     element =  [haln[i].id, j - l, r, s]
@@ -141,6 +178,6 @@ for i in range(1, len(haln)):
                     r = ""
                     l = 0
 
-with open('Seq_differences/full/MAFFT-compact-horizontal-output.txt', 'w') as f:
+with open('Seq_differences/compact/MAFFT-compact-horizontal-output.txt', 'w') as f:
     for item in hm:
         f.write("%s\n" % item)  
