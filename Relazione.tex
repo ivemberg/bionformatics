@@ -12,33 +12,62 @@
 \begin{document}
 
 \maketitle 
+% \tableofcontents mettiamo l'indice?
+
+\newpage
 
 \section*{SARS-CoV-2}
-Il SARS-CoV-2 fa parte della famiglia dei coronavirus, virus noti per causare malattie che vanno dal comune raffreddore a malattie più gravi come la Sindrome respiratoria mediorientale (MERS) e la Sindrome respiratoria acuta grave respiratoria (SARS). \\
-Nel Dicembre 2019 a Wuhan, in Cina, è stato isolato un nuovo virus appartenente a questa famiglia, denominato SARS-CoV-2. La sequenza virale ha un'omologia del 76\% con il virus che causò la pandemia nel 2002, risultando così molto simile.\\
-%immagine L’illustrazione, creata dai Centers for Disease Control and Prevention (CDC) statunitense, rivela la morfologia ultrastrutturale del SARS-CoV-2.% \\
-I Coronavirus hanno morfologia rotondeggiante e dimensioni di 100-150nm di diametro. Partendo dallo strato più esterno andando verso l'interno troviamo le seguenti componenti:
-	- Glicoproteina S ("spike"), sono le protezioni sulle superfici del virus, lunghe circa 20nm e somigliano ad una corona che circonda il virone. Questa proteina è una degli elementi che varia rispetto al vecchio virus, infatti  essa determina la specificità del virus per cellule epiteliali del tratto respiratorio, modelli 3D suggeriscono che sia in grado di legarsi al recettore ACE2 espresso dalle cellule dei capillari dei polmoni; 	\\
-	- Proteina M, proteina membrana che attraversa il rivestimento (envelope) interagendo all'interno del virone con il complesso RNA-proteina;\\
-	- Dimero emagglutinina-esterasi (HE): questa proteina del rivestimento, più piccola della glicoproteina S, svolge una funzione importante durante la fase di rilascio del virus all’interno della cellula ospite, \\
-	- Proteina E: l’espressione di questa proteina aiuta la glicoproteina S (e quindi il virus) ad attaccarsi alla membrana della cellula bersaglio;\\
-	- RNA e proteina N: il genoma dei Coronavirus è costituito da un singolo filamento di RNA a polarità positiva di grande taglia (da 27 a 32 kb nei diversi virus); non sono noti virus a RNA di taglia maggiore. L’RNA dà origine a 7 proteine virali ed è associato alla proteina N, che ne aumenta la stabilità.\\
+I coronavirus sono una famiglia di virus RNA a filamento positivo con aspetto simile a una corona se esaminati al microscopio elettronico (da cui il nome) e noti per causare malattie che vanno dal comune raffreddore a patologie più gravi come la Sindrome respiratoria mediorientale (MERS) o la Sindrome respiratoria acuta grave (SARS). \\
+Nel Dicembre 2019 a Wuhan, in Cina, è stato isolato un nuovo ceppo di coronavirus, denominato SARS-CoV-2 (\textit{Severe Acute Respiratory Syndrome - Coronavirus - 2}), la cui sequenza virale ha un'omologia del 76\% con il virus che causò la pandemia della Sars nel 2002.La malattia respiratoria causata da questo nuovo coronavirus è stata chiamata COVID-19.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.3\linewidth]{nCov.png}
+\caption{\textit{L’illustrazione, creata dai Centers for Disease Control and Prevention (CDC) statunitense, rivela la morfologia ultrastrutturale del SARS-CoV-2}}
+\label{fig:1}
+\end{figure}
+
+Ogni virione (singola particella virale) SARS-CoV-2 ha un diametro di circa 50-200 nanometri. Come altri coronavirus, SARS-CoV-2 presenta quattro proteine strutturali: S (spike), E (inviluppo), M (membrana) e N (nucleocapside). La proteina N contiene il genoma dell'RNA mentre le proteine S, E, M creano insieme l'inviluppo virale. %chiedere a prof Cattin
+In particolare la proteina spike è quella che permette al virus di attaccarsi alla membrana di una cellula ospite.\\
+
+Fra le sequenze genomiche SARS-CoV-2 note è stata evidenziata una bassa variabilità, si ritiene dunque che il ceppo sia stato rilevato dalle autorità sanitarie entro poche settimane dalla sua comparsa tra la popolazione umana alla fine del 2019.
+Dopo il primo caso di infezione noto, avvenuto in Cina verso la fine del 2019, il virus si è diffuso in tutte le province della Cina e in oltre 150 altri paesi in Asia, Europa, Nord America, Sud America, Africa e Oceania.
+La trasmissione da uomo a uomo di SARS-CoV-2 è stata confermata nel gennaio 2020 e avviene principalmente attraverso goccioline respiratorie da tosse e starnuti entro un raggio di circa 1,8 metri oppure un'altra possibile causa di infezione è il contatto indiretto tramite superfici contaminate.\\
+Il numero di riproduzione di base del virus è stato stimato tra 1.4 e 3.9, il che significa che ogni infezione dal virus dovrebbe causare da 1.4 a 3.9 nuove infezioni nel caso in cui nessun membro della comunità sia immune e non vengano prese misure preventive.\\
+Al 25 maggio 2020, ci sono stati 5.428.605 casi confermati totali di infezione da SARS-CoV-2 nella pandemia in corso, con un totale di decessi attribuiti al virus di 345.375. 
+
+\newpage
 
 \section*{Obiettivo del progetto}
-L'obiettivo del nostro progetto è diviso in due parti: \\
-	- nella prima parte vogliamo eseguire un confronto verticale fra la sequenza di riferimento (quindi la prima sequenza che è presente nella banca dati raccolta a Wuhan) e le sequenze prese rispettivamente da Italia, New York, Spagna e Russia. Le sequenze dei vari paesi sono state prese in ordine temporale crescente, in modo che attraverso il confronto potessimo denotare delle mutazioni nel tempo.
-	-nella seconda parte, invece, abbiamo voluto eseguire un confronto orizzontale tra le utlimissime sequenze raccolte dei vari paesi in modo da poter visualizzare la presenza di eventuali mutazioni, sia con la sequenza di riferimento sia tra di loro. 
+L'obiettivo del nostro progetto è individuare inizialmente, attraverso uno studio verticale in alcuni paesi, eventuali mutazioni avvenute dunque in una determinato lugo e, successivamente, confrontare il virus presente nel periodo corrente in diversi paesi nel mondo. \\
+Più precisamente: %mi sa da scrivere un po' meglio
+\begin{itemize}
+\item nella prima parte eseguiamo un'analisi verticale fra la sequenza di riferimento (ossia la prima sequenza che presente nella banca dati raccolta a Wuhan) e delle sequenze prese rispettivamente da Italia, New York, Spagna e Russia. Le sequenze dei singoli paesi sono state prese seguendo un ordine temporale crescente, in modo tale da poter denotare attraverso il confronto delle mutazioni nel tempo.
+\item nella seconda parte, invece, effettuiamo un confronto orizzontale tra le ultime sequenze raccolte dei vari paesi scelti, in modo da poter individuare la presenza di eventuali mutazioni nello stato corrente del virus, sempre tenedo come riferimanto la prima sequenze presente nella banca dati. 
+\end{itemize}
 
 \section*{Scelta delle sequenze}
-Le seqeunze sono state prese dal sito Gsaid. Per ogni paese abbiamo preso solo sequenze complete e su pazienti tutti di genere maschile, inoltre abbiamo cercato di seguire una linea temporale che partisse dalla prima sequenza presente nel database all'ultima, con in mezzo sequenze che si distanziavano tra di loro di una settimana. \\
-Per quanto riguarda, invece, la scelta dei paesi Italia, NY, Spagna e Russia è stata dettata dal fatto che risultavano essere tra i paesi più colpiti dal virus e quindi li abbiamo ritenuti interessanti da analizzare.\\
-%Sarebbe interessante mettere una classifica no??
+Abbiamo deciso di selezionare alcuni dei paesi con il più alto numero di casi di COVID-19, ossia Stati Uniti (per il quale ci siamo concentrati su uno degli stati a sua volta più colpito, quello di New York), Russia,  Spagna e Italia. I casi, al 25 Maggio 2020, sono riportati nella tabella seguente:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Stati Uniti} & 1,678,477 \\ \hline
+\textbf{Russia}      & 353,427   \\ \hline
+\textbf{Spagna}      & 235,823   \\ \hline
+\textbf{Italia}      & 229,858   \\ \hline
+\end{tabular}
+\end{table}
+
+Le sequenze analizzate sono state prese dal sito GISAID. Per ogni paese abbiamo preso solo sequenze complete (con più di 29000 basi) e su pazienti tutti di sesso maschile. Abbiamo cercato inoltre di seguire una linea temporale che partisse dalla prima sequenza presente nel database fino all'ultima, con in mezzo sequenze che si distanziavano tra di loro di una settimana.
 
 \section*{Scelta dei tool}
-Tra i tool messi a disposizione abbiamo scelto di utilizzare. Clustal Omega, Kalign e MAFFT.\\
-Abbiamo scelto Clustal Omega poichè sfrutta il modello probabilistico Profilo HMM (Hidden Markov Model), il quale è in grado di incapsulare i cambiamenti evolutivi che si sono verificati in una serie di sequenze correlate. Per fare questo il modello va a studiare le informazioni specifiche di ogni amminoacido conservato nella colonna di allineamento. Inoltre questo tool risultava utile per sequenze molto lunghe.\\
-Kalign è stato scelto poichè è un tool che si concentra sulle regioni locali e lavoro molto velocemtne. Questo ci sembrava perfetto per il tipo di analisi sui precisi stati che volevamo svolgere.\\
-Infine abbiamo scelto MAFFT poichè attraverso l'algoritmo della trasformata di Fourier veloce ottimizza gli allineamenti proteici in base alle proprietà fisiche degli aminoacidi, utilizzando sia un allineamento progressivo che iterativo. Anche esso risulta essere ottimale per sequenze di lunghezza medio-grandi.
+Tra i tool messi a disposizione abbiamo scelto di utilizzare Clustal Omega, Kalign e MAFFT.\\
+Abbiamo scelto Clustal Omega poichè sfrutta il modello probabilistico Profilo HMM (Hidden Markov Model), il quale è in grado di incapsulare i cambiamenti evolutivi che si sono verificati in una serie di sequenze correlate ed inoltre questo tool risultava ottimale per sequenze molto lunghe.\\
+Kalign è stato scelto poichè è un tool che si concentra sulle regioni locali e lavora molto velocemente, motivo per il quale ci sembrava particolarmente adatto per le analisi sui singoli stati che volevamo svolgere.\\
+Infine abbiamo scelto MAFFT poichè attraverso l'algoritmo della trasformata di Fourier veloce ottimizza gli allineamenti proteici in base alle proprietà fisiche degli aminoacidi, utilizzando sia un allineamento progressivo che iterativo. Anche esso risulta essere ottimale per sequenze di lunghezza medio-grandi. %% non va bene perché noi non facciamo allineamenti proteici
+
 %Qua parliamo del codice ma aspetterei che sia completo e correto per descriverlo.
 
 \section*{Risultati ottenuti}
