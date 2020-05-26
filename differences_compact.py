@@ -171,7 +171,7 @@ for i in range(1, len(haln)):
                     l = 0
             else:
                 if s != "" and r != "":
-                    element =  [haln[i].id.split('/')[0], j - l, r.upper(), s.upper()]
+                    element =  [haln[i].id.split('/')[0], j - l, l, r.upper(), s.upper()]
                     hm.append(element)
                     s = ""
                     r = ""
