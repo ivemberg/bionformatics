@@ -8,11 +8,19 @@
 \contentsline {subsection}{Italia}{4}{section*.9}% 
 \contentsline {subsection}{Spagna}{4}{section*.10}% 
 \contentsline {section}{Appendice A - risultati estesi}{5}{section*.11}% 
-\contentsline {subsection}{Italia}{6}{section*.12}% 
+\contentsline {subsection}{New York (USA)}{6}{section*.12}% 
 \contentsline {subsubsection}{Clustal Omega}{6}{section*.13}% 
-\contentsline {subsubsection}{Kalign}{8}{section*.14}% 
-\contentsline {subsubsection}{MAFFT}{10}{section*.15}% 
-\contentsline {subsection}{Spagna}{12}{section*.16}% 
-\contentsline {subsubsection}{Clustal Omega}{12}{section*.17}% 
-\contentsline {subsubsection}{Kalign}{16}{section*.18}% 
-\contentsline {subsubsection}{MAFFT}{17}{section*.19}% 
+\contentsline {subsubsection}{Kalign}{9}{section*.14}% 
+\contentsline {subsubsection}{MAFFT}{12}{section*.15}% 
+\contentsline {subsection}{Russia}{14}{section*.16}% 
+\contentsline {subsubsection}{Clustal Omega}{14}{section*.17}% 
+\contentsline {subsubsection}{Kalign}{17}{section*.18}% 
+\contentsline {subsubsection}{MAFFT}{19}{section*.19}% 
+\contentsline {subsection}{Italia}{21}{section*.20}% 
+\contentsline {subsubsection}{Clustal Omega}{21}{section*.21}% 
+\contentsline {subsubsection}{Kalign}{23}{section*.22}% 
+\contentsline {subsubsection}{MAFFT}{25}{section*.23}% 
+\contentsline {subsection}{Spagna}{27}{section*.24}% 
+\contentsline {subsubsection}{Clustal Omega}{27}{section*.25}% 
+\contentsline {subsubsection}{Kalign}{31}{section*.26}% 
+\contentsline {subsubsection}{MAFFT}{35}{section*.27}% 
