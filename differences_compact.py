@@ -17,14 +17,14 @@ for f in glob.glob('Results/Kalign/*.fasta'):
                 r += aln[0].seq[j]
                 l += 1
                 if (j == len(aln[i].seq)-1):
-                    element =  [aln[i].id.split('/')[0], j - l + 1, l, r, s]
+                    element =  [aln[i].id, j - l, l, r, s]
                     k.append(element)
                     s = ""
                     r = ""
                     l = 0
             else:
                 if s != "" and r != "":
-                    element =  [aln[i].id.split('/')[0], j - l, l, r, s]
+                    element =  [aln[i].id, j - l, l, r, s]
                     k.append(element)
                     s = ""
                     r = ""
@@ -47,14 +47,14 @@ for f in glob.glob('Results/Clustal Omega/*.fasta'):
                 r += aln[0].seq[j]
                 l += 1
                 if (j == len(aln[i].seq)-1):
-                    element =  [aln[i].id.split('/')[0],  j - l + 1, l, r, s]
+                    element =  [aln[i].id, j - l, l, r, s]
                     c.append(element)
                     s = ""
                     r = ""
                     l = 0
             else:
                 if s != "" and r != "":
-                    element =  [aln[i].id.split('/')[0], j - l, l, r, s]
+                    element =  [aln[i].id, j - l, l, r, s]
                     c.append(element)
                     s = ""
                     r = ""
@@ -77,14 +77,14 @@ for f in glob.glob('Results/MAFFT/*.fasta'):
                 r += aln[0].seq[j]
                 l += 1
                 if (j == len(aln[i].seq)-1):
-                    element =  [aln[i].id.split('/')[0],  j - l + 1, l, r, s]
+                    element =  [aln[i].id, j - l, l, r.upper(), s.upper()]
                     m.append(element)
                     s = ""
                     r = ""
                     l = 0
             else:
                 if s != "" and r != "":
-                    element =  [aln[i].id.split('/')[0], j - l, l, r, s]
+                    element =  [aln[i].id, j - l, l, r.upper(), s.upper()]
                     m.append(element)
                     s = ""
                     r = ""
@@ -106,14 +106,14 @@ for i in range(1, len(haln)):
                 r += haln[0].seq[j]
                 l += 1
                 if (j == len(haln[i].seq)-1):
-                    element =  [haln[i].id.split('/')[0],  j - l + 1, l, r, s]
+                    element =  [haln[i].id, j - l, l, r, s]
                     hk.append(element)
                     s = ""
                     r = ""
                     l = 0
             else:
                 if s != "" and r != "":
-                    element =  [haln[i].id.split('/')[0], j - l, l, r, s]
+                    element =  [haln[i].id, j - l, l, r, s]
                     hk.append(element)
                     s = ""
                     r = ""
@@ -135,14 +135,14 @@ for i in range(1, len(haln)):
                 r += haln[0].seq[j]
                 l += 1
                 if (j == len(haln[i].seq)-1):
-                    element =  [haln[i].id.split('/')[0],  j - l + 1, l, r, s]
+                    element =  [haln[i].id, j - l, l, r, s]
                     hc.append(element)
                     s = ""
                     r = ""
                     l = 0
             else:
                 if s != "" and r != "":
-                    element =  [haln[i].id.split('/')[0], j - l, l, r, s]
+                    element =  [haln[i].id, j - l, l, r, s]
                     hc.append(element)
                     s = ""
                     r = ""
@@ -164,14 +164,14 @@ for i in range(1, len(haln)):
                 r += haln[0].seq[j]
                 l += 1
                 if (j == len(haln[i].seq)-1):
-                    element =  [haln[i].id.split('/')[0],  j - l + 1, l, r, s]
+                    element =  [haln[i].id, j - l, l, r.upper(), s.upper()]
                     hm.append(element)
                     s = ""
                     r = ""
                     l = 0
             else:
                 if s != "" and r != "":
-                    element =  [haln[i].id.split('/')[0], j - l, r, s]
+                    element =  [haln[i].id, j - l, r.upper(), s.upper]
                     hm.append(element)
                     s = ""
                     r = ""
