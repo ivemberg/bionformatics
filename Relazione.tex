@@ -128,18 +128,25 @@ Tra i tool messi a disposizione abbiamo scelto di utilizzare Clustal Omega, Kali
 Abbiamo scelto Clustal Omega poichè sfrutta il modello probabilistico Profilo HMM (Hidden Markov Model), il quale è in grado di incapsulare i cambiamenti evolutivi che si sono verificati in una serie di sequenze correlate ed inoltre questo tool risultava ottimale per sequenze molto lunghe.\\
 Kalign è stato scelto poichè è un tool che si concentra sulle regioni locali e lavora molto velocemente, motivo per il quale ci sembrava particolarmente adatto per le analisi sui singoli stati che volevamo svolgere.\\
 Infine abbiamo scelto MAFFT poichè attraverso l'algoritmo della trasformata di Fourier veloce ottimizza gli allineamenti in base alle proprietà fisiche, utilizzando sia un allineamento progressivo che iterativo. Anche esso risulta essere ottimale per sequenze di lunghezza medio-grandi.\\
-%Manca la parte di Python
+%Manca la parte di codice
 
 \section{Analisi verticale}
 Nell' analisi verticale abbiamo deciso di studiare singolarmente ogni stato, prendendo le sequenze scelte e confrontandole con quella di riferimento. I risultati ottenuti sono visibile nell'appendice A della relazione.
 \subsection{New York (USA)}
 Nell'eseguire i tre tool non abbiamo ottenuto risultati differenti nonostante i tre approcci differenti di calcolo.\\ %Forse qualcosa a livello di caratteri che cambiano da sottolineare??
+Tutte le sequenze, tranne la sequenza numero tre, presentano variaziobe di carattere nelle posizioni 240, 1058, 14047, 23402 e 25562.\\
+La sequenza numero tre risulta essere quella più particolare, in quanto è l'unica che presenta mutazioni differenti rispetto le altre.\\
 
 \subsection{Russia}
 La Russia, come New York, nonostante i diversi metodi di calcolo non presenta differenze negli output dei tre tool.\\ %Stesso quesito di sopra
+Tutte le sequenze, a parte la numero cinque, presentano una variazione nella posizione 240.\\
+Alle posizioni 3036 e 14407 tutte le sequenze presentano dei cambiamenti.\\
+La sequenza numero 5 è l'unica a presentare una variazione (abbastanza lunga) di caratteri a partire dalla posizione 75.\\
 
 \subsection{Italia}
 L'esecuzione dei tre tool con le sequenze dell' Italia ha prodotti output praticamete identici trane per alcune parti.\\
+Tutte le sequenze a parte la numero uno variano il carattere nella posizione 241, stesso discorso accade alla posizione 14408\\
+In tutte le sequenze avviene un cambio di carattere nella stessa posizione, la 23403.\\
 Clustal e e Mafft presentano sequenze con variazioni di carattere nelle posizioni 29890 della sequenza 3, 29898 della sequenza 4 e 29899 della sequenza 6.\\
 Per Kalign invece si hanno dei cambi di carattere nella posizone 29879 delle sequenze 3, 4 e 6.\\
 
@@ -147,8 +154,10 @@ Per Kalign invece si hanno dei cambi di carattere nella posizone 29879 delle seq
 Nell'eseguire l'analisi con i tre differenti tool abbiamo ottenuto dei risultati identici tranne nelle ultime due sequenze della Spagna. Mentre Kalign e Mafft producono lo stesso output qualcosa cambia con Clustal.\\
 Nell'ouput di Clustal, nella sesta sequenza spagnola, troviamo dei cambi di carattere nell posizioni 5175, 6353, 28882, 29687 e 29733. Per quanto riguarda la sequenza sette, invece, si hanno dei cambi di carattere nelle posizioni 8738, 18743 e 22892.\\
 Con Kalign e Mafft, nella sequena sei, abbiamo dei cambi di caratteri nelle posizioni 8738, 18743 e 22892. Nella sequenza sette i cambi di carattere sono nelle posizioni 5175, 6353, 28882, 29687 e 29733.\\
+Inoltre abiamo notato che le prime tre sequenze presentanto tutte una variazione alla posizione 8781.\\
+Nel complesso, quindi, possiamo affermare che le sequenze spagnole sono quelle che sono risultate più differenti fra di loro, avendo tra una sequenza e un'altra cambiamenti in molte posizioni diverse.\\ %gli spagnoli non so boni, bastardi!!
 
-\section{Analisi verticale}
+\section{Analisi orizzontale}
 Nell'analisi verticale abbiamo, invece, deciso di confrontare le ultime sequenze che erano disponibili con quella di riferimento. Anche questi risultati sono consultabili nell'appendice B della relazione\\
 Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le sequenze hanno subito gli stessi cambiamenti nonostante si trovassere in aree giografiche diverse. Questo risultato ottenuto in base alle sequenze da noi scelte, sottolinea come nonostante il virus sia molto mutevole, questo potrebbero non dipendere dal clima o il luogo in cui si trova.
 

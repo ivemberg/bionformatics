@@ -1,31 +1,31 @@
-\contentsline {section}{SARS-CoV-2}{2}{section*.2}% 
-\contentsline {section}{Obiettivo del progetto}{3}{section*.3}% 
-\contentsline {section}{Sequenze}{3}{section*.4}% 
-\contentsline {section}{Tool}{3}{section*.5}% 
-\contentsline {section}{Analisi verticale}{4}{section*.6}% 
-\contentsline {subsection}{New York (USA)}{4}{section*.7}% 
-\contentsline {subsection}{Russia}{4}{section*.8}% 
-\contentsline {subsection}{Italia}{4}{section*.9}% 
-\contentsline {subsection}{Spagna}{4}{section*.10}% 
-\contentsline {section}{Analisi verticale}{4}{section*.11}% 
-\contentsline {section}{Appendice A - risultati confronto verticale}{6}{section*.12}% 
-\contentsline {subsection}{New York (USA)}{7}{section*.13}% 
-\contentsline {subsubsection}{Clustal Omega}{7}{section*.14}% 
-\contentsline {subsubsection}{Kalign}{10}{section*.15}% 
-\contentsline {subsubsection}{MAFFT}{13}{section*.16}% 
-\contentsline {subsection}{Russia}{15}{section*.17}% 
-\contentsline {subsubsection}{Clustal Omega}{15}{section*.18}% 
-\contentsline {subsubsection}{Kalign}{18}{section*.19}% 
-\contentsline {subsubsection}{MAFFT}{20}{section*.20}% 
-\contentsline {subsection}{Italia}{22}{section*.21}% 
-\contentsline {subsubsection}{Clustal Omega}{22}{section*.22}% 
-\contentsline {subsubsection}{Kalign}{24}{section*.23}% 
-\contentsline {subsubsection}{MAFFT}{26}{section*.24}% 
-\contentsline {subsection}{Spagna}{28}{section*.25}% 
-\contentsline {subsubsection}{Clustal Omega}{28}{section*.26}% 
-\contentsline {subsubsection}{Kalign}{32}{section*.27}% 
-\contentsline {subsubsection}{MAFFT}{37}{section*.28}% 
-\contentsline {section}{Appendice B - risultati confronto orizzontale}{42}{section*.29}% 
-\contentsline {subsection}{Clustal Omega}{42}{section*.30}% 
-\contentsline {subsection}{Kalign}{44}{section*.31}% 
-\contentsline {subsection}{MAFFT}{46}{section*.32}% 
+\contentsline {section}{SARS-CoV-2}{2}{section*.2}%
+\contentsline {section}{Obiettivo del progetto}{3}{section*.3}%
+\contentsline {section}{Sequenze}{3}{section*.4}%
+\contentsline {section}{Tool}{3}{section*.5}%
+\contentsline {section}{Analisi verticale}{4}{section*.6}%
+\contentsline {subsection}{New York (USA)}{4}{section*.7}%
+\contentsline {subsection}{Russia}{4}{section*.8}%
+\contentsline {subsection}{Italia}{4}{section*.9}%
+\contentsline {subsection}{Spagna}{4}{section*.10}%
+\contentsline {section}{Analisi orizzontale}{5}{section*.11}%
+\contentsline {section}{Appendice A - risultati confronto verticale}{6}{section*.12}%
+\contentsline {subsection}{New York (USA)}{7}{section*.13}%
+\contentsline {subsubsection}{Clustal Omega}{7}{section*.14}%
+\contentsline {subsubsection}{Kalign}{10}{section*.15}%
+\contentsline {subsubsection}{MAFFT}{13}{section*.16}%
+\contentsline {subsection}{Russia}{15}{section*.17}%
+\contentsline {subsubsection}{Clustal Omega}{15}{section*.18}%
+\contentsline {subsubsection}{Kalign}{18}{section*.19}%
+\contentsline {subsubsection}{MAFFT}{20}{section*.20}%
+\contentsline {subsection}{Italia}{22}{section*.21}%
+\contentsline {subsubsection}{Clustal Omega}{22}{section*.22}%
+\contentsline {subsubsection}{Kalign}{24}{section*.23}%
+\contentsline {subsubsection}{MAFFT}{26}{section*.24}%
+\contentsline {subsection}{Spagna}{28}{section*.25}%
+\contentsline {subsubsection}{Clustal Omega}{28}{section*.26}%
+\contentsline {subsubsection}{Kalign}{32}{section*.27}%
+\contentsline {subsubsection}{MAFFT}{37}{section*.28}%
+\contentsline {section}{Appendice B - risultati confronto orizzontale}{42}{section*.29}%
+\contentsline {subsection}{Clustal Omega}{42}{section*.30}%
+\contentsline {subsection}{Kalign}{44}{section*.31}%
+\contentsline {subsection}{MAFFT}{46}{section*.32}%
