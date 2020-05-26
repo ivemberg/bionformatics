@@ -1,9 +1,9 @@
-\contentsline {section}{SARS-CoV-2}{2}{section*.2}% 
-\contentsline {section}{Obiettivo del progetto}{3}{section*.3}% 
-\contentsline {section}{Sequenze}{3}{section*.4}% 
-\contentsline {section}{Tool}{3}{section*.5}% 
-\contentsline {section}{Analisi verticale}{4}{section*.6}% 
-\contentsline {subsection}{New York (USA)}{4}{section*.7}% 
-\contentsline {subsection}{Russia}{4}{section*.8}% 
-\contentsline {subsection}{Italia}{4}{section*.9}% 
-\contentsline {subsection}{Spagna}{6}{section*.10}% 
+\contentsline {section}{SARS-CoV-2}{2}{section*.2}%
+\contentsline {section}{Obiettivo del progetto}{3}{section*.3}%
+\contentsline {section}{Sequenze}{3}{section*.4}%
+\contentsline {section}{Tool}{3}{section*.5}%
+\contentsline {section}{Analisi verticale}{4}{section*.6}%
+\contentsline {subsection}{New York (USA)}{4}{section*.7}%
+\contentsline {subsection}{Russia}{4}{section*.8}%
+\contentsline {subsection}{Italia}{4}{section*.9}%
+\contentsline {subsection}{Spagna}{6}{section*.10}%

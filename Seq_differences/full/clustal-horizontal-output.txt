@@ -1,4 +1,4 @@
-sequence : hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873
+sequence : Italy|EPI_ISL_436729/1-29873
   position : 0 reference base: A sequence base: N
   position : 1 reference base: T sequence base: N
   position : 2 reference base: T sequence base: N
@@ -54,7 +54,7 @@ sequence : hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873
   position : 29900 reference base: A sequence base: -
   position : 29901 reference base: A sequence base: -
   position : 29902 reference base: A sequence base: -
-sequence : hCoV-19/Russia/StPetersburg-RII6061S/2020|EPI_ISL_430108|2020-04-15/1-29903
+sequence : Russia|EPI_ISL_430108/1-29903
   position : 240 reference base: C sequence base: T
   position : 834 reference base: C sequence base: T
   position : 3036 reference base: C sequence base: T
@@ -93,7 +93,7 @@ sequence : hCoV-19/Russia/StPetersburg-RII6061S/2020|EPI_ISL_430108|2020-04-15/1
   position : 29900 reference base: A sequence base: N
   position : 29901 reference base: A sequence base: N
   position : 29902 reference base: A sequence base: N
-sequence : hCoV-19/Spain/Barcelona_VH1407/2020|EPI_ISL_444975|2020-04-10/1-29903
+sequence : Spain|EPI_ISL_444975/1-29903
   position : 240 reference base: C sequence base: T
   position : 3036 reference base: C sequence base: T
   position : 5175 reference base: A sequence base: G
@@ -104,7 +104,7 @@ sequence : hCoV-19/Spain/Barcelona_VH1407/2020|EPI_ISL_444975|2020-04-10/1-29903
   position : 28882 reference base: G sequence base: A
   position : 29687 reference base: G sequence base: C
   position : 29733 reference base: G sequence base: C
-sequence : hCoV-19/USA/NY-NYUMC482/2020|EPI_ISL_435547|2020-04-24/1-29903
+sequence : USA|EPI_ISL_435547/1-29903
   position : 0 reference base: A sequence base: N
   position : 1 reference base: T sequence base: N
   position : 2 reference base: T sequence base: N

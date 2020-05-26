@@ -1,14 +1,14 @@
-sequence : 1_hCoV-19/Italy/SPL1/2020|EPI_ISL_412974|2020-01-29/1-29903
+sequence : 1_Italy|EPI_ISL_412974/1-29903
   position : 11083 reference base: G sequence base: T
   position : 26144 reference base: G sequence base: T
-sequence : 2_hCoV-19/Italy/CDG1/2020|EPI_ISL_412973|2020-02-20/1-29903
+sequence : 2_Italy|EPI_ISL_412973/1-29903
   position : 241 reference base: C sequence base: T
   position : 3037 reference base: C sequence base: T
   position : 14408 reference base: C sequence base: T
   position : 23403 reference base: A sequence base: G
   position : 29867 reference base: T sequence base: N
   position : 29868 reference base: G sequence base: N
-sequence : 3_hCoV-19/Italy/FVG-ICGEB_S9/2020|EPI_ISL_417423|2020-03-01/1-29891
+sequence : 3_Italy|EPI_ISL_417423/1-29891
   position : 0 reference base: - sequence base: G
   position : 241 reference base: C sequence base: T
   position : 3037 reference base: C sequence base: T
@@ -27,7 +27,7 @@ sequence : 3_hCoV-19/Italy/FVG-ICGEB_S9/2020|EPI_ISL_417423|2020-03-01/1-29891
   position : 29889 reference base: A sequence base: -
   position : 29890 reference base: A sequence base: -
   position : 29891 reference base: A sequence base: -
-sequence : 4_hCoV-19/Italy/TE4880/2020|EPI_ISL_418256|2020-03-14/1-29898
+sequence : 4_Italy|EPI_ISL_418256/1-29898
   position : 42 reference base: T sequence base: Y
   position : 44 reference base: C sequence base: N
   position : 45 reference base: G sequence base: N
@@ -43,7 +43,7 @@ sequence : 4_hCoV-19/Italy/TE4880/2020|EPI_ISL_418256|2020-03-14/1-29898
   position : 29881 reference base: A sequence base: -
   position : 29882 reference base: A sequence base: -
   position : 29883 reference base: A sequence base: -
-sequence : 5_hCoV-19/Italy/INMI6/2020|EPI_ISL_419254|2020-03-23/1-29834
+sequence : 5_Italy|EPI_ISL_419254/1-29834
   position : 1 reference base: A sequence base: -
   position : 2 reference base: T sequence base: -
   position : 3 reference base: T sequence base: -
@@ -117,7 +117,7 @@ sequence : 5_hCoV-19/Italy/INMI6/2020|EPI_ISL_419254|2020-03-23/1-29834
   position : 29901 reference base: A sequence base: -
   position : 29902 reference base: A sequence base: -
   position : 29903 reference base: A sequence base: -
-sequence : 6_hCoV-19/Italy/FVG-ICGEB_S18/2020|EPI_ISL_428854|2020-03-30/1-29899
+sequence : 6_Italy|EPI_ISL_428854/1-29899
   position : 241 reference base: C sequence base: T
   position : 3037 reference base: C sequence base: T
   position : 14408 reference base: C sequence base: T
@@ -127,7 +127,7 @@ sequence : 6_hCoV-19/Italy/FVG-ICGEB_S18/2020|EPI_ISL_428854|2020-03-30/1-29899
   position : 29880 reference base: A sequence base: -
   position : 29881 reference base: A sequence base: -
   position : 29882 reference base: A sequence base: -
-sequence : 7_hCoV-19/Italy/TE13858/2020|EPI_ISL_435152|2020-04-09/1-29878
+sequence : 7_Italy|EPI_ISL_435152/1-29878
   position : 1 reference base: A sequence base: N
   position : 2 reference base: T sequence base: N
   position : 3 reference base: T sequence base: N
@@ -201,7 +201,7 @@ sequence : 7_hCoV-19/Italy/TE13858/2020|EPI_ISL_435152|2020-04-09/1-29878
   position : 29901 reference base: A sequence base: -
   position : 29902 reference base: A sequence base: -
   position : 29903 reference base: A sequence base: -
-sequence : 8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873
+sequence : 8/Italy|EPI_ISL_436729/1-29873
   position : 1 reference base: A sequence base: N
   position : 2 reference base: T sequence base: N
   position : 3 reference base: T sequence base: N
@@ -257,7 +257,7 @@ sequence : 8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873
   position : 29901 reference base: A sequence base: -
   position : 29902 reference base: A sequence base: -
   position : 29903 reference base: A sequence base: -
-sequence : 1_hCoV-19/USA/NY_2929/2020|EPI_ISL_420793|2020-03-02/1-29882
+sequence : 1_USA|EPI_ISL_420793/1-29882
   position : 240 reference base: C sequence base: T
   position : 1058 reference base: C sequence base: T
   position : 3036 reference base: C sequence base: T
@@ -285,7 +285,7 @@ sequence : 1_hCoV-19/USA/NY_2929/2020|EPI_ISL_420793|2020-03-02/1-29882
   position : 29900 reference base: A sequence base: -
   position : 29901 reference base: A sequence base: -
   position : 29902 reference base: A sequence base: -
-sequence : 2_hCoV-19/USA/NY-Wadsworth-11717-01/2020|EPI_ISL_426291|2020-03-08/1-29806
+sequence : 2_USA|EPI_ISL_426291/1-29806
   position : 0 reference base: A sequence base: -
   position : 1 reference base: T sequence base: -
   position : 2 reference base: T sequence base: -
@@ -390,7 +390,7 @@ sequence : 2_hCoV-19/USA/NY-Wadsworth-11717-01/2020|EPI_ISL_426291|2020-03-08/1-
   position : 29900 reference base: A sequence base: -
   position : 29901 reference base: A sequence base: -
   position : 29902 reference base: A sequence base: -
-sequence : 3_hCoV-19/USA/NY-PV08148/2020|EPI_ISL_421365|2020-03-14/1-29726
+sequence : 3_USA|EPI_ISL_421365/1-29726
   position : 0 reference base: A sequence base: -
   position : 1 reference base: T sequence base: -
   position : 2 reference base: T sequence base: -
@@ -575,7 +575,7 @@ sequence : 3_hCoV-19/USA/NY-PV08148/2020|EPI_ISL_421365|2020-03-14/1-29726
   position : 29900 reference base: A sequence base: -
   position : 29901 reference base: A sequence base: -
   position : 29902 reference base: A sequence base: -
-sequence : 4_hCoV-19/USA/NY-PV09019/2020|EPI_ISL_421594|2020-03-21/1-29709
+sequence : 4_USA|EPI_ISL_421594/1-29709
   position : 0 reference base: A sequence base: -
   position : 1 reference base: T sequence base: -
   position : 2 reference base: T sequence base: -
@@ -777,7 +777,7 @@ sequence : 4_hCoV-19/USA/NY-PV09019/2020|EPI_ISL_421594|2020-03-21/1-29709
   position : 29900 reference base: A sequence base: -
   position : 29901 reference base: A sequence base: -
   position : 29902 reference base: A sequence base: -
-sequence : 5_hCoV-19/USA/NY-Wadsworth-32104-01/2020|EPI_ISL_426309|2020-03-28/1-29822
+sequence : 5_USA|EPI_ISL_426309/1-29822
   position : 0 reference base: A sequence base: -
   position : 1 reference base: T sequence base: -
   position : 2 reference base: T sequence base: -
@@ -865,7 +865,7 @@ sequence : 5_hCoV-19/USA/NY-Wadsworth-32104-01/2020|EPI_ISL_426309|2020-03-28/1-
   position : 29900 reference base: A sequence base: -
   position : 29901 reference base: A sequence base: -
   position : 29902 reference base: A sequence base: -
-sequence : 6_hCoV-19/USA/NY-NYUMC253/2020|EPI_ISL_428767|2020-04-05/1-29903
+sequence : 6_USA|EPI_ISL_428767/1-29903
   position : 0 reference base: A sequence base: N
   position : 1 reference base: T sequence base: N
   position : 2 reference base: T sequence base: N
@@ -886,7 +886,7 @@ sequence : 6_hCoV-19/USA/NY-NYUMC253/2020|EPI_ISL_428767|2020-04-05/1-29903
   position : 18936 reference base: G sequence base: A
   position : 23402 reference base: A sequence base: G
   position : 25562 reference base: G sequence base: T
-sequence : 7_hCoV-19/USA/NY-NYUMC391/2020|EPI_ISL_430418|2020-04-13/1-29903
+sequence : 7_USA|EPI_ISL_430418/1-29903
   position : 0 reference base: A sequence base: N
   position : 240 reference base: C sequence base: T
   position : 1058 reference base: C sequence base: T
@@ -894,7 +894,7 @@ sequence : 7_hCoV-19/USA/NY-NYUMC391/2020|EPI_ISL_430418|2020-04-13/1-29903
   position : 14407 reference base: C sequence base: T
   position : 23402 reference base: A sequence base: G
   position : 25562 reference base: G sequence base: T
-sequence : 8_hCoV-19/USA/NY-NYUMC455/2020|EPI_ISL_435521|2020-04-20/1-29903
+sequence : 8_USA|EPI_ISL_435521/1-29903
   position : 0 reference base: A sequence base: N
   position : 1 reference base: T sequence base: N
   position : 2 reference base: T sequence base: N
@@ -912,7 +912,7 @@ sequence : 8_hCoV-19/USA/NY-NYUMC455/2020|EPI_ISL_435521|2020-04-20/1-29903
   position : 15573 reference base: G sequence base: A
   position : 23402 reference base: A sequence base: G
   position : 25562 reference base: G sequence base: T
-sequence : 9_hCoV-19/USA/NY-NYUMC482/2020|EPI_ISL_435547|2020-04-24/1-29903
+sequence : 9_USA|EPI_ISL_435547/1-29903
   position : 0 reference base: A sequence base: N
   position : 1 reference base: T sequence base: N
   position : 2 reference base: T sequence base: N
@@ -1165,14 +1165,14 @@ sequence : 9_hCoV-19/USA/NY-NYUMC482/2020|EPI_ISL_435547|2020-04-24/1-29903
   position : 27058 reference base: C sequence base: T
   position : 29539 reference base: G sequence base: A
   position : 29902 reference base: A sequence base: N
-sequence : 1_hCoV-19/Russia/Moscow-62505/2020|EPI_ISL_428860|2020-03-11/1-29903
+sequence : 1_Russia|EPI_ISL_428860/1-29903
   position : 240 reference base: C sequence base: T
   position : 3036 reference base: C sequence base: T
   position : 14407 reference base: C sequence base: T
   position : 18567 reference base: C sequence base: T
   position : 23402 reference base: A sequence base: G
   position : 26529 reference base: A sequence base: G
-sequence : 2_hCoV-19/Russia/Moscow_PMVL-1/2020|EPI_ISL_421275|2020-03-18/1-29891
+sequence : 2_Russia|EPI_ISL_421275/1-29891
   position : 240 reference base: C sequence base: T
   position : 3036 reference base: C sequence base: T
   position : 4001 reference base: C sequence base: T
@@ -1198,12 +1198,12 @@ sequence : 2_hCoV-19/Russia/Moscow_PMVL-1/2020|EPI_ISL_421275|2020-03-18/1-29891
   position : 29900 reference base: A sequence base: -
   position : 29901 reference base: A sequence base: -
   position : 29902 reference base: A sequence base: -
-sequence : 3_hCoV-19/Russia/StPetersburg-RII4326S/2020|EPI_ISL_427337|2020-03-25/1-29903
+sequence : 3_Russia|EPI_ISL_427337/1-29903
   position : 240 reference base: C sequence base: T
   position : 3036 reference base: C sequence base: T
   position : 14407 reference base: C sequence base: T
   position : 23402 reference base: A sequence base: G
-sequence : 4_hCoV-19/Russia/Moscow-35I/2020|EPI_ISL_428852|2020-04-02/1-29903
+sequence : 4_Russia|EPI_ISL_428852/1-29903
   position : 240 reference base: C sequence base: T
   position : 3036 reference base: C sequence base: T
   position : 10968 reference base: C sequence base: T
@@ -1212,7 +1212,7 @@ sequence : 4_hCoV-19/Russia/Moscow-35I/2020|EPI_ISL_428852|2020-04-02/1-29903
   position : 28880 reference base: G sequence base: A
   position : 28881 reference base: G sequence base: A
   position : 28882 reference base: G sequence base: C
-sequence : 5_hCoV-19/Russia/StPetersburg-RII4726S/2020|EPI_ISL_427334|2020-04-07/1-29903
+sequence : 5_Russia|EPI_ISL_427334/1-29903
   position : 0 reference base: A sequence base: N
   position : 1 reference base: T sequence base: N
   position : 2 reference base: T sequence base: N
@@ -1444,7 +1444,7 @@ sequence : 5_hCoV-19/Russia/StPetersburg-RII4726S/2020|EPI_ISL_427334|2020-04-07
   position : 29900 reference base: A sequence base: N
   position : 29901 reference base: A sequence base: N
   position : 29902 reference base: A sequence base: N
-sequence : 6_hCoV-19/Russia/StPetersburg-RII5643S/2020|EPI_ISL_430096|2020-04-14/1-29903
+sequence : 6_Russia|EPI_ISL_430096/1-29903
   position : 0 reference base: A sequence base: N
   position : 1 reference base: T sequence base: N
   position : 2 reference base: T sequence base: N
@@ -1491,7 +1491,7 @@ sequence : 6_hCoV-19/Russia/StPetersburg-RII5643S/2020|EPI_ISL_430096|2020-04-14
   position : 29900 reference base: A sequence base: N
   position : 29901 reference base: A sequence base: N
   position : 29902 reference base: A sequence base: N
-sequence : 7_hCoV-19/Russia/StPetersburg-RII6061S/2020|EPI_ISL_430108|2020-04-15/1-29903
+sequence : 7_Russia|EPI_ISL_430108/1-29903
   position : 240 reference base: C sequence base: T
   position : 834 reference base: C sequence base: T
   position : 3036 reference base: C sequence base: T
@@ -1530,7 +1530,7 @@ sequence : 7_hCoV-19/Russia/StPetersburg-RII6061S/2020|EPI_ISL_430108|2020-04-15
   position : 29900 reference base: A sequence base: N
   position : 29901 reference base: A sequence base: N
   position : 29902 reference base: A sequence base: N
-sequence : 1_hCoV-19/Spain/Madrid201105/2020|EPI_ISL_418251|2020-02-25/1-29781
+sequence : 1_Spain|EPI_ISL_418251/1-29781
   position : 240 reference base: C sequence base: T
   position : 3036 reference base: C sequence base: T
   position : 8781 reference base: C sequence base: T
@@ -1660,7 +1660,7 @@ sequence : 1_hCoV-19/Spain/Madrid201105/2020|EPI_ISL_418251|2020-02-25/1-29781
   position : 29900 reference base: A sequence base: -
   position : 29901 reference base: A sequence base: -
   position : 29902 reference base: A sequence base: -
-sequence : 2_hCoV-19/Spain/PaisVasco201607/2020|EPI_ISL_419240|2020-03-03/1-29787
+sequence : 2_Spain|EPI_ISL_419240/1-29787
   position : 8781 reference base: C sequence base: T
   position : 9476 reference base: T sequence base: A
   position : 14804 reference base: C sequence base: T
@@ -1784,7 +1784,7 @@ sequence : 2_hCoV-19/Spain/PaisVasco201607/2020|EPI_ISL_419240|2020-03-03/1-2978
   position : 29900 reference base: A sequence base: -
   position : 29901 reference base: A sequence base: -
   position : 29902 reference base: A sequence base: -
-sequence : 3_hCoV-19/Spain/Valencia21/2020|EPI_ISL_419685|2020-03-10/1-29782
+sequence : 3_Spain|EPI_ISL_419685/1-29782
   position : 0 reference base: A sequence base: -
   position : 1 reference base: T sequence base: -
   position : 2 reference base: T sequence base: -
@@ -2992,7 +2992,7 @@ sequence : 3_hCoV-19/Spain/Valencia21/2020|EPI_ISL_419685|2020-03-10/1-29782
   position : 29900 reference base: A sequence base: -
   position : 29901 reference base: A sequence base: -
   position : 29902 reference base: A sequence base: -
-sequence : 4_hCoV-19/Spain/Valencia206/2020|EPI_ISL_436301|2020-03-17/1-29802
+sequence : 4_Spain|EPI_ISL_436301/1-29802
   position : 0 reference base: A sequence base: -
   position : 1 reference base: T sequence base: -
   position : 2 reference base: T sequence base: -
@@ -3331,7 +3331,7 @@ sequence : 4_hCoV-19/Spain/Valencia206/2020|EPI_ISL_436301|2020-03-17/1-29802
   position : 29900 reference base: A sequence base: -
   position : 29901 reference base: A sequence base: -
   position : 29902 reference base: A sequence base: -
-sequence : 5_hCoV-19/Spain/Valencia229/2020|EPI_ISL_436324|2020-03-24/1-29804
+sequence : 5_Spain|EPI_ISL_436324/1-29804
   position : 0 reference base: A sequence base: -
   position : 1 reference base: T sequence base: -
   position : 2 reference base: T sequence base: -
@@ -3664,7 +3664,7 @@ sequence : 5_hCoV-19/Spain/Valencia229/2020|EPI_ISL_436324|2020-03-24/1-29804
   position : 29900 reference base: A sequence base: -
   position : 29901 reference base: A sequence base: -
   position : 29902 reference base: A sequence base: -
-sequence : 6_hCoV-19/Spain/Barcelona_VH7773/2020|EPI_ISL_444976|2020-04-06/1-29903
+sequence : 6_Spain|EPI_ISL_444976/1-29903
   position : 240 reference base: C sequence base: T
   position : 3036 reference base: C sequence base: T
   position : 8738 reference base: C sequence base: T
@@ -3673,7 +3673,7 @@ sequence : 6_hCoV-19/Spain/Barcelona_VH7773/2020|EPI_ISL_444976|2020-04-06/1-299
   position : 20267 reference base: A sequence base: G
   position : 22892 reference base: A sequence base: G
   position : 23402 reference base: A sequence base: G
-sequence : 7_hCoV-19/Spain/Barcelona_VH1407/2020|EPI_ISL_444975|2020-04-10/1-29903
+sequence : 7_Spain|EPI_ISL_444975/1-29903
   position : 240 reference base: C sequence base: T
   position : 3036 reference base: C sequence base: T
   position : 5175 reference base: A sequence base: G
@@ -3684,642 +3684,3 @@ sequence : 7_hCoV-19/Spain/Barcelona_VH1407/2020|EPI_ISL_444975|2020-04-10/1-299
   position : 28882 reference base: G sequence base: A
   position : 29687 reference base: G sequence base: C
   position : 29733 reference base: G sequence base: C
-sequence : 1_hCoV-19/Italy/SPL1/2020|EPI_ISL_412974|2020-01-29/1-29903
-  position : 11083 reference base: G sequence base: T
-  position : 26144 reference base: G sequence base: T
-sequence : 2_hCoV-19/Italy/CDG1/2020|EPI_ISL_412973|2020-02-20/1-29903
-  position : 241 reference base: C sequence base: T
-  position : 3037 reference base: C sequence base: T
-  position : 14408 reference base: C sequence base: T
-  position : 23403 reference base: A sequence base: G
-  position : 29867 reference base: T sequence base: N
-  position : 29868 reference base: G sequence base: N
-sequence : 3_hCoV-19/Italy/FVG-ICGEB_S9/2020|EPI_ISL_417423|2020-03-01/1-29891
-  position : 0 reference base: - sequence base: G
-  position : 241 reference base: C sequence base: T
-  position : 3037 reference base: C sequence base: T
-  position : 14408 reference base: C sequence base: T
-  position : 23403 reference base: A sequence base: G
-  position : 29879 reference base: A sequence base: -
-  position : 29880 reference base: A sequence base: -
-  position : 29881 reference base: A sequence base: -
-  position : 29882 reference base: A sequence base: -
-  position : 29883 reference base: A sequence base: -
-  position : 29884 reference base: A sequence base: -
-  position : 29885 reference base: A sequence base: -
-  position : 29886 reference base: A sequence base: -
-  position : 29887 reference base: A sequence base: -
-  position : 29888 reference base: A sequence base: -
-  position : 29889 reference base: A sequence base: -
-  position : 29890 reference base: A sequence base: -
-  position : 29891 reference base: A sequence base: -
-sequence : 4_hCoV-19/Italy/TE4880/2020|EPI_ISL_418256|2020-03-14/1-29898
-  position : 42 reference base: T sequence base: Y
-  position : 44 reference base: C sequence base: N
-  position : 45 reference base: G sequence base: N
-  position : 241 reference base: C sequence base: T
-  position : 3037 reference base: C sequence base: T
-  position : 14408 reference base: C sequence base: T
-  position : 23403 reference base: A sequence base: G
-  position : 28881 reference base: G sequence base: A
-  position : 28882 reference base: G sequence base: A
-  position : 28883 reference base: G sequence base: C
-  position : 29879 reference base: A sequence base: -
-  position : 29880 reference base: A sequence base: -
-  position : 29881 reference base: A sequence base: -
-  position : 29882 reference base: A sequence base: -
-  position : 29883 reference base: A sequence base: -
-sequence : 5_hCoV-19/Italy/INMI6/2020|EPI_ISL_419254|2020-03-23/1-29834
-  position : 1 reference base: A sequence base: -
-  position : 2 reference base: T sequence base: -
-  position : 3 reference base: T sequence base: -
-  position : 4 reference base: A sequence base: -
-  position : 5 reference base: A sequence base: -
-  position : 6 reference base: A sequence base: -
-  position : 7 reference base: G sequence base: -
-  position : 8 reference base: G sequence base: -
-  position : 9 reference base: T sequence base: -
-  position : 10 reference base: T sequence base: -
-  position : 11 reference base: T sequence base: -
-  position : 12 reference base: A sequence base: -
-  position : 13 reference base: T sequence base: -
-  position : 14 reference base: A sequence base: -
-  position : 15 reference base: C sequence base: -
-  position : 16 reference base: C sequence base: -
-  position : 17 reference base: T sequence base: -
-  position : 18 reference base: T sequence base: -
-  position : 19 reference base: C sequence base: -
-  position : 20 reference base: C sequence base: -
-  position : 21 reference base: C sequence base: -
-  position : 22 reference base: A sequence base: -
-  position : 23 reference base: G sequence base: -
-  position : 24 reference base: G sequence base: -
-  position : 25 reference base: T sequence base: -
-  position : 241 reference base: C sequence base: T
-  position : 3037 reference base: C sequence base: T
-  position : 14408 reference base: C sequence base: T
-  position : 23403 reference base: A sequence base: G
-  position : 29860 reference base: A sequence base: -
-  position : 29861 reference base: G sequence base: -
-  position : 29862 reference base: G sequence base: -
-  position : 29863 reference base: A sequence base: -
-  position : 29864 reference base: G sequence base: -
-  position : 29865 reference base: A sequence base: -
-  position : 29866 reference base: A sequence base: -
-  position : 29867 reference base: T sequence base: -
-  position : 29868 reference base: G sequence base: -
-  position : 29869 reference base: A sequence base: -
-  position : 29870 reference base: C sequence base: -
-  position : 29871 reference base: A sequence base: -
-  position : 29872 reference base: A sequence base: -
-  position : 29873 reference base: A sequence base: -
-  position : 29874 reference base: A sequence base: -
-  position : 29875 reference base: A sequence base: -
-  position : 29876 reference base: A sequence base: -
-  position : 29877 reference base: A sequence base: -
-  position : 29878 reference base: A sequence base: -
-  position : 29879 reference base: A sequence base: -
-  position : 29880 reference base: A sequence base: -
-  position : 29881 reference base: A sequence base: -
-  position : 29882 reference base: A sequence base: -
-  position : 29883 reference base: A sequence base: -
-  position : 29884 reference base: A sequence base: -
-  position : 29885 reference base: A sequence base: -
-  position : 29886 reference base: A sequence base: -
-  position : 29887 reference base: A sequence base: -
-  position : 29888 reference base: A sequence base: -
-  position : 29889 reference base: A sequence base: -
-  position : 29890 reference base: A sequence base: -
-  position : 29891 reference base: A sequence base: -
-  position : 29892 reference base: A sequence base: -
-  position : 29893 reference base: A sequence base: -
-  position : 29894 reference base: A sequence base: -
-  position : 29895 reference base: A sequence base: -
-  position : 29896 reference base: A sequence base: -
-  position : 29897 reference base: A sequence base: -
-  position : 29898 reference base: A sequence base: -
-  position : 29899 reference base: A sequence base: -
-  position : 29900 reference base: A sequence base: -
-  position : 29901 reference base: A sequence base: -
-  position : 29902 reference base: A sequence base: -
-  position : 29903 reference base: A sequence base: -
-sequence : 6_hCoV-19/Italy/FVG-ICGEB_S18/2020|EPI_ISL_428854|2020-03-30/1-29899
-  position : 241 reference base: C sequence base: T
-  position : 3037 reference base: C sequence base: T
-  position : 14408 reference base: C sequence base: T
-  position : 23403 reference base: A sequence base: G
-  position : 29009 reference base: G sequence base: A
-  position : 29879 reference base: A sequence base: -
-  position : 29880 reference base: A sequence base: -
-  position : 29881 reference base: A sequence base: -
-  position : 29882 reference base: A sequence base: -
-sequence : 7_hCoV-19/Italy/TE13858/2020|EPI_ISL_435152|2020-04-09/1-29878
-  position : 1 reference base: A sequence base: N
-  position : 2 reference base: T sequence base: N
-  position : 3 reference base: T sequence base: N
-  position : 4 reference base: A sequence base: N
-  position : 5 reference base: A sequence base: N
-  position : 6 reference base: A sequence base: N
-  position : 7 reference base: G sequence base: N
-  position : 8 reference base: G sequence base: N
-  position : 9 reference base: T sequence base: N
-  position : 10 reference base: T sequence base: N
-  position : 11 reference base: T sequence base: N
-  position : 12 reference base: A sequence base: N
-  position : 13 reference base: T sequence base: N
-  position : 14 reference base: A sequence base: N
-  position : 15 reference base: C sequence base: N
-  position : 16 reference base: C sequence base: N
-  position : 17 reference base: T sequence base: N
-  position : 18 reference base: T sequence base: N
-  position : 19 reference base: C sequence base: N
-  position : 20 reference base: C sequence base: N
-  position : 21 reference base: C sequence base: N
-  position : 22 reference base: A sequence base: N
-  position : 23 reference base: G sequence base: N
-  position : 24 reference base: G sequence base: N
-  position : 25 reference base: T sequence base: N
-  position : 26 reference base: A sequence base: N
-  position : 27 reference base: A sequence base: N
-  position : 28 reference base: C sequence base: N
-  position : 29 reference base: A sequence base: N
-  position : 30 reference base: A sequence base: N
-  position : 31 reference base: A sequence base: N
-  position : 32 reference base: C sequence base: N
-  position : 33 reference base: C sequence base: N
-  position : 34 reference base: A sequence base: N
-  position : 35 reference base: A sequence base: N
-  position : 36 reference base: C sequence base: N
-  position : 37 reference base: C sequence base: N
-  position : 241 reference base: C sequence base: T
-  position : 3037 reference base: C sequence base: T
-  position : 5986 reference base: C sequence base: T
-  position : 6866 reference base: A sequence base: W
-  position : 6869 reference base: A sequence base: W
-  position : 14408 reference base: C sequence base: T
-  position : 23403 reference base: A sequence base: G
-  position : 28881 reference base: G sequence base: A
-  position : 28882 reference base: G sequence base: A
-  position : 28883 reference base: G sequence base: C
-  position : 29701 reference base: G sequence base: T
-  position : 29879 reference base: A sequence base: -
-  position : 29880 reference base: A sequence base: -
-  position : 29881 reference base: A sequence base: -
-  position : 29882 reference base: A sequence base: -
-  position : 29883 reference base: A sequence base: -
-  position : 29884 reference base: A sequence base: -
-  position : 29885 reference base: A sequence base: -
-  position : 29886 reference base: A sequence base: -
-  position : 29887 reference base: A sequence base: -
-  position : 29888 reference base: A sequence base: -
-  position : 29889 reference base: A sequence base: -
-  position : 29890 reference base: A sequence base: -
-  position : 29891 reference base: A sequence base: -
-  position : 29892 reference base: A sequence base: -
-  position : 29893 reference base: A sequence base: -
-  position : 29894 reference base: A sequence base: -
-  position : 29895 reference base: A sequence base: -
-  position : 29896 reference base: A sequence base: -
-  position : 29897 reference base: A sequence base: -
-  position : 29898 reference base: A sequence base: -
-  position : 29899 reference base: A sequence base: -
-  position : 29900 reference base: A sequence base: -
-  position : 29901 reference base: A sequence base: -
-  position : 29902 reference base: A sequence base: -
-  position : 29903 reference base: A sequence base: -
-sequence : 8_hCoV-19/Italy/TE26643/2020|EPI_ISL_436729|2020-04-27/1-29873
-  position : 1 reference base: A sequence base: N
-  position : 2 reference base: T sequence base: N
-  position : 3 reference base: T sequence base: N
-  position : 4 reference base: A sequence base: N
-  position : 5 reference base: A sequence base: N
-  position : 6 reference base: A sequence base: N
-  position : 7 reference base: G sequence base: N
-  position : 8 reference base: G sequence base: N
-  position : 9 reference base: T sequence base: N
-  position : 31 reference base: A sequence base: G
-  position : 241 reference base: C sequence base: T
-  position : 3037 reference base: C sequence base: T
-  position : 3045 reference base: C sequence base: T
-  position : 6449 reference base: C sequence base: T
-  position : 6863 reference base: A sequence base: M
-  position : 6866 reference base: A sequence base: W
-  position : 6869 reference base: A sequence base: W
-  position : 14408 reference base: C sequence base: T
-  position : 19677 reference base: G sequence base: R
-  position : 21627 reference base: C sequence base: Y
-  position : 23403 reference base: A sequence base: G
-  position : 25459 reference base: G sequence base: K
-  position : 28881 reference base: G sequence base: A
-  position : 28882 reference base: G sequence base: A
-  position : 28883 reference base: G sequence base: C
-  position : 29874 reference base: A sequence base: -
-  position : 29875 reference base: A sequence base: -
-  position : 29876 reference base: A sequence base: -
-  position : 29877 reference base: A sequence base: -
-  position : 29878 reference base: A sequence base: -
-  position : 29879 reference base: A sequence base: -
-  position : 29880 reference base: A sequence base: -
-  position : 29881 reference base: A sequence base: -
-  position : 29882 reference base: A sequence base: -
-  position : 29883 reference base: A sequence base: -
-  position : 29884 reference base: A sequence base: -
-  position : 29885 reference base: A sequence base: -
-  position : 29886 reference base: A sequence base: -
-  position : 29887 reference base: A sequence base: -
-  position : 29888 reference base: A sequence base: -
-  position : 29889 reference base: A sequence base: -
-  position : 29890 reference base: A sequence base: -
-  position : 29891 reference base: A sequence base: -
-  position : 29892 reference base: A sequence base: -
-  position : 29893 reference base: A sequence base: -
-  position : 29894 reference base: A sequence base: -
-  position : 29895 reference base: A sequence base: -
-  position : 29896 reference base: A sequence base: -
-  position : 29897 reference base: A sequence base: -
-  position : 29898 reference base: A sequence base: -
-  position : 29899 reference base: A sequence base: -
-  position : 29900 reference base: A sequence base: -
-  position : 29901 reference base: A sequence base: -
-  position : 29902 reference base: A sequence base: -
-  position : 29903 reference base: A sequence base: -
-sequence : 1_hCoV-19/USA/NY_2929/2020|EPI_ISL_420793|2020-03-02/1-29882
-  position : 240 reference base: C sequence base: T
-  position : 1058 reference base: C sequence base: T
-  position : 3036 reference base: C sequence base: T
-  position : 14407 reference base: C sequence base: T
-  position : 23402 reference base: A sequence base: G
-  position : 25562 reference base: G sequence base: T
-  position : 29882 reference base: A sequence base: -
-  position : 29883 reference base: A sequence base: -
-  position : 29884 reference base: A sequence base: -
-  position : 29885 reference base: A sequence base: -
-  position : 29886 reference base: A sequence base: -
-  position : 29887 reference base: A sequence base: -
-  position : 29888 reference base: A sequence base: -
-  position : 29889 reference base: A sequence base: -
-  position : 29890 reference base: A sequence base: -
-  position : 29891 reference base: A sequence base: -
-  position : 29892 reference base: A sequence base: -
-  position : 29893 reference base: A sequence base: -
-  position : 29894 reference base: A sequence base: -
-  position : 29895 reference base: A sequence base: -
-  position : 29896 reference base: A sequence base: -
-  position : 29897 reference base: A sequence base: -
-  position : 29898 reference base: A sequence base: -
-  position : 29899 reference base: A sequence base: -
-  position : 29900 reference base: A sequence base: -
-  position : 29901 reference base: A sequence base: -
-  position : 29902 reference base: A sequence base: -
-sequence : 2_hCoV-19/USA/NY-Wadsworth-11717-01/2020|EPI_ISL_426291|2020-03-08/1-29806
-  position : 0 reference base: A sequence base: -
-  position : 1 reference base: T sequence base: -
-  position : 2 reference base: T sequence base: -
-  position : 3 reference base: A sequence base: -
-  position : 4 reference base: A sequence base: -
-  position : 5 reference base: A sequence base: -
-  position : 6 reference base: G sequence base: -
-  position : 7 reference base: G sequence base: -
-  position : 8 reference base: T sequence base: -
-  position : 9 reference base: T sequence base: -
-  position : 10 reference base: T sequence base: -
-  position : 11 reference base: A sequence base: -
-  position : 12 reference base: T sequence base: -
-  position : 13 reference base: A sequence base: -
-  position : 14 reference base: C sequence base: -
-  position : 15 reference base: C sequence base: -
-  position : 16 reference base: T sequence base: -
-  position : 17 reference base: T sequence base: -
-  position : 18 reference base: C sequence base: -
-  position : 19 reference base: C sequence base: -
-  position : 20 reference base: C sequence base: -
-  position : 21 reference base: A sequence base: -
-  position : 22 reference base: G sequence base: -
-  position : 23 reference base: G sequence base: -
-  position : 24 reference base: T sequence base: -
-  position : 25 reference base: A sequence base: -
-  position : 26 reference base: A sequence base: -
-  position : 27 reference base: C sequence base: -
-  position : 28 reference base: A sequence base: -
-  position : 29 reference base: A sequence base: -
-  position : 240 reference base: C sequence base: T
-  position : 1058 reference base: C sequence base: T
-  position : 3036 reference base: C sequence base: T
-  position : 8769 reference base: C sequence base: Y
-  position : 14407 reference base: C sequence base: T
-  position : 23402 reference base: A sequence base: G
-  position : 25562 reference base: G sequence base: T
-  position : 29836 reference base: C sequence base: -
-  position : 29837 reference base: C sequence base: -
-  position : 29838 reference base: A sequence base: -
-  position : 29839 reference base: T sequence base: -
-  position : 29840 reference base: G sequence base: -
-  position : 29841 reference base: T sequence base: -
-  position : 29842 reference base: G sequence base: -
-  position : 29843 reference base: A sequence base: -
-  position : 29844 reference base: T sequence base: -
-  position : 29845 reference base: T sequence base: -
-  position : 29846 reference base: T sequence base: -
-  position : 29847 reference base: T sequence base: -
-  position : 29848 reference base: A sequence base: -
-  position : 29849 reference base: A sequence base: -
-  position : 29850 reference base: T sequence base: -
-  position : 29851 reference base: A sequence base: -
-  position : 29852 reference base: G sequence base: -
-  position : 29853 reference base: C sequence base: -
-  position : 29854 reference base: T sequence base: -
-  position : 29855 reference base: T sequence base: -
-  position : 29856 reference base: C sequence base: -
-  position : 29857 reference base: T sequence base: -
-  position : 29858 reference base: T sequence base: -
-  position : 29859 reference base: A sequence base: -
-  position : 29860 reference base: G sequence base: -
-  position : 29861 reference base: G sequence base: -
-  position : 29862 reference base: A sequence base: -
-  position : 29863 reference base: G sequence base: -
-  position : 29864 reference base: A sequence base: -
-  position : 29865 reference base: A sequence base: -
-  position : 29866 reference base: T sequence base: -
-  position : 29867 reference base: G sequence base: -
-  position : 29868 reference base: A sequence base: -
-  position : 29869 reference base: C sequence base: -
-  position : 29870 reference base: A sequence base: -
-  position : 29871 reference base: A sequence base: -
-  position : 29872 reference base: A sequence base: -
-  position : 29873 reference base: A sequence base: -
-  position : 29874 reference base: A sequence base: -
-  position : 29875 reference base: A sequence base: -
-  position : 29876 reference base: A sequence base: -
-  position : 29877 reference base: A sequence base: -
-  position : 29878 reference base: A sequence base: -
-  position : 29879 reference base: A sequence base: -
-  position : 29880 reference base: A sequence base: -
-  position : 29881 reference base: A sequence base: -
-  position : 29882 reference base: A sequence base: -
-  position : 29883 reference base: A sequence base: -
-  position : 29884 reference base: A sequence base: -
-  position : 29885 reference base: A sequence base: -
-  position : 29886 reference base: A sequence base: -
-  position : 29887 reference base: A sequence base: -
-  position : 29888 reference base: A sequence base: -
-  position : 29889 reference base: A sequence base: -
-  position : 29890 reference base: A sequence base: -
-  position : 29891 reference base: A sequence base: -
-  position : 29892 reference base: A sequence base: -
-  position : 29893 reference base: A sequence base: -
-  position : 29894 reference base: A sequence base: -
-  position : 29895 reference base: A sequence base: -
-  position : 29896 reference base: A sequence base: -
-  position : 29897 reference base: A sequence base: -
-  position : 29898 reference base: A sequence base: -
-  position : 29899 reference base: A sequence base: -
-  position : 29900 reference base: A sequence base: -
-  position : 29901 reference base: A sequence base: -
-  position : 29902 reference base: A sequence base: -
-sequence : 3_hCoV-19/USA/NY-PV08148/2020|EPI_ISL_421365|2020-03-14/1-29726
-  position : 0 reference base: A sequence base: -
-  position : 1 reference base: T sequence base: -
-  position : 2 reference base: T sequence base: -
-  position : 3 reference base: A sequence base: -
-  position : 4 reference base: A sequence base: -
-  position : 5 reference base: A sequence base: -
-  position : 6 reference base: G sequence base: -
-  position : 7 reference base: G sequence base: -
-  position : 8 reference base: T sequence base: -
-  position : 9 reference base: T sequence base: -
-  position : 10 reference base: T sequence base: -
-  position : 11 reference base: A sequence base: -
-  position : 12 reference base: T sequence base: -
-  position : 13 reference base: A sequence base: -
-  position : 14 reference base: C sequence base: -
-  position : 15 reference base: C sequence base: -
-  position : 16 reference base: T sequence base: -
-  position : 17 reference base: T sequence base: -
-  position : 18 reference base: C sequence base: -
-  position : 19 reference base: C sequence base: -
-  position : 20 reference base: C sequence base: -
-  position : 21 reference base: A sequence base: -
-  position : 22 reference base: G sequence base: -
-  position : 23 reference base: G sequence base: -
-  position : 24 reference base: T sequence base: -
-  position : 25 reference base: A sequence base: -
-  position : 26 reference base: A sequence base: -
-  position : 27 reference base: C sequence base: -
-  position : 28 reference base: A sequence base: -
-  position : 29 reference base: A sequence base: -
-  position : 30 reference base: A sequence base: -
-  position : 31 reference base: C sequence base: -
-  position : 32 reference base: C sequence base: -
-  position : 33 reference base: A sequence base: -
-  position : 34 reference base: A sequence base: -
-  position : 35 reference base: C sequence base: -
-  position : 36 reference base: C sequence base: -
-  position : 37 reference base: A sequence base: -
-  position : 38 reference base: A sequence base: -
-  position : 39 reference base: C sequence base: -
-  position : 40 reference base: T sequence base: -
-  position : 41 reference base: T sequence base: -
-  position : 42 reference base: T sequence base: -
-  position : 43 reference base: C sequence base: -
-  position : 44 reference base: G sequence base: -
-  position : 45 reference base: A sequence base: -
-  position : 46 reference base: T sequence base: -
-  position : 47 reference base: C sequence base: -
-  position : 48 reference base: T sequence base: -
-  position : 49 reference base: C sequence base: -
-  position : 50 reference base: T sequence base: -
-  position : 51 reference base: T sequence base: -
-  position : 52 reference base: G sequence base: -
-  position : 53 reference base: T sequence base: -
-  position : 54 reference base: A sequence base: -
-  position : 2675 reference base: C sequence base: T
-  position : 8781 reference base: C sequence base: T
-  position : 22605 reference base: A sequence base: T
-  position : 23524 reference base: C sequence base: T
-  position : 28143 reference base: T sequence base: C
-  position : 28877 reference base: G sequence base: A
-  position : 29741 reference base: G sequence base: A
-  position : 29781 reference base: A sequence base: -
-  position : 29782 reference base: G sequence base: -
-  position : 29783 reference base: C sequence base: -
-  position : 29784 reference base: T sequence base: -
-  position : 29785 reference base: G sequence base: -
-  position : 29786 reference base: C sequence base: -
-  position : 29787 reference base: C sequence base: -
-  position : 29788 reference base: T sequence base: -
-  position : 29789 reference base: A sequence base: -
-  position : 29790 reference base: T sequence base: -
-  position : 29791 reference base: A sequence base: -
-  position : 29792 reference base: T sequence base: -
-  position : 29793 reference base: G sequence base: -
-  position : 29794 reference base: G sequence base: -
-  position : 29795 reference base: A sequence base: -
-  position : 29796 reference base: A sequence base: -
-  position : 29797 reference base: G sequence base: -
-  position : 29798 reference base: A sequence base: -
-  position : 29799 reference base: G sequence base: -
-  position : 29800 reference base: C sequence base: -
-  position : 29801 reference base: C sequence base: -
-  position : 29802 reference base: C sequence base: -
-  position : 29803 reference base: T sequence base: -
-  position : 29804 reference base: A sequence base: -
-  position : 29805 reference base: A sequence base: -
-  position : 29806 reference base: T sequence base: -
-  position : 29807 reference base: G sequence base: -
-  position : 29808 reference base: T sequence base: -
-  position : 29809 reference base: G sequence base: -
-  position : 29810 reference base: T sequence base: -
-  position : 29811 reference base: A sequence base: -
-  position : 29812 reference base: A sequence base: -
-  position : 29813 reference base: A sequence base: -
-  position : 29814 reference base: A sequence base: -
-  position : 29815 reference base: T sequence base: -
-  position : 29816 reference base: T sequence base: -
-  position : 29817 reference base: A sequence base: -
-  position : 29818 reference base: A sequence base: -
-  position : 29819 reference base: T sequence base: -
-  position : 29820 reference base: T sequence base: -
-  position : 29821 reference base: T sequence base: -
-  position : 29822 reference base: T sequence base: -
-  position : 29823 reference base: A sequence base: -
-  position : 29824 reference base: G sequence base: -
-  position : 29825 reference base: T sequence base: -
-  position : 29826 reference base: A sequence base: -
-  position : 29827 reference base: G sequence base: -
-  position : 29828 reference base: T sequence base: -
-  position : 29829 reference base: G sequence base: -
-  position : 29830 reference base: C sequence base: -
-  position : 29831 reference base: T sequence base: -
-  position : 29832 reference base: A sequence base: -
-  position : 29833 reference base: T sequence base: -
-  position : 29834 reference base: C sequence base: -
-  position : 29835 reference base: C sequence base: -
-  position : 29836 reference base: C sequence base: -
-  position : 29837 reference base: C sequence base: -
-  position : 29838 reference base: A sequence base: -
-  position : 29839 reference base: T sequence base: -
-  position : 29840 reference base: G sequence base: -
-  position : 29841 reference base: T sequence base: -
-  position : 29842 reference base: G sequence base: -
-  position : 29843 reference base: A sequence base: -
-  position : 29844 reference base: T sequence base: -
-  position : 29845 reference base: T sequence base: -
-  position : 29846 reference base: T sequence base: -
-  position : 29847 reference base: T sequence base: -
-  position : 29848 reference base: A sequence base: -
-  position : 29849 reference base: A sequence base: -
-  position : 29850 reference base: T sequence base: -
-  position : 29851 reference base: A sequence base: -
-  position : 29852 reference base: G sequence base: -
-  position : 29853 reference base: C sequence base: -
-  position : 29854 reference base: T sequence base: -
-  position : 29855 reference base: T sequence base: -
-  position : 29856 reference base: C sequence base: -
-  position : 29857 reference base: T sequence base: -
-  position : 29858 reference base: T sequence base: -
-  position : 29859 reference base: A sequence base: -
-  position : 29860 reference base: G sequence base: -
-  position : 29861 reference base: G sequence base: -
-  position : 29862 reference base: A sequence base: -
-  position : 29863 reference base: G sequence base: -
-  position : 29864 reference base: A sequence base: -
-  position : 29865 reference base: A sequence base: -
-  position : 29866 reference base: T sequence base: -
-  position : 29867 reference base: G sequence base: -
-  position : 29868 reference base: A sequence base: -
-  position : 29869 reference base: C sequence base: -
-  position : 29870 reference base: A sequence base: -
-  position : 29871 reference base: A sequence base: -
-  position : 29872 reference base: A sequence base: -
-  position : 29873 reference base: A sequence base: -
-  position : 29874 reference base: A sequence base: -
-  position : 29875 reference base: A sequence base: -
-  position : 29876 reference base: A sequence base: -
-  position : 29877 reference base: A sequence base: -
-  position : 29878 reference base: A sequence base: -
-  position : 29879 reference base: A sequence base: -
-  position : 29880 reference base: A sequence base: -
-  position : 29881 reference base: A sequence base: -
-  position : 29882 reference base: A sequence base: -
-  position : 29883 reference base: A sequence base: -
-  position : 29884 reference base: A sequence base: -
-  position : 29885 reference base: A sequence base: -
-  position : 29886 reference base: A sequence base: -
-  position : 29887 reference base: A sequence base: -
-  position : 29888 reference base: A sequence base: -
-  position : 29889 reference base: A sequence base: -
-  position : 29890 reference base: A sequence base: -
-  position : 29891 reference base: A sequence base: -
-  position : 29892 reference base: A sequence base: -
-  position : 29893 reference base: A sequence base: -
-  position : 29894 reference base: A sequence base: -
-  position : 29895 reference base: A sequence base: -
-  position : 29896 reference base: A sequence base: -
-  position : 29897 reference base: A sequence base: -
-  position : 29898 reference base: A sequence base: -
-  position : 29899 reference base: A sequence base: -
-  position : 29900 reference base: A sequence base: -
-  position : 29901 reference base: A sequence base: -
-  position : 29902 reference base: A sequence base: -
-sequence : 4_hCoV-19/USA/NY-PV09019/2020|EPI_ISL_421594|2020-03-21/1-29709
-  position : 0 reference base: A sequence base: -
-  position : 1 reference base: T sequence base: -
-  position : 2 reference base: T sequence base: -
-  position : 3 reference base: A sequence base: -
-  position : 4 reference base: A sequence base: -
-  position : 5 reference base: A sequence base: -
-  position : 6 reference base: G sequence base: -
-  position : 7 reference base: G sequence base: -
-  position : 8 reference base: T sequence base: -
-  position : 9 reference base: T sequence base: -
-  position : 10 reference base: T sequence base: -
-  position : 11 reference base: A sequence base: -
-  position : 12 reference base: T sequence base: -
-  position : 13 reference base: A sequence base: -
-  position : 14 reference base: C sequence base: -
-  position : 15 reference base: C sequence base: -
-  position : 16 reference base: T sequence base: -
-  position : 17 reference base: T sequence base: -
-  position : 18 reference base: C sequence base: -
-  position : 19 reference base: C sequence base: -
-  position : 20 reference base: C sequence base: -
-  position : 21 reference base: A sequence base: -
-  position : 22 reference base: G sequence base: -
-  position : 23 reference base: G sequence base: -
-  position : 24 reference base: T sequence base: -
-  position : 25 reference base: A sequence base: -
-  position : 26 reference base: A sequence base: -
-  position : 27 reference base: C sequence base: -
-  position : 28 reference base: A sequence base: -
-  position : 29 reference base: A sequence base: -
-  position : 30 reference base: A sequence base: -
-  position : 31 reference base: C sequence base: -
-  position : 32 reference base: C sequence base: -
-  position : 33 reference base: A sequence base: -
-  position : 34 reference base: A sequence base: -
-  position : 35 reference base: C sequence base: -
-  position : 36 reference base: C sequence base: -
-  position : 37 reference base: A sequence base: -
-  position : 38 reference base: A sequence base: -
-  position : 39 reference base: C sequence base: -
-  position : 40 reference base: T sequence base: -
-  position : 41 reference base: T sequence base: -
-  position : 42 reference base: T sequence base: -
-  position : 43 reference base: C sequence base: -
-  position : 44 reference base: G sequence base: -
-  position : 45 reference base: A sequence base: -
-  position : 46 reference base: T sequence base: -
-  position : 47 reference base: C sequence base: -
-  position : 48 reference base: T sequence base: -
-  position : 49 reference base: C sequence base: -
-  position : 50 reference base: T sequence base: -
-  position : 51 reference base: T sequence base: -
-  position : 52 reference base: G sequence base: -
-  position : 53 reference base: T sequence base: -
-  position : 54 reference base: A sequence base: -
-  position : 240 reference base: C sequence base: T
-  position : 1058 reference base: C sequence base: T
-  position : 3036 reference base: C sequence base: T
-  position : 14407 reference base: C sequence base: T
-  position : 23125 reference base: G sequence base: T
-  position : 23402 reference base: A sequence base: G

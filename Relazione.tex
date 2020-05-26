@@ -48,7 +48,7 @@
 \begin{center}
     {\LARGE{
     
-            \textbf{Bioinformatica\\ }
+            \textbf{Multiple Sequence Alignment (MSA) di sequenze SARS-Cov2 \\ }
     }}        
 \end{center}
 
@@ -96,8 +96,8 @@ Al 25 maggio 2020, ci sono stati 5.428.605 casi confermati totali di infezione d
 \newpage
 
 \section{Obiettivo del progetto}
-L'obiettivo del nostro progetto è individuare inizialmente, attraverso uno studio verticale in alcuni paesi, eventuali mutazioni avvenute dunque in una determinato lugo e, successivamente, confrontare il virus presente nel periodo corrente in diversi paesi nel mondo. \\
-Più precisamente: %mi sa da scrivere un po' meglio
+L'obiettivo del nostro progetto è riuscire ad allineare le sequenze scaricate (compresa quella che utlizziamo come riferimento per i confronti) con i tool scelti, e produrre in output le variazioni delle sequenze scaricate rispetto alla sequenza di riferimento e creare un'apposita documentazione. \\
+Per poter raggiungere questo obiettivo, abbiamo deciso di dividere la nostra analisi in due parti:\\ 
 \begin{itemize}
 \item nella prima parte eseguiamo un'analisi verticale fra la sequenza di riferimento (ossia la prima sequenza che presente nella banca dati raccolta a Wuhan) e delle sequenze prese rispettivamente da Italia, New York, Spagna e Russia. Le sequenze dei singoli paesi sono state prese seguendo un ordine temporale crescente, in modo tale da poter denotare attraverso il confronto delle mutazioni nel tempo.
 \item nella seconda parte, invece, effettuiamo un confronto orizzontale tra le ultime sequenze raccolte dei vari paesi scelti, in modo da poter individuare la presenza di eventuali mutazioni nello stato corrente del virus, sempre tenedo come riferimanto la prima sequenze presente nella banca dati. 
@@ -123,7 +123,7 @@ Le sequenze analizzate sono state prese dal sito GISAID. Per ogni paese abbiamo 
 Tra i tool messi a disposizione abbiamo scelto di utilizzare Clustal Omega, Kalign e MAFFT.\\
 Abbiamo scelto Clustal Omega poichè sfrutta il modello probabilistico Profilo HMM (Hidden Markov Model), il quale è in grado di incapsulare i cambiamenti evolutivi che si sono verificati in una serie di sequenze correlate ed inoltre questo tool risultava ottimale per sequenze molto lunghe.\\
 Kalign è stato scelto poichè è un tool che si concentra sulle regioni locali e lavora molto velocemente, motivo per il quale ci sembrava particolarmente adatto per le analisi sui singoli stati che volevamo svolgere.\\
-Infine abbiamo scelto MAFFT poichè attraverso l'algoritmo della trasformata di Fourier veloce ottimizza gli allineamenti proteici in base alle proprietà fisiche degli aminoacidi, utilizzando sia un allineamento progressivo che iterativo. Anche esso risulta essere ottimale per sequenze di lunghezza medio-grandi. %% non va bene perché noi non facciamo allineamenti proteici
+Infine abbiamo scelto MAFFT poichè attraverso l'algoritmo della trasformata di Fourier veloce ottimizza gli allineamenti in base alle proprietà fisiche, utilizzando sia un allineamento progressivo che iterativo. Anche esso risulta essere ottimale per sequenze di lunghezza medio-grandi.
 
 \section{Analisi verticale}
 
