@@ -9,3 +9,10 @@
 \contentsline {subsection}{Spagna}{4}{section*.10}% 
 \contentsline {section}{Appendice A - risultati estesi}{5}{section*.11}% 
 \contentsline {subsection}{Italia}{6}{section*.12}% 
+\contentsline {subsubsection}{Clustal Omega}{6}{section*.13}% 
+\contentsline {subsubsection}{Kalign}{8}{section*.14}% 
+\contentsline {subsubsection}{MAFFT}{10}{section*.15}% 
+\contentsline {subsection}{Spagna}{12}{section*.16}% 
+\contentsline {subsubsection}{Clustal Omega}{12}{section*.17}% 
+\contentsline {subsubsection}{Kalign}{16}{section*.18}% 
+\contentsline {subsubsection}{MAFFT}{17}{section*.19}% 
