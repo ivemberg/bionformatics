@@ -155,7 +155,7 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 
 \newpage
 
-\section{Appendice A - risultati estesi}
+\section{Appendice A - risultati confronto verticale}
 
 \newgeometry{left=0.5cm, top=0.3cm}
 
@@ -281,7 +281,7 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 1\_USA|EPI\_ISL\_420793 & 23402 & 1 & A & G \\* \midrule
 1\_USA|EPI\_ISL\_420793 & 25562 & 1 & G & T \\* \midrule
 1\_USA|EPI\_ISL\_420793 & 29881 & 21 & AAAAAAAAAAAAAAAAAAAAA & --------------------- \\* \midrule
-2\_USA|EPI\_ISL\_426291 & 0 & 30 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATACCTTCCCAG\\ GTAACAA\end{tabular} & ------------------------------ \\* \midrule
+2\_USA|EPI\_ISL\_426291 & 0 & 30 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATACCTTCCC\\ AGGTAACAA\end{tabular} & ------------------------------ \\* \midrule
 2\_USA|EPI\_ISL\_426291 & 240 & 1 & C & T \\* \midrule
 2\_USA|EPI\_ISL\_426291 & 1058 & 1 & C & T \\* \midrule
 2\_USA|EPI\_ISL\_426291 & 3036 & 1 & C & T \\* \midrule
@@ -289,8 +289,8 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 2\_USA|EPI\_ISL\_426291 & 14407 & 1 & C & T \\* \midrule
 2\_USA|EPI\_ISL\_426291 & 23402 & 1 & A & G \\* \midrule
 2\_USA|EPI\_ISL\_426291 & 25562 & 1 & G & T \\* \midrule
-2\_USA|EPI\_ISL\_426291 & 29835 & 67 & \begin{tabular}[c]{@{}c@{}}CCATGTGATTTTAATAGCTTCTTAG\\ GAGAATGACAAAAAAAAAAAAAA\\ AAAAAAAAAAAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}----------------------\\ ----------------------\\ -----------------------\end{tabular} \\* \midrule
-3\_USA|EPI\_ISL\_421365 & 0 & 55 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATACCTTCCCAGGTA\\ ACAAACCAACCAACTTTCGATCTCTT\\ GTA\end{tabular} & \begin{tabular}[c]{@{}c@{}}------------------------\\ ------------------------\\ -------\end{tabular} \\* \midrule
+2\_USA|EPI\_ISL\_426291 & 29835 & 67 & \begin{tabular}[c]{@{}c@{}}CCATGTGATTTTAATAGCTT\\ CTTAGGAGAATGACAAAAAA \\AAAAAAAAAAAAAAAAAAAA \\ AAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}----------------------\\ ----------------------\\ -----------------------\end{tabular} \\* \midrule
+3\_USA|EPI\_ISL\_421365 & 0 & 55 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATACCTTCC\\CAGGTAACAAACCAACCAAC\\TTTCGATCTCTT\\ GTA\end{tabular} & \begin{tabular}[c]{@{}c@{}}------------------------\\ ------------------------\\ -------\end{tabular} \\* \midrule
 3\_USA|EPI\_ISL\_421365 & 2675 & 1 & C & T \\* \midrule
 3\_USA|EPI\_ISL\_421365 & 8781 & 1 & C & T \\* \midrule
 3\_USA|EPI\_ISL\_421365 & 22605 & 1 & A & T \\* \midrule
@@ -822,7 +822,6 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 \end{longtable}
 
 \newpage
-
 \subsubsection{MAFFT}
 
 % Please add the following required packages to your document preamble:
@@ -902,7 +901,6 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 \newpage
 
 \subsection{Spagna}
-
 \subsubsection{Clustal Omega}
 
 % Please add the following required packages to your document preamble:
@@ -992,10 +990,13 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 \newpage
 \subsubsection{Kalign}
 
-
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
 \begin{longtable}{@{}ccccc@{}}
 \toprule
-\textbf{ID\_SEQ} & \textbf{POS} & \textbf{LENGTH} & \textbf{REFERENCE} & \textbf{MUTATION} \\* \midrule
+\textbf{ID\_SEQ} & \textbf{PO} & \textbf{LENGTH} & \textbf{REFERENCE} & \textbf{MUTATION} \\* \midrule
 \endfirsthead
 %
 \cline{1-5}
@@ -1008,7 +1009,7 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 1\_Spain|EPI\_ISL\_418251 & 14407 & 1 & C & T \\* \midrule
 1\_Spain|EPI\_ISL\_418251 & 21262 & 1 & C & T \\* \midrule
 1\_Spain|EPI\_ISL\_418251 & 23402 & 1 & A & G \\* \midrule
-1\_Spain|EPI\_ISL\_418251 & 29780 & 122 & \begin{tabular}[c]{@{}c@{}}AGCTGCCTATATGGAAGAGC\\ CCTAATGTGTAAAATTAATTT\\ TAGTAGTGCTATCCCCATGTG\\ ATTTTAATAGCTTCTTAGGAG\\ AATGACAAAAAAAAAAAAAA\\ AAAAAAAAAAAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}--------------------\\ --------------------\\ --------------------\\ ---------------------\\ ---------------------\\ --------------------\end{tabular} \\* \midrule
+1\_Spain|EPI\_ISL\_418251 & 29780 & 122 & \begin{tabular}[c]{@{}c@{}}AGCTGCCTATATGGAA\\ GAGCCCTAATGTGTA\\ AAATTAATTTTAGTA\\ GTGCTATCCCCATGT\\ GATTTTAATAGCTTC\\ TTAGGAGAATGACAA\\ AAAAAAAAAAAAAAA\\ AAAAAAAAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}----------------\\ ---------------\\ ---------------\\ ---------------\\ ---------------\\ ---------------\\ ---------------\\ ----------------\end{tabular} \\* \midrule
 2\_Spain|EPI\_ISL\_419240 & 8781 & 1 & C & T \\* \midrule
 2\_Spain|EPI\_ISL\_419240 & 9476 & 1 & T & A \\* \midrule
 2\_Spain|EPI\_ISL\_419240 & 14804 & 1 & C & T \\* \midrule
@@ -1016,26 +1017,26 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 2\_Spain|EPI\_ISL\_419240 & 28143 & 1 & T & C \\* \midrule
 2\_Spain|EPI\_ISL\_419240 & 28656 & 1 & C & T \\* \midrule
 2\_Spain|EPI\_ISL\_419240 & 28862 & 1 & C & T \\* \midrule
-2\_Spain|EPI\_ISL\_419240 & 29786 & 116 & \begin{tabular}[c]{@{}c@{}}CTATATGGAAGAGCCCTAAT\\ GTGTAAAATTAATTTTAGTAG\\ TGCTATCCCCATGTGATTTTA\\ ATAGCTTCTTAGGAGAATGAC\\ AAAAAAAAAAAAAAAAAAA\\ AAAAAAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}--------------------\\ --------------------\\ --------------------\\ --------------------\\ ---------------------\\ ---------------\end{tabular} \\* \midrule
-3\_Spain|EPI\_ISL\_419685 & 0 & 54 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATACCTTCC\\ CAGGTAACAAACCAACCAA\\ CTTTCGATCTCTTGT\end{tabular} & \begin{tabular}[c]{@{}c@{}}---------------------\\ ---------------------\\ ------------\end{tabular} \\* \midrule
+2\_Spain|EPI\_ISL\_419240 & 29786 & 116 & \begin{tabular}[c]{@{}c@{}}CTATATGGAAGAGCC\\ CTAATGTGTAAAATT\\ AATTTTAGTAGTGCT\\ ATCCCCATGTGATTT\\ TAATAGCTTCTTAGG\\ AGAATGACAAAAAAA\\ AAAAAAAAAAAAAAA\\ AAAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}---------------\\ ----------------\\ ----------------\\ ----------------\\ -----------------\\ -----------------\\ -------------------\end{tabular} \\* \midrule
+3\_Spain|EPI\_ISL\_419685 & 0 & 54 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATACC\\ TTCCCAGGTAACAAAC\\ CAACCAACTTTCGATC\\ TCTTGT\end{tabular} & \begin{tabular}[c]{@{}c@{}}------------------\\ -------------------\\ -----------------\end{tabular} \\* \midrule
 3\_Spain|EPI\_ISL\_419685 & 2000 & 1 & G & A \\* \midrule
-3\_Spain|EPI\_ISL\_419685 & 5296 & 290 & \begin{tabular}[c]{@{}c@{}}ACTGCATTGTTAACACTCCA\\ ACAAATAGAGTTGAAGTTTA\\ ATCCACCTGCTCTACAAGATG\\ CTTATTACAGAGCAAGGGCTG\\ GTGAAGCTGCTAACTTTTGTG\\ CACTTATCTTAGCCTACTGTAA\\ TAAGACAGTAGGTGAGTTAGG\\ TGATGTTAGAGAAACAATGAGT\\ TACTTGTTTCAACATGCCAATTT\\ AGATTCTTGCAAAAGAGTCTTG\\ AACGTGGTGTGTAAAACTTGTG\\ GACAACAGCAGACAACCCTTAA\\ GGGTGTAGAAGCTGTTATGTACA\\ TGGGCACACT\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNN\end{tabular} \\* \midrule
+3\_Spain|EPI\_ISL\_419685 & 5296 & 290 & \begin{tabular}[c]{@{}c@{}}ACTGCATTGTTAACA\\ CTCCAACAAATAGAG\\ TTGAAGTTTAATCCA\\ CCTGCTCTACAAGAT\\ GCTTATTACAGAGCA\\ AGGGCTGGTGAAGCT\\ GCTAACTTTTGTGCA\\ CTTATCTTAGCCTAC\\ TGTAATAAGACAGTA\\ GGTGAGTTAGGTGAT\\ GTTAGAGAAACAATG\\ AGTTACTTGTTTCAA\\ CATGCCAATTTAGAT\\ TCTTGCAAAAGAGTC\\ TTGAACGTGGTGTGT\\ AAAACTTGTGGACAA\\ CAGCAGACAACCCTT\\ AAGGGTGTAGAAGCT\\ GTTATGTACATGGGC\\ ACACT\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNN\end{tabular} \\* \midrule
 3\_Spain|EPI\_ISL\_419685 & 8781 & 1 & C & T \\* \midrule
 3\_Spain|EPI\_ISL\_419685 & 9476 & 1 & T & A \\* \midrule
-3\_Spain|EPI\_ISL\_419685 & 13378 & 243 & \begin{tabular}[c]{@{}c@{}}GTCTGCGGTATGTGGAAAGG\\ TTATGGCTGTAGTTGTGATCA\\ ACTCCGCGAACCCATGCTTCA\\ GTCAGCTGATGCACAATCGTT\\ TTTAAACGGGTTTGCGGTGTA\\ AGTGCAGCCCGTCTTACACCG\\ TGCGGCACAGGCACTAGTACT\\ GATGTCGTATACAGGGCTTTTG\\ ACATCTACAATGATAAAGTAGC\\ TGGTTTTGCTAAATTCCTAAAA\\ ACTAATTGTTGTCGCTTCCAAG\\ AAAAGGACG\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NN\end{tabular} \\* \midrule
+3\_Spain|EPI\_ISL\_419685 & 13378 & 243 & \begin{tabular}[c]{@{}c@{}}GTCTGCGGTATGTGG\\ AAAGGTTATGGCTGT\\ AGTTGTGATCAACTC\\ CGCGAACCCATGCTT\\ CAGTCAGCTGATGCA\\ CAATCGTTTTTAAAC\\ GGGTTTGCGGTGTAA\\ GTGCAGCCCGTCTTA\\ CACCGTGCGGCACAG\\ GCACTAGTACTGATG\\ TCGTATACAGGGCTT\\ TTGACATCTACAATG\\ ATAAAGTAGCTGGTT\\ TTGCTAAATTCCTAA\\ AAACTAATTGTTGTC\\ GCTTCCAAGAAAAGG\\ ACG\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNN\end{tabular} \\* \midrule
 3\_Spain|EPI\_ISL\_419685 & 14804 & 1 & C & T \\* \midrule
-3\_Spain|EPI\_ISL\_419685 & 22877 & 267 & \begin{tabular}[c]{@{}c@{}}ACAATCTTGATTCTAAGGTTGG\\ TGGTAATTATAATTACCTGTATA\\ GATTGTTTAGGAAGTCTAATCT\\ CAAACCTTTTGAGAGAGATATT\\ TCAACTGAAATCTATCAGGCCG\\ GTAGCACACCTTGTAATGGTGT\\ TGAAGGTTTTAATTGTTACTTTC\\ CTTTACAATCATATGGTTTCCAA\\ CCCACTAATGGTGTTGGTTACCA\\ ACCATACAGAGTAGTAGTACTTT\\ CTTTTGAACTTCTACATGCACCA\\ GCAACTGTTTGTGGACCTA\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNN\end{tabular} \\* \midrule
-3\_Spain|EPI\_ISL\_419685 & 25646 & 278 & \begin{tabular}[c]{@{}c@{}}GTTGTTTGTAACAGTTTACT\\ CACACCTTTTGCTCGTTGCT\\ GCTGGCCTTGAAGCCCCTTT\\ TCTCTATCTTTATGCTTTAGT\\ CTACTTCTTGCAGAGTATAA\\ ACTTTGTAAGAATAATAATG\\ AGGCTTTGGCTTTGCTGGAA\\ ATGCCGTTCCAAAAACCCAT\\ TACTTTATGATGCCAACTATT\\ TTCTTTGCTGGCATACTAATT\\ GTTACGACTATTGTATACCTT\\ ACAATAGTGTAACTTCTTCAA\\ TTGTCATTACTTCAGGTGATG\\ GCACAACAAGTC\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNN\end{tabular} \\* \midrule
+3\_Spain|EPI\_ISL\_419685 & 22877 & 267 & \begin{tabular}[c]{@{}c@{}}ACAATCTTGATTCT\\ AAGGTTGGTGGTAAT\\ TATAATTACCTGTAT\\ AGATTGTTTAGGAAG\\ TCTAATCTCAAACCT\\ TTTGAGAGAGATATT\\ TCAACTGAAATCTAT\\ CAGGCCGGTAGCACA\\ CCTTGTAATGGTGTT\\ GAAGGTTTTAATTGT\\ TACTTTCCTTTACAA\\ TCATATGGTTTCCAA\\ CCCACTAATGGTGTT\\ GGTTACCAACCATAC\\ AGAGTAGTAGTACTT\\ TCTTTTGAACTTCTA\\ CATGCACCAGCAACT\\ GTTTGTGGACCTA\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNN\end{tabular} \\* \midrule
+3\_Spain|EPI\_ISL\_419685 & 25646 & 278 & \begin{tabular}[c]{@{}c@{}}GTTGTTTGTAACAGT\\ TTACTCACACCTTTT\\ GCTCGTTGCTGCTGG\\ CCTTGAAGCCCCTTT\\ TCTCTATCTTTATGC\\ TTTAGTCTACTTCTT\\ GCAGAGTATAAACTT\\ TGTAAGAATAATAAT\\ GAGGCTTTGGCTTTG\\ CTGGAAATGCCGTTC\\ CAAAAACCCATTACT\\ TTATGATGCCAACTA\\ TTTTCTTTGCTGGCA\\ TACTAATTGTTACGA\\ CTATTGTATACCTTA\\ CAATAGTGTAACTTC\\ TTCAATTGTCATTAC\\ TTCAGGTGATGGCAC\\ AACAAGTC\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNN\end{tabular} \\* \midrule
 3\_Spain|EPI\_ISL\_419685 & 25978 & 1 & G & T \\* \midrule
 3\_Spain|EPI\_ISL\_419685 & 28143 & 1 & T & C \\* \midrule
 3\_Spain|EPI\_ISL\_419685 & 28656 & 1 & C & T \\* \midrule
 3\_Spain|EPI\_ISL\_419685 & 28862 & 1 & C & T \\* \midrule
-3\_Spain|EPI\_ISL\_419685 & 29835 & 67 & \begin{tabular}[c]{@{}c@{}}CCATGTGATTTTAATAGCTT\\ CTTAGGAGAATGACAAAAA\\ AAAAAAAAAAAAAAAAAA\\ AAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}--------------------\\ --------------------\\ --------------------\\ -------\end{tabular} \\* \midrule
-4\_Spain|EPI\_ISL\_436301 & 0 & 49 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATACCTTCCC\\ AGGTAACAAACCAACCAACT\\ TTCGATCT\end{tabular} & \begin{tabular}[c]{@{}c@{}}---------------------\\ ---------------------\\ -------\end{tabular} \\* \midrule
+3\_Spain|EPI\_ISL\_419685 & 29835 & 67 & \begin{tabular}[c]{@{}c@{}}CCATGTGATTTTAATA\\ GCTTCTTAGGAGAATG\\ ACAAAAAAAAAAAAA\\ AAAAAAAAAAAAAAA\\ AAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}---------------\\ ----------------\\ ----------------\\ --------------------\end{tabular} \\* \midrule
+4\_Spain|EPI\_ISL\_436301 & 0 & 49 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATACCT\\ TCCCAGGTAACAAACC\\ AACCAACTTTCGATCT\end{tabular} & \begin{tabular}[c]{@{}c@{}}----------------\\ -----------------\\ ----------------\end{tabular} \\* \midrule
 4\_Spain|EPI\_ISL\_436301 & 240 & 1 & C & T \\* \midrule
 4\_Spain|EPI\_ISL\_436301 & 3036 & 1 & C & T \\* \midrule
-4\_Spain|EPI\_ISL\_436301 & 8655 & 150 & \begin{tabular}[c]{@{}c@{}}TAAACATACTGACTTTTCAAG\\ TGAAATCATAGGATACAAGGC\\ TATTGATGGTGGTGTCACTCGT\\ GACATAGCATCTACAGATACTT\\ GTTTTGCTAACAAACATGCTGA\\ TTTTGACACATGGTTTAGCCAG\\ CGTGGTGGTAGTTATACTAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNN\end{tabular} \\* \midrule
-4\_Spain|EPI\_ISL\_436301 & 8807 & 74 & \begin{tabular}[c]{@{}c@{}}ACAAAGCTTGCCCATTGATTGC\\ TGCAGTCATAACAAGAGAAGTG\\ GGTTTTGTCGTGCCTGGTTTGCC\\ TGGCACG\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNN\end{tabular} \\* \midrule
+4\_Spain|EPI\_ISL\_436301 & 8655 & 150 & \begin{tabular}[c]{@{}c@{}}TAAACATACTGACTT\\ TTCAAGTGAAATCAT\\ AGGATACAAGGCTAT\\ TGATGGTGGTGTCAC\\ TCGTGACATAGCATC\\ TACAGATACTTGTTT\\ TGCTAACAAACATGC\\ TGATTTTGACACATG\\ GTTTAGCCAGCGTGG\\ TGGTAGTTATACTAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\end{tabular} \\* \midrule
+4\_Spain|EPI\_ISL\_436301 & 8807 & 74 & \begin{tabular}[c]{@{}c@{}}ACAAAGCTTGCCCA\\ TTGATTGCTGCAGTC\\ ATAACAAGAGAAGTG\\ GGTTTTGTCGTGCCTG\\ GTTTGCCTGGCACG\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNN\end{tabular} \\* \midrule
 4\_Spain|EPI\_ISL\_436301 & 8888 & 5 & GCACA & NNNNN \\* \midrule
 4\_Spain|EPI\_ISL\_436301 & 14407 & 1 & C & T \\* \midrule
 4\_Spain|EPI\_ISL\_436301 & 17125 & 1 & T & C \\* \midrule
@@ -1043,16 +1044,16 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 4\_Spain|EPI\_ISL\_436301 & 23402 & 1 & A & G \\* \midrule
 4\_Spain|EPI\_ISL\_436301 & 27577 & 1 & A & W \\* \midrule
 4\_Spain|EPI\_ISL\_436301 & 28811 & 1 & G & K \\* \midrule
-4\_Spain|EPI\_ISL\_436301 & 29850 & 52 & \begin{tabular}[c]{@{}c@{}}AGCTTCTTAGGAGAATGACAA\\ AAAAAAAAAAAAAAAAAAAA\\ AAAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}---------------------\\ ---------------------\\ ----------\end{tabular} \\* \midrule
-5\_Spain|EPI\_ISL\_436324 & 0 & 47 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATACCTTCCCA\\ GGTAACAAACCAACCAACTTT\\ CGAT\end{tabular} & \begin{tabular}[c]{@{}c@{}}--------------------\\ ---------------------\\ ------\end{tabular} \\* \midrule
+4\_Spain|EPI\_ISL\_436301 & 29850 & 52 & \begin{tabular}[c]{@{}c@{}}AGCTTCTTAGGAGAA\\ TGACAAAAAAAAAAA\\ AAAAAAAAAAAAAAA\\ AAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}------------------------\\ ----------------------------\end{tabular} \\* \midrule
+5\_Spain|EPI\_ISL\_436324 & 0 & 47 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATACC\\ TTCCCAGGTAACAAAC\\ CAACCAACTTTCGAT\end{tabular} & \begin{tabular}[c]{@{}c@{}}------------------------\\ -----------------------\end{tabular} \\* \midrule
 5\_Spain|EPI\_ISL\_436324 & 240 & 1 & C & T \\* \midrule
 5\_Spain|EPI\_ISL\_436324 & 3036 & 1 & C & T \\* \midrule
-5\_Spain|EPI\_ISL\_436324 & 13379 & 227 & \begin{tabular}[c]{@{}c@{}}TCTGCGGTATGTGGAAAGGTTA\\ TGGCTGTAGTTGTGATCAACTC\\ CGCGAACCCATGCTTCAGTCAG\\ CTGATGCACAATCGTTTTTAAAC\\ GGGTTTGCGGTGTAAGTGCAGC\\ CCGTCTTACACCGTGCGGCACA\\ GGCACTAGTACTGATGTCGTATA\\ CAGGGCTTTTGACATCTACAATG\\ ATAAAGTAGCTGGTTTTGCTAAA\\ TTCCTAAAAACTAATTGTTGTCGCT\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNN\end{tabular} \\* \midrule
+5\_Spain|EPI\_ISL\_436324 & 13379 & 227 & \begin{tabular}[c]{@{}c@{}}TCTGCGGTATGTGGA\\ AAGGTTATGGCTGTA\\ GTTGTGATCAACTCC\\ GCGAACCCATGCTTC\\ AGTCAGCTGATGCAC\\ AATCGTTTTTAAACG\\ GGTTTGCGGTGTAAG\\ TGCAGCCCGTCTTAC\\ ACCGTGCGGCACAGG\\ CACTAGTACTGATGT\\ CGTATACAGGGCTTT\\ TGACATCTACAATGA\\ TAAAGTAGCTGGTTT\\ TGCTAAATTCCTAAA\\ AACTAATTGTTGTCG\\ CT\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NN\end{tabular} \\* \midrule
 5\_Spain|EPI\_ISL\_436324 & 14407 & 1 & C & T \\* \midrule
 5\_Spain|EPI\_ISL\_436324 & 22403 & 1 & A & W \\* \midrule
 5\_Spain|EPI\_ISL\_436324 & 23402 & 1 & A & G \\* \midrule
 5\_Spain|EPI\_ISL\_436324 & 29143 & 1 & C & T \\* \midrule
-5\_Spain|EPI\_ISL\_436324 & 29850 & 52 & \begin{tabular}[c]{@{}c@{}}AGCTTCTTAGGAGAATGACA\\ AAAAAAAAAAAAAAAAAAA\\ AAAAAAAAAAAAA\end{tabular} & ---------------------------------------------------- \\* \midrule
+5\_Spain|EPI\_ISL\_436324 & 29850 & 52 & \begin{tabular}[c]{@{}c@{}}AGCTTCTTAGGAGAA\\ TGACAAAAAAAAAAA\\ AAAAAAAAAAAAAAA\\ AAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}--------------------------\\ --------------------------\end{tabular} \\* \midrule
 6\_Spain|EPI\_ISL\_444976 & 240 & 1 & C & T \\* \midrule
 6\_Spain|EPI\_ISL\_444976 & 3036 & 1 & C & T \\* \midrule
 6\_Spain|EPI\_ISL\_444976 & 8738 & 1 & C & T \\* \midrule
@@ -1095,7 +1096,7 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 1\_Spain|EPI\_ISL\_418251 & 14407 & 1 & C & T \\* \midrule
 1\_Spain|EPI\_ISL\_418251 & 21262 & 1 & C & T \\* \midrule
 1\_Spain|EPI\_ISL\_418251 & 23402 & 1 & A & G \\* \midrule
-1\_Spain|EPI\_ISL\_418251 & 29780 & 122 & \begin{tabular}[c]{@{}c@{}}AGCTGCCTATATGGAAGAGC\\ CCTAATGTGTAAAATTAATTT\\ TAGTAGTGCTATCCCCATGTG\\ ATTTTAATAGCTTCTTAGGAG\\ AATGACAAAAAAAAAAAAA\\ AAAAAAAAAAAAAAAAAAA\\ A\end{tabular} & \begin{tabular}[c]{@{}c@{}}--------------------\\ --------------------\\ --------------------\\ --------------------\\ --------------------\\ ----------------------\end{tabular} \\* \midrule
+1\_Spain|EPI\_ISL\_418251 & 29780 & 122 & \begin{tabular}[c]{@{}c@{}}AGCTGCCTATATGGA\\ AGAGCCCTAATGTGT\\ AAAATTAATTTTAGT\\ AGTGCTATCCCCATG\\ TGATTTTAATAGCTT\\ CTTAGGAGAATGACA\\ AAAAAAAAAAAAAAA\\ AAAAAAAAAAAAAAA\\ AA\end{tabular} & \begin{tabular}[c]{@{}c@{}}----------------------------\\ -----------------------------\\ -----------------------------\\ ------------------------------------\end{tabular} \\* \midrule
 2\_Spain|EPI\_ISL\_419240 & 8781 & 1 & C & T \\* \midrule
 2\_Spain|EPI\_ISL\_419240 & 9476 & 1 & T & A \\* \midrule
 2\_Spain|EPI\_ISL\_419240 & 14804 & 1 & C & T \\* \midrule
@@ -1103,26 +1104,26 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 2\_Spain|EPI\_ISL\_419240 & 28143 & 1 & T & C \\* \midrule
 2\_Spain|EPI\_ISL\_419240 & 28656 & 1 & C & T \\* \midrule
 2\_Spain|EPI\_ISL\_419240 & 28862 & 1 & C & T \\* \midrule
-2\_Spain|EPI\_ISL\_419240 & 29786 & 116 & \begin{tabular}[c]{@{}c@{}}CTATATGGAAGAGCCCTAAT\\ GTGTAAAATTAATTTTAGTAG\\ TGCTATCCCCATGTGATTTTAA\\ TAGCTTCTTAGGAGAATGACA\\ AAAAAAAAAAAAAAAAAAAA\\ AAAAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}--------------------\\ ---------------------\\ ---------------------\\ ----------------------\\ ----------------------\\ ----------\end{tabular} \\* \midrule
-3\_Spain|EPI\_ISL\_419685 & 0 & 54 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATACCTTCCCA\\ GGTAACAAACCAACCAACTTT\\ CGATCTCTTGT\end{tabular} & \begin{tabular}[c]{@{}c@{}}--------------------\\ ---------------------\\ -------------\end{tabular} \\* \midrule
+2\_Spain|EPI\_ISL\_419240 & 29786 & 116 & \begin{tabular}[c]{@{}c@{}}CTATATGGAAGAGCC\\ CTAATGTGTAAAATT\\ AATTTTAGTAGTGCT\\ ATCCCCATGTGATTT\\ TAATAGCTTCTTAGG\\ AGAATGACAAAAAAA\\ AAAAAAAAAAAAAAA\\ AAAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}----------------------------------------------\\ -----------------------------------------------\\ -----------------------\end{tabular} \\* \midrule
+3\_Spain|EPI\_ISL\_419685 & 0 & 54 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATACCT\\ TCCCAGGTAACAAACCA\\ ACCAACTTTCGATCTCTTGT\end{tabular} & \begin{tabular}[c]{@{}c@{}}------------------------------------\\ ------------------\end{tabular} \\* \midrule
 3\_Spain|EPI\_ISL\_419685 & 2000 & 1 & G & A \\* \midrule
-3\_Spain|EPI\_ISL\_419685 & 5296 & 290 & \begin{tabular}[c]{@{}c@{}}ACTGCATTGTTAACACTCCAA\\ CAAATAGAGTTGAAGTTTAATC\\ CACCTGCTCTACAAGATGCTTA\\ TTACAGAGCAAGGGCTGGTGAA\\ GCTGCTAACTTTTGTGCACTTAT\\ CTTAGCCTACTGTAATAAGACA\\ GTAGGTGAGTTAGGTGATGTTA\\ GAGAAACAATGAGTTACTTGTT\\ TCAACATGCCAATTTAGATTCTT\\ GCAAAAGAGTCTTGAACGTGGT\\ GTGTAAAACTTGTGGACAACAG\\ CAGACAACCCTTAAGGGTGTAG\\ AAGCTGTTATGTACATGGGCACA\\ CT\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNN\end{tabular} \\* \midrule
+3\_Spain|EPI\_ISL\_419685 & 5296 & 290 & \begin{tabular}[c]{@{}c@{}}ACTGCATTGTTAACA\\ CTCCAACAAATAGAG\\ TTGAAGTTTAATCCA\\ CCTGCTCTACAAGAT\\ GCTTATTACAGAGCA\\ AGGGCTGGTGAAGCT\\ GCTAACTTTTGTGCA\\ CTTATCTTAGCCTAC\\ TGTAATAAGACAGTA\\ GGTGAGTTAGGTGAT\\ GTTAGAGAAACAATG\\ AGTTACTTGTTTCAA\\ CATGCCAATTTAGAT\\ TCTTGCAAAAGAGTC\\ TTGAACGTGGTGTGT\\ AAAACTTGTGGACAA\\ CAGCAGACAACCCTT\\ AAGGGTGTAGAAGCT\\ GTTATGTACATGGGC\\ ACACT\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNN\end{tabular} \\* \midrule
 3\_Spain|EPI\_ISL\_419685 & 8781 & 1 & C & T \\* \midrule
 3\_Spain|EPI\_ISL\_419685 & 9476 & 1 & T & A \\* \midrule
-3\_Spain|EPI\_ISL\_419685 & 13378 & 243 & \begin{tabular}[c]{@{}c@{}}GTCTGCGGTATGTGGAAAGGTTA\\ TGGCTGTAGTTGTGATCAACTCC\\ GCGAACCCATGCTTCAGTCAGCT\\ GATGCACAATCGTTTTTAAACGG\\ GTTTGCGGTGTAAGTGCAGCCCG\\ TCTTACACCGTGCGGCACAGGCA\\ CTAGTACTGATGTCGTATACAGGG\\ CTTTTGACATCTACAATGATAAAG\\ TAGCTGGTTTTGCTAAATTCCTAA\\ AAACTAATTGTTGTCGCTTCCAAG\\ AAAAGGACG\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNN\end{tabular} \\* \midrule
+3\_Spain|EPI\_ISL\_419685 & 13378 & 243 & \begin{tabular}[c]{@{}c@{}}GTCTGCGGTATGTGG\\ AAAGGTTATGGCTGT\\ AGTTGTGATCAACTC\\ CGCGAACCCATGCTT\\ CAGTCAGCTGATGCA\\ CAATCGTTTTTAAAC\\ GGGTTTGCGGTGTAA\\ GTGCAGCCCGTCTTA\\ CACCGTGCGGCACAG\\ GCACTAGTACTGATG\\ TCGTATACAGGGCTT\\ TTGACATCTACAATG\\ ATAAAGTAGCTGGTT\\ TTGCTAAATTCCTAA\\ AAACTAATTGTTGTC\\ GCTTCCAAGAAAAGG\\ ACG\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNN\end{tabular} \\* \midrule
 3\_Spain|EPI\_ISL\_419685 & 14804 & 1 & C & T \\* \midrule
-3\_Spain|EPI\_ISL\_419685 & 22877 & 267 & \begin{tabular}[c]{@{}c@{}}ACAATCTTGATTCTAAGGTTGGTG\\ GTAATTATAATTACCTGTATAGATTG\\ TTTAGGAAGTCTAATCTCAAACCTT\\ TTGAGAGAGATATTTCAACTGAAAT\\ CTATCAGGCCGGTAGCACACCTTGT\\ AATGGTGTTGAAGGTTTTAATTGTTA\\ CTTTCCTTTACAATCATATGGTTTCCA\\ ACCCACTAATGGTGTTGGTTACCAAC\\ CATACAGAGTAGTAGTACTTTCTTTTG\\ AACTTCTACATGCACCAGCAACTGTT\\ TGTGGACCTA\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNN\end{tabular} \\* \midrule
-3\_Spain|EPI\_ISL\_419685 & 25646 & 278 & \begin{tabular}[c]{@{}c@{}}GTTGTTTGTAACAGTTTACTCACACCT\\ TTTGCTCGTTGCTGCTGGCCTTGAAGC\\ CCCTTTTCTCTATCTTTATGCTTTAGTCT\\ ACTTCTTGCAGAGTATAAACTTTGTAAG\\ AATAATAATGAGGCTTTGGCTTTGCTGG\\ AAATGCCGTTCCAAAAACCCATTACTTT\\ ATGATGCCAACTATTTTCTTTGCTGGCAT\\ ACTAATTGTTACGACTATTGTATACCTTA\\ CAATAGTGTAACTTCTTCAATTGTCATTA\\ CTTCAGGTGATGGCACAACAAGTC\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNN\\ NNNNN\end{tabular} \\* \midrule
+3\_Spain|EPI\_ISL\_419685 & 22877 & 267 & \begin{tabular}[c]{@{}c@{}}ACAATCTTGATTCTA\\ AGGTTGGTGGTAATT\\ ATAATTACCTGTATA\\ GATTGTTTAGGAAGT\\ CTAATCTCAAACCTT\\ TTGAGAGAGATATTT\\ CAACTGAAATCTATC\\ AGGCCGGTAGCACAC\\ CTTGTAATGGTGTTG\\ AAGGTTTTAATTGTT\\ ACTTTCCTTTACAAT\\ CATATGGTTTCCAAC\\ CCACTAATGGTGTTG\\ GTTACCAACCATACA\\ GAGTAGTAGTACTTT\\ CTTTTGAACTTCTAC\\ ATGCACCAGCAACTG\\ TTTGTGGACCTA\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNN\end{tabular} \\* \midrule
+3\_Spain|EPI\_ISL\_419685 & 25646 & 278 & \begin{tabular}[c]{@{}c@{}}GTTGTTTGTAACAGT\\ TTACTCACACCTTTT\\ GCTCGTTGCTGCTGG\\ CCTTGAAGCCCCTTT\\ TCTCTATCTTTATGC\\ TTTAGTCTACTTCTT\\ GCAGAGTATAAACTT\\ TGTAAGAATAATAAT\\ GAGGCTTTGGCTTTG\\ CTGGAAATGCCGTTC\\ CAAAAACCCATTACT\\ TTATGATGCCAACTA\\ TTTTCTTTGCTGGCA\\ TACTAATTGTTACGA\\ CTATTGTATACCTTA\\ CAATAGTGTAACTTC\\ TTCAATTGTCATTAC\\ TTCAGGTGATGGCAC\\ AACAAGTC\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNN\end{tabular} \\* \midrule
 3\_Spain|EPI\_ISL\_419685 & 25978 & 1 & G & T \\* \midrule
 3\_Spain|EPI\_ISL\_419685 & 28143 & 1 & T & C \\* \midrule
 3\_Spain|EPI\_ISL\_419685 & 28656 & 1 & C & T \\* \midrule
 3\_Spain|EPI\_ISL\_419685 & 28862 & 1 & C & T \\* \midrule
-3\_Spain|EPI\_ISL\_419685 & 29835 & 67 & \begin{tabular}[c]{@{}c@{}}CCATGTGATTTTAATAGCTTCTTAGGAG\\ AATGACAAAAAAAAAAAAAAAAAAAA\\ AAAAAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}-------------------------------------------\\ ------------------------\end{tabular} \\* \midrule
-4\_Spain|EPI\_ISL\_436301 & 0 & 49 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATACCTTCCCAGGTAAC\\ AAACCAACCAACTTTCGATCT\end{tabular} & ------------------------------------------------- \\* \midrule
+3\_Spain|EPI\_ISL\_419685 & 29835 & 67 & \begin{tabular}[c]{@{}c@{}}CCATGTGATTTTAAT\\ AGCTTCTTAGGAGA\\ ATGACAAAAAAAAA\\ AAAAAAAAAAAAAA\\ AAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}-----------------------------\\ --------------------------------------\end{tabular} \\* \midrule
+4\_Spain|EPI\_ISL\_436301 & 0 & 49 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATAC\\ CTTCCCAGGTAACAA\\ ACCAACCAACTTTCG\\ ATCT\end{tabular} & \begin{tabular}[c]{@{}c@{}}----------------------------\\ ---------------------\end{tabular} \\* \midrule
 4\_Spain|EPI\_ISL\_436301 & 240 & 1 & C & T \\* \midrule
 4\_Spain|EPI\_ISL\_436301 & 3036 & 1 & C & T \\* \midrule
-4\_Spain|EPI\_ISL\_436301 & 8655 & 150 & \begin{tabular}[c]{@{}c@{}}TAAACATACTGACTTTTCAAGTGAAATC\\ ATAGGATACAAGGCTATTGATGGTGGTGT\\ CACTCGTGACATAGCATCTACAGATACTT\\ GTTTTGCTAACAAACATGCTGATTTTGAC\\ ACATGGTTTAGCCAGCGTGGTGGTAGTTA\\ TACTAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNN\end{tabular} \\* \midrule
-4\_Spain|EPI\_ISL\_436301 & 8807 & 74 & \begin{tabular}[c]{@{}c@{}}ACAAAGCTTGCCCATTGATTGCTGCAGTC\\ ATAACAAGAGAAGTGGGTTTTGTCGTGCC\\ TGGTTTGCCTGGCACG\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNN\end{tabular} \\* \midrule
+4\_Spain|EPI\_ISL\_436301 & 8655 & 150 & \begin{tabular}[c]{@{}c@{}}TAAACATACTGACTTT\\ TCAAGTGAAATCATA\\ GGATACAAGGCTATT\\ GATGGTGGTGTCACT\\ CGTGACATAGCATCT\\ ACAGATACTTGTTTT\\ GCTAACAAACATGCT\\ GATTTTGACACATGG\\ TTTAGCCAGCGTGGT\\ GGTAGTTATACTAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\end{tabular} \\* \midrule
+4\_Spain|EPI\_ISL\_436301 & 8807 & 74 & \begin{tabular}[c]{@{}c@{}}ACAAAGCTTGCCCAT\\ TGATTGCTGCAGTCA\\ TAACAAGAGAAGTGG\\ GTTTTGTCGTGCCTG\\ GTTTGCCTGGCACG\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNN\\ NNNNNNNNNNN\end{tabular} \\* \midrule
 4\_Spain|EPI\_ISL\_436301 & 8888 & 5 & GCACA & NNNNN \\* \midrule
 4\_Spain|EPI\_ISL\_436301 & 14407 & 1 & C & T \\* \midrule
 4\_Spain|EPI\_ISL\_436301 & 17125 & 1 & T & C \\* \midrule
@@ -1130,16 +1131,16 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 4\_Spain|EPI\_ISL\_436301 & 23402 & 1 & A & G \\* \midrule
 4\_Spain|EPI\_ISL\_436301 & 27577 & 1 & A & W \\* \midrule
 4\_Spain|EPI\_ISL\_436301 & 28811 & 1 & G & K \\* \midrule
-4\_Spain|EPI\_ISL\_436301 & 29850 & 52 & \begin{tabular}[c]{@{}c@{}}AGCTTCTTAGGAGAATGACAAAAAAAAAA\\ AAAAAAAAAAAAAAAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}--------------------------\\ --------------------------\end{tabular} \\* \midrule
-5\_Spain|EPI\_ISL\_436324 & 0 & 47 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATACCTTCCCAGGTAACAAA\\ CCAACCAACTTTCGAT\end{tabular} & ----------------------------------------------- \\* \midrule
+4\_Spain|EPI\_ISL\_436301 & 29850 & 52 & \begin{tabular}[c]{@{}c@{}}AGCTTCTTAGGAGAA\\ TGACAAAAAAAAAAA\\ AAAAAAAAAAAAAAA\\ AAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}---------------------------\\ -------------------------\end{tabular} \\* \midrule
+5\_Spain|EPI\_ISL\_436324 & 0 & 47 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATAC\\ CTTCCCAGGTAACAA\\ ACCAACCAACTTTCG\\ AT\end{tabular} & \begin{tabular}[c]{@{}c@{}}-----------------------\\ ------------------------\end{tabular} \\* \midrule
 5\_Spain|EPI\_ISL\_436324 & 240 & 1 & C & T \\* \midrule
 5\_Spain|EPI\_ISL\_436324 & 3036 & 1 & C & T \\* \midrule
-5\_Spain|EPI\_ISL\_436324 & 13379 & 227 & \begin{tabular}[c]{@{}c@{}}TCTGCGGTATGTGGAAAGGTTATGGCTGTAGT\\ TGTGATCAACTCCGCGAACCCATGCTTCAGTC\\ AGCTGATGCACAATCGTTTTTAAACGGGTTTGC\\ GGTGTAAGTGCAGCCCGTCTTACACCGTGCGGC\\ ACAGGCACTAGTACTGATGTCGTATACAGGGCT\\ TTTGACATCTACAATGATAAAGTAGCTGGTTTTG\\ CTAAATTCCTAAAAACTAATTGTTGTCGCT\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNNNN\\ NNNNNNN\end{tabular} \\* \midrule
+5\_Spain|EPI\_ISL\_436324 & 13379 & 227 & \begin{tabular}[c]{@{}c@{}}TCTGCGGTATGTGGAA\\ AGGTTATGGCTGTAG\\ TTGTGATCAACTCCG\\ CGAACCCATGCTTCA\\ GTCAGCTGATGCACA\\ ATCGTTTTTAAACGG\\ GTTTGCGGTGTAAGT\\ GCAGCCCGTCTTACA\\ CCGTGCGGCACAGGC\\ ACTAGTACTGATGTC\\ GTATACAGGGCTTTT\\ GACATCTACAATGAT\\ AAAGTAGCTGGTTTT\\ GCTAAATTCCTAAAA\\ ACTAATTGTTGTCGCT\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNN\end{tabular} \\* \midrule
 5\_Spain|EPI\_ISL\_436324 & 14407 & 1 & C & T \\* \midrule
 5\_Spain|EPI\_ISL\_436324 & 22403 & 1 & A & W \\* \midrule
 5\_Spain|EPI\_ISL\_436324 & 23402 & 1 & A & G \\* \midrule
 5\_Spain|EPI\_ISL\_436324 & 29143 & 1 & C & T \\* \midrule
-5\_Spain|EPI\_ISL\_436324 & 29850 & 52 & \begin{tabular}[c]{@{}c@{}}AGCTTCTTAGGAGAATGACAAAAAAAAAAAAA\\ AAAAAAAAAAAAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}-------------------------------\\ ---------------------\end{tabular} \\* \midrule
+5\_Spain|EPI\_ISL\_436324 & 29850 & 52 & \begin{tabular}[c]{@{}c@{}}AGCTTCTTAGGAGAA\\ TGACAAAAAAAAAAA\\ AAAAAAAAAAAAAAA\\ AAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}------------------------\\ ----------------------------\end{tabular} \\* \midrule
 6\_Spain|EPI\_ISL\_444976 & 240 & 1 & C & T \\* \midrule
 6\_Spain|EPI\_ISL\_444976 & 3036 & 1 & C & T \\* \midrule
 6\_Spain|EPI\_ISL\_444976 & 8738 & 1 & C & T \\* \midrule
@@ -1159,5 +1160,199 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 7\_Spain|EPI\_ISL\_444975 & 29687 & 1 & G & C \\* \midrule
 7\_Spain|EPI\_ISL\_444975 & 29733 & 1 & G & C \\* \bottomrule
 \end{longtable}
+
+\newpage
+\section{Appendice B - risultati confronto orizzontale}
+\subsection{Clustal Omega}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\begin{longtable}{@{}ccccc@{}}
+\toprule
+\textbf{ID\_SEQ} & \textbf{POS} & \textbf{LENGTH} & \textbf{REFERENCE} & \textbf{MUTATION} \\* \midrule
+\endfirsthead
+%
+\cline{1-5}
+\endhead
+%
+Italy|EPI\_ISL\_436729 & 0 & 9 & ATTAAAGGT & NNNNNNNNN \\* \midrule
+Italy|EPI\_ISL\_436729 & 30 & 1 & A & G \\* \midrule
+Italy|EPI\_ISL\_436729 & 240 & 1 & C & T \\* \midrule
+Italy|EPI\_ISL\_436729 & 3036 & 1 & C & T \\* \midrule
+Italy|EPI\_ISL\_436729 & 3044 & 1 & C & T \\* \midrule
+Italy|EPI\_ISL\_436729 & 6448 & 1 & C & T \\* \midrule
+Italy|EPI\_ISL\_436729 & 6862 & 1 & A & M \\* \midrule
+Italy|EPI\_ISL\_436729 & 6865 & 1 & A & W \\* \midrule
+Italy|EPI\_ISL\_436729 & 6868 & 1 & A & W \\* \midrule
+Italy|EPI\_ISL\_436729 & 14407 & 1 & C & T \\* \midrule
+Italy|EPI\_ISL\_436729 & 19676 & 1 & G & R \\* \midrule
+Italy|EPI\_ISL\_436729 & 21626 & 1 & C & Y \\* \midrule
+Italy|EPI\_ISL\_436729 & 23402 & 1 & A & G \\* \midrule
+Italy|EPI\_ISL\_436729 & 25458 & 1 & G & K \\* \midrule
+Italy|EPI\_ISL\_436729 & 28880 & 3 & GGG & AAC \\* \midrule
+Italy|EPI\_ISL\_436729 & 29872 & 30 & \begin{tabular}[c]{@{}c@{}}AAAAAAAAAAAAAAAAAAAA\\ AAAAAAAAAA\end{tabular} & ------------------------------ \\* \midrule
+Russia|EPI\_ISL\_430108 & 240 & 1 & C & T \\* \midrule
+Russia|EPI\_ISL\_430108 & 834 & 1 & C & T \\* \midrule
+Russia|EPI\_ISL\_430108 & 3036 & 1 & C & T \\* \midrule
+Russia|EPI\_ISL\_430108 & 14407 & 1 & C & T \\* \midrule
+Russia|EPI\_ISL\_430108 & 20267 & 1 & A & G \\* \midrule
+Russia|EPI\_ISL\_430108 & 23402 & 1 & A & G \\* \midrule
+Russia|EPI\_ISL\_430108 & 29870 & 32 & \begin{tabular}[c]{@{}c@{}}AAAAAAAAAAAAAAAAAAAA\\ AAAAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNN\end{tabular} \\* \midrule
+Spain|EPI\_ISL\_444975 & 240 & 1 & C & T \\* \midrule
+Spain|EPI\_ISL\_444975 & 3036 & 1 & C & T \\* \midrule
+Spain|EPI\_ISL\_444975 & 5175 & 1 & A & G \\* \midrule
+Spain|EPI\_ISL\_444975 & 6353 & 1 & C & T \\* \midrule
+Spain|EPI\_ISL\_444975 & 14407 & 1 & C & T \\* \midrule
+Spain|EPI\_ISL\_444975 & 20267 & 1 & A & G \\* \midrule
+Spain|EPI\_ISL\_444975 & 23402 & 1 & A & G \\* \midrule
+Spain|EPI\_ISL\_444975 & 28882 & 1 & G & A \\* \midrule
+Spain|EPI\_ISL\_444975 & 29687 & 1 & G & C \\* \midrule
+Spain|EPI\_ISL\_444975 & 29733 & 1 & G & C \\* \midrule
+USA|EPI\_ISL\_435547 & 0 & 136 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATACCTTCC\\ CAGGTAACAAACCAACCAA\\ CTTTCGATCTCTTGTAGATCT\\ GTTCTCTAAACGAACTTTAAA\\ ATCTGTGTGGCTGTCACTCGG\\ CTGCATGCTTAGTGCACTCAC\\ GCAGTATAATTAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNN\end{tabular} \\* \midrule
+USA|EPI\_ISL\_435547 & 145 & 3 & ACT & NNN \\* \midrule
+USA|EPI\_ISL\_435547 & 240 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 1058 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 3036 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 9113 & 102 & \begin{tabular}[c]{@{}c@{}}CTGACACACGTTATGTGCTC\\ ATGGATGGCTCTATTATTCAA\\ TTTCCTAACACCTACCTTGAA\\ GGTTCTGTTAGAGTGGTAACA\\ ACTTTTGATTCTGAGTACT\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NN\end{tabular} \\* \midrule
+USA|EPI\_ISL\_435547 & 11915 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 14407 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 18997 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 23402 & 1 & A & G \\* \midrule
+USA|EPI\_ISL\_435547 & 25562 & 1 & G & T \\* \midrule
+USA|EPI\_ISL\_435547 & 27058 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 29539 & 1 & G & A \\* \midrule
+USA|EPI\_ISL\_435547 & 29901 & 1 & A & N \\* \bottomrule
+\end{longtable}
+
+\newpage
+\subsection{Kalign}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\begin{longtable}{@{}ccccc@{}}
+\toprule
+\textbf{ID\_SEQ} & \textbf{POS} & \textbf{LENGTH} & \textbf{REFERENCE} & \textbf{MUTATION} \\* \midrule
+\endfirsthead
+%
+\cline{1-5}
+\endhead
+%
+Italy|EPI\_ISL\_436729 & 0 & 9 & ATTAAAGGT & NNNNNNNNN \\* \midrule
+Italy|EPI\_ISL\_436729 & 30 & 1 & A & G \\* \midrule
+Italy|EPI\_ISL\_436729 & 240 & 1 & C & T \\* \midrule
+Italy|EPI\_ISL\_436729 & 3036 & 1 & C & T \\* \midrule
+Italy|EPI\_ISL\_436729 & 3044 & 1 & C & T \\* \midrule
+Italy|EPI\_ISL\_436729 & 6448 & 1 & C & T \\* \midrule
+Italy|EPI\_ISL\_436729 & 6862 & 1 & A & M \\* \midrule
+Italy|EPI\_ISL\_436729 & 6865 & 1 & A & W \\* \midrule
+Italy|EPI\_ISL\_436729 & 6868 & 1 & A & W \\* \midrule
+Italy|EPI\_ISL\_436729 & 14407 & 1 & C & T \\* \midrule
+Italy|EPI\_ISL\_436729 & 19676 & 1 & G & R \\* \midrule
+Italy|EPI\_ISL\_436729 & 21626 & 1 & C & Y \\* \midrule
+Italy|EPI\_ISL\_436729 & 23402 & 1 & A & G \\* \midrule
+Italy|EPI\_ISL\_436729 & 25458 & 1 & G & K \\* \midrule
+Italy|EPI\_ISL\_436729 & 28880 & 3 & GGG & AAC \\* \midrule
+Italy|EPI\_ISL\_436729 & 29872 & 30 & \begin{tabular}[c]{@{}c@{}}AAAAAAAAAAAAAAAAAAAA\\ AAAAAAAAAA\end{tabular} & ------------------------------ \\* \midrule
+Russia|EPI\_ISL\_430108 & 240 & 1 & C & T \\* \midrule
+Russia|EPI\_ISL\_430108 & 834 & 1 & C & T \\* \midrule
+Russia|EPI\_ISL\_430108 & 3036 & 1 & C & T \\* \midrule
+Russia|EPI\_ISL\_430108 & 14407 & 1 & C & T \\* \midrule
+Russia|EPI\_ISL\_430108 & 20267 & 1 & A & G \\* \midrule
+Russia|EPI\_ISL\_430108 & 23402 & 1 & A & G \\* \midrule
+Russia|EPI\_ISL\_430108 & 29870 & 32 & \begin{tabular}[c]{@{}c@{}}AAAAAAAAAAAAAAAAAAAA\\ AAAAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNN\end{tabular} \\* \midrule
+Spain|EPI\_ISL\_444975 & 240 & 1 & C & T \\* \midrule
+Spain|EPI\_ISL\_444975 & 3036 & 1 & C & T \\* \midrule
+Spain|EPI\_ISL\_444975 & 5175 & 1 & A & G \\* \midrule
+Spain|EPI\_ISL\_444975 & 6353 & 1 & C & T \\* \midrule
+Spain|EPI\_ISL\_444975 & 14407 & 1 & C & T \\* \midrule
+Spain|EPI\_ISL\_444975 & 20267 & 1 & A & G \\* \midrule
+Spain|EPI\_ISL\_444975 & 23402 & 1 & A & G \\* \midrule
+Spain|EPI\_ISL\_444975 & 28882 & 1 & G & A \\* \midrule
+Spain|EPI\_ISL\_444975 & 29687 & 1 & G & C \\* \midrule
+Spain|EPI\_ISL\_444975 & 29733 & 1 & G & C \\* \midrule
+USA|EPI\_ISL\_435547 & 0 & 136 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATACCTTCC\\ CAGGTAACAAACCAACCAA\\ CTTTCGATCTCTTGTAGATCT\\ GTTCTCTAAACGAACTTTAA\\ AATCTGTGTGGCTGTCACTC\\ GGCTGCATGCTTAGTGCACT\\ CACGCAGTATAATTAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNN\\ NNN\end{tabular} \\* \midrule
+USA|EPI\_ISL\_435547 & 145 & 3 & ACT & NNN \\* \midrule
+USA|EPI\_ISL\_435547 & 240 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 1058 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 3036 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 9113 & 102 & \begin{tabular}[c]{@{}c@{}}CTGACACACGTTATGTGCTC\\ ATGGATGGCTCTATTATTCAA\\ TTTCCTAACACCTACCTTGAA\\ GGTTCTGTTAGAGTGGTAACA\\ ACTTTTGATTCTGAGTACT\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNNNNN\\ NN\end{tabular} \\* \midrule
+USA|EPI\_ISL\_435547 & 11915 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 14407 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 18997 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 23402 & 1 & A & G \\* \midrule
+USA|EPI\_ISL\_435547 & 25562 & 1 & G & T \\* \midrule
+USA|EPI\_ISL\_435547 & 27058 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 29539 & 1 & G & A \\* \midrule
+USA|EPI\_ISL\_435547 & 29901 & 1 & A & N \\* \bottomrule
+\end{longtable}
+
+\newpage
+\subsection{MAFFT}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\begin{longtable}{@{}ccccc@{}}
+\toprule
+\textbf{ID\_SEQ} & \textbf{POS} & \textbf{LENGTH} & \textbf{REFERENCE} & \textbf{MUTATION} \\* \midrule
+\endfirsthead
+%
+\cline{1-5}
+\endhead
+%
+Italy|EPI\_ISL\_436729 & 0 & 9 & ATTAAAGGT & NNNNNNNNN \\* \midrule
+Italy|EPI\_ISL\_436729 & 30 & 1 & A & G \\* \midrule
+Italy|EPI\_ISL\_436729 & 240 & 1 & C & T \\* \midrule
+Italy|EPI\_ISL\_436729 & 3036 & 1 & C & T \\* \midrule
+Italy|EPI\_ISL\_436729 & 3044 & 1 & C & T \\* \midrule
+Italy|EPI\_ISL\_436729 & 6448 & 1 & C & T \\* \midrule
+Italy|EPI\_ISL\_436729 & 6862 & 1 & A & M \\* \midrule
+Italy|EPI\_ISL\_436729 & 6865 & 1 & A & W \\* \midrule
+Italy|EPI\_ISL\_436729 & 6868 & 1 & A & W \\* \midrule
+Italy|EPI\_ISL\_436729 & 14407 & 1 & C & T \\* \midrule
+Italy|EPI\_ISL\_436729 & 19676 & 1 & G & R \\* \midrule
+Italy|EPI\_ISL\_436729 & 21626 & 1 & C & Y \\* \midrule
+Italy|EPI\_ISL\_436729 & 23402 & 1 & A & G \\* \midrule
+Italy|EPI\_ISL\_436729 & 25458 & 1 & G & K \\* \midrule
+Italy|EPI\_ISL\_436729 & 28880 & 3 & GGG & AAC \\* \midrule
+Italy|EPI\_ISL\_436729 & 29872 & 30 & \begin{tabular}[c]{@{}c@{}}AAAAAAAAAAAAAAA\\ AAAAAAAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}----------------\\ --------------\end{tabular} \\* \midrule
+Russia|EPI\_ISL\_430108 & 240 & 1 & C & T \\* \midrule
+Russia|EPI\_ISL\_430108 & 834 & 1 & C & T \\* \midrule
+Russia|EPI\_ISL\_430108 & 3036 & 1 & C & T \\* \midrule
+Russia|EPI\_ISL\_430108 & 14407 & 1 & C & T \\* \midrule
+Russia|EPI\_ISL\_430108 & 20267 & 1 & A & G \\* \midrule
+Russia|EPI\_ISL\_430108 & 23402 & 1 & A & G \\* \midrule
+Russia|EPI\_ISL\_430108 & 29870 & 32 & \begin{tabular}[c]{@{}c@{}}AAAAAAAAAAAAAAA\\ AAAAAAAAAAAAAAAAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNNN\end{tabular} \\* \midrule
+Spain|EPI\_ISL\_444975 & 240 & 1 & C & T \\* \midrule
+Spain|EPI\_ISL\_444975 & 3036 & 1 & C & T \\* \midrule
+Spain|EPI\_ISL\_444975 & 5175 & 1 & A & G \\* \midrule
+Spain|EPI\_ISL\_444975 & 6353 & 1 & C & T \\* \midrule
+Spain|EPI\_ISL\_444975 & 14407 & 1 & C & T \\* \midrule
+Spain|EPI\_ISL\_444975 & 20267 & 1 & A & G \\* \midrule
+Spain|EPI\_ISL\_444975 & 23402 & 1 & A & G \\* \midrule
+Spain|EPI\_ISL\_444975 & 28882 & 1 & G & A \\* \midrule
+Spain|EPI\_ISL\_444975 & 29687 & 1 & G & C \\* \midrule
+Spain|EPI\_ISL\_444975 & 29733 & 1 & G & C \\* \midrule
+USA|EPI\_ISL\_435547 & 0 & 136 & \begin{tabular}[c]{@{}c@{}}ATTAAAGGTTTATAC\\ CTTCCCAGGTAACAA\\ ACCAACCAACTTTCG\\ ATCTCTTGTAGATCTG\\ TTCTCTAAACGAACTT\\ TAAAATCTGTGTGGCT\\ GTCACTCGGCTGCATG\\ CTTAGTGCACTCACGC\\ AGTATAATTAA\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNNN\end{tabular} \\* \midrule
+USA|EPI\_ISL\_435547 & 145 & 3 & ACT & NNN \\* \midrule
+USA|EPI\_ISL\_435547 & 240 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 1058 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 3036 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 9113 & 102 & \begin{tabular}[c]{@{}c@{}}CTGACACACGTTATG\\ TGCTCATGGATGGCT\\ CTATTATTCAATTTCC\\ TAACACCTACCTTGA\\ AGGTTCTGTTAGAGT\\ GGTAACAACTTTTGA\\ TTCTGAGTACT\end{tabular} & \begin{tabular}[c]{@{}c@{}}NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNNNNN\\ NNNNNNNNNNNN\end{tabular} \\* \midrule
+USA|EPI\_ISL\_435547 & 11915 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 14407 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 18997 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 23402 & 1 & A & G \\* \midrule
+USA|EPI\_ISL\_435547 & 25562 & 1 & G & T \\* \midrule
+USA|EPI\_ISL\_435547 & 27058 & 1 & C & T \\* \midrule
+USA|EPI\_ISL\_435547 & 29539 & 1 & G & A \\* \midrule
+USA|EPI\_ISL\_435547 & 29901 & 1 & A & N \\* \bottomrule
+\end{longtable}
+
 \restoregeometry
 \end{document}
