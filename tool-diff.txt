@@ -82,3 +82,87 @@ Kalign:  ('7_Spain|EPI_ISL_444975', 29733, 1, 'G', 'C') Clustal Omega:  ('7_Spai
 
 MAFFT:  ('7_Spain|EPI_ISL_444975', 29733, 1, 'G', 'C') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 23402, 1, 'A', 'G') 
 
+Kalign:  ('3_Italy|EPI_ISL_417423', 29879, 13, 'AAAAAAAAAAAAA', '-------------') Clustal Omega:  ('3_Italy|EPI_ISL_417423', 29890, 13, 'AAAAAAAAAAAAA', '-------------') 
+
+MAFFT:  ('3_Italy|EPI_ISL_417423', 29879, 13, 'AAAAAAAAAAAAA', '-------------') Kalign:  ('3_Italy|EPI_ISL_417423', 29890, 13, 'AAAAAAAAAAAAA', '-------------') 
+
+Kalign:  ('4_Italy|EPI_ISL_418256', 29879, 5, 'AAAAA', '-----') Clustal Omega:  ('4_Italy|EPI_ISL_418256', 29898, 5, 'AAAAA', '-----') 
+
+MAFFT:  ('4_Italy|EPI_ISL_418256', 29879, 5, 'AAAAA', '-----') Kalign:  ('4_Italy|EPI_ISL_418256', 29898, 5, 'AAAAA', '-----') 
+
+Kalign:  ('6_Italy|EPI_ISL_428854', 29879, 4, 'AAAA', '----') Clustal Omega:  ('6_Italy|EPI_ISL_428854', 29899, 4, 'AAAA', '----') 
+
+MAFFT:  ('6_Italy|EPI_ISL_428854', 29879, 4, 'AAAA', '----') Kalign:  ('6_Italy|EPI_ISL_428854', 29899, 4, 'AAAA', '----') 
+
+Kalign:  ('6_Spain|EPI_ISL_444976', 240, 1, 'C', 'T') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 240, 1, 'C', 'T') 
+
+MAFFT:  ('6_Spain|EPI_ISL_444976', 240, 1, 'C', 'T') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 240, 1, 'C', 'T') 
+
+Kalign:  ('6_Spain|EPI_ISL_444976', 3036, 1, 'C', 'T') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 3036, 1, 'C', 'T') 
+
+MAFFT:  ('6_Spain|EPI_ISL_444976', 3036, 1, 'C', 'T') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 3036, 1, 'C', 'T') 
+
+Kalign:  ('6_Spain|EPI_ISL_444976', 8738, 1, 'C', 'T') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 5175, 1, 'A', 'G') 
+
+MAFFT:  ('6_Spain|EPI_ISL_444976', 8738, 1, 'C', 'T') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 5175, 1, 'A', 'G') 
+
+Kalign:  ('6_Spain|EPI_ISL_444976', 14407, 1, 'C', 'T') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 6353, 1, 'C', 'T') 
+
+MAFFT:  ('6_Spain|EPI_ISL_444976', 14407, 1, 'C', 'T') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 6353, 1, 'C', 'T') 
+
+Kalign:  ('6_Spain|EPI_ISL_444976', 18743, 1, 'C', 'T') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 14407, 1, 'C', 'T') 
+
+MAFFT:  ('6_Spain|EPI_ISL_444976', 18743, 1, 'C', 'T') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 14407, 1, 'C', 'T') 
+
+Kalign:  ('6_Spain|EPI_ISL_444976', 20267, 1, 'A', 'G') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 20267, 1, 'A', 'G') 
+
+MAFFT:  ('6_Spain|EPI_ISL_444976', 20267, 1, 'A', 'G') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 20267, 1, 'A', 'G') 
+
+Kalign:  ('6_Spain|EPI_ISL_444976', 22892, 1, 'A', 'G') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 23402, 1, 'A', 'G') 
+
+MAFFT:  ('6_Spain|EPI_ISL_444976', 22892, 1, 'A', 'G') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 23402, 1, 'A', 'G') 
+
+Kalign:  ('6_Spain|EPI_ISL_444976', 23402, 1, 'A', 'G') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 28882, 1, 'G', 'A') 
+
+MAFFT:  ('6_Spain|EPI_ISL_444976', 23402, 1, 'A', 'G') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 28882, 1, 'G', 'A') 
+
+Kalign:  ('7_Spain|EPI_ISL_444975', 240, 1, 'C', 'T') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 29687, 1, 'G', 'C') 
+
+MAFFT:  ('7_Spain|EPI_ISL_444975', 240, 1, 'C', 'T') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 29687, 1, 'G', 'C') 
+
+Kalign:  ('7_Spain|EPI_ISL_444975', 3036, 1, 'C', 'T') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 29733, 1, 'G', 'C') 
+
+MAFFT:  ('7_Spain|EPI_ISL_444975', 3036, 1, 'C', 'T') Clustal Omega:  ('6_Spain|EPI_ISL_444975', 29733, 1, 'G', 'C') 
+
+Kalign:  ('7_Spain|EPI_ISL_444975', 5175, 1, 'A', 'G') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 240, 1, 'C', 'T') 
+
+MAFFT:  ('7_Spain|EPI_ISL_444975', 5175, 1, 'A', 'G') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 240, 1, 'C', 'T') 
+
+Kalign:  ('7_Spain|EPI_ISL_444975', 6353, 1, 'C', 'T') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 3036, 1, 'C', 'T') 
+
+MAFFT:  ('7_Spain|EPI_ISL_444975', 6353, 1, 'C', 'T') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 3036, 1, 'C', 'T') 
+
+Kalign:  ('7_Spain|EPI_ISL_444975', 14407, 1, 'C', 'T') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 8738, 1, 'C', 'T') 
+
+MAFFT:  ('7_Spain|EPI_ISL_444975', 14407, 1, 'C', 'T') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 8738, 1, 'C', 'T') 
+
+Kalign:  ('7_Spain|EPI_ISL_444975', 20267, 1, 'A', 'G') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 14407, 1, 'C', 'T') 
+
+MAFFT:  ('7_Spain|EPI_ISL_444975', 20267, 1, 'A', 'G') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 14407, 1, 'C', 'T') 
+
+Kalign:  ('7_Spain|EPI_ISL_444975', 23402, 1, 'A', 'G') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 18743, 1, 'C', 'T') 
+
+MAFFT:  ('7_Spain|EPI_ISL_444975', 23402, 1, 'A', 'G') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 18743, 1, 'C', 'T') 
+
+Kalign:  ('7_Spain|EPI_ISL_444975', 28882, 1, 'G', 'A') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 20267, 1, 'A', 'G') 
+
+MAFFT:  ('7_Spain|EPI_ISL_444975', 28882, 1, 'G', 'A') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 20267, 1, 'A', 'G') 
+
+Kalign:  ('7_Spain|EPI_ISL_444975', 29687, 1, 'G', 'C') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 22892, 1, 'A', 'G') 
+
+MAFFT:  ('7_Spain|EPI_ISL_444975', 29687, 1, 'G', 'C') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 22892, 1, 'A', 'G') 
+
+Kalign:  ('7_Spain|EPI_ISL_444975', 29733, 1, 'G', 'C') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 23402, 1, 'A', 'G') 
+
+MAFFT:  ('7_Spain|EPI_ISL_444975', 29733, 1, 'G', 'C') Clustal Omega:  ('7_Spain|EPI_ISL_444976', 23402, 1, 'A', 'G') 
+
