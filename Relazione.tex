@@ -105,7 +105,7 @@ Al 25 maggio 2020, ci sono stati 5.428.605 casi confermati totali di infezione d
 \newpage
 
 \section{Obiettivo del progetto}
-L'obiettivo del progetto è eseguire un allineamento multiplo di sequenze utilizzando alcuni tra i vari tool di allineamento, scelti in base ai requisiti del progetto e alle sequenze utilizzate. Le variazioni individuate in output sono state documente appositamente. \\
+L'obiettivo del progetto è eseguire un allineamento multiplo di sequenze utilizzando alcuni tra i vari tool di allineamento, scelti in base ai requisiti del progetto e alle sequenze utilizzate. Le variazioni individuate in output sono state appositamente documentate. \\
 Per poter raggiungere questo obiettivo, l'analisi è stata divisa in due parti:\\ 
 \begin{itemize}
 \item Nella prima parte è eseguita un'analisi verticale fra la sequenza di riferimento (la prima sequenza raccolta presente a database, Wuhan - Dicembre 2019) e le sequenze prese rispettivamente da Italia, New York, Spagna e Russia. Le sequenze dei singoli paesi sono state scelte seguendo un ordine temporale consecutivo, in modo tale da individuare eventuali modifiche avvenute nel tempo.
@@ -140,7 +140,7 @@ Cina & NC\_045512 & 2019-12 \\ \hline
 \caption{Sequenza di reference presa dal sito  \textcolor{black}{\href{https://www.ncbi.nlm.nih.gov/genbank/sars-cov-2-seqs/}{NCI}}}
 \end{table}
 
-Le sequenze analizzate provengono dal database GISAID. Per ogni paese abbiamo preso solo sequenze complete (con più di 29000 basi) e su pazienti tutti di sesso maschile, genere che è risultato più colpito, per avere dati più omogenei. Abbiamo cercato inoltre di seguire una linea temporale che partisse dalla prima sequenza presente nel database fino all'ultima, con in mezzo sequenze che si distanziavano tra di loro di una settimana.
+Le sequenze analizzate provengono dal database GISAID. Per ogni paese sono studiate solo sequenze complete (con più di 29000 basi) provenienti da pazienti di sesso maschile, genere che è risultato più colpito, per avere dati più omogenei. Queste coprono una linea temporale che parte dalla prima sequenza presente nel database fino all'ultima, ciascuna a distanza di una settima dall'altra.
 
 \begin{table}[H]
 \resizebox{\textwidth}{!}{%
@@ -184,25 +184,25 @@ Spagna & hCoV-19/Spain/Barcelona\_VH1407/2020 & EPI\_ISL\_444975 & 10/04/2020 \\
 \end{table}
 
 \section{Tool}
-Tra i tool messi a disposizione da EMBL-EBI abbiamo scelto di utilizzare Clustal Omega, Kalign e MAFFT.
-Abbiamo scelto Clustal Omega poichè sfrutta il modello probabilistico Profilo HMM (Hidden Markov Model), il quale è in grado di incapsulare i cambiamenti evolutivi che si sono verificati in una serie di sequenze correlate ed inoltre questo tool risultava ottimale per sequenze molto lunghe.\\
-Kalign è stato scelto poichè è un tool che si concentra sulle regioni locali e lavora molto velocemente, motivo per il quale ci sembrava particolarmente adatto per le analisi sui singoli stati che volevamo svolgere.\\
-Infine abbiamo scelto MAFFT poichè attraverso l'algoritmo della trasformata di Fourier veloce ottimizza gli allineamenti in base alle proprietà fisiche, utilizzando sia un allineamento progressivo che iterativo. Anche esso risulta essere ottimale per sequenze di lunghezza medio-grandi.\\
+Tra i tool messi a disposizione da EMBL-EBI sono stati utilizzati Clustal Omega, Kalign e MAFFT.
+\textbf{\textit{Clustal Omega}} sfrutta il modello probabilistico Profilo HMM (Hidden Markov Model), il quale è in grado di incapsulare i cambiamenti evolutivi che si sono verificati in una serie di sequenze correlate. Scelto in quanto ottimale per sequenze molto lunghe e per la provata efficenza in molteplici scenari.\\
+\textbf{\textit{Kalign}} è un tool che si concentra sulle regioni locali e lavora molto velocemente, scelto in quanto particolarmente adatto per le analisi svolte sui singoli stati.\\
+Infine \textbf{\textit{MAFFT}} è stato scelto poichè attraverso l'algoritmo della trasformata di Fourier veloce ottimizza gli allineamenti in base alle proprietà fisiche, utilizzando sia un allineamento progressivo che iterativo. Anch'esso risulta ottimale per sequenze di lunghezza medio-grandi.\\
 
 Per raccogliere le differenze fra le sequenze, ed eventuali differenze nei risultati ottenuti dai tre tool, è stato scritto uno script Python, sfruttando la libreria Biopython per poter gestire al meglio i file di allineamento. Il codice è consultabile presso la \textcolor{blue}{\href{https://gitlab.com/i.bettini/bioinformatic}{repository GitLab}}.
 
 \section{Analisi verticale}
-Nell'analisi verticale abbiamo deciso di studiare singolarmente ogni stato, prendendo le sequenze scelte e confrontandole con quella di riferimento, effettuando l'allineamento con i 3 tool scelti. I risultati ottenuti sono visibili nell'appendice A della relazione.
+Nell'analisi verticale viene studiato singolarmente ogni paese, prendendo le sequenze scelte e confrontandole con quella di riferimento, effettuando l'allineamento con i 3 tool scelti. I risultati ottenuti sono visibili nell'appendice A della relazione.
 
 \subsection{New York (USA)}
-Nell'eseguire l'allineamento delle sequenze di New York con i tre tool abbiamo ottenuto, nonostante i diversi approcci, output identici.\\ 
+L'allineamento delle sequenze di New York con i tre tool produce, nonostante i diversi approcci, output identici.\\ 
 %tranne che nella seq 1 ci son modifiche in pos 0 MA tutte con N o -, la mettiamo?
 In tutte le sequenze, esclusa la numero 3, sono presenti le stesse variazioni nelle posizioni 240, 3036, 1058, 14047, 23402 e 25562.
 La terza sequenza, infatti, è l'unica che non presenta mutazioni rilevate anche nelle altre sequenze studiate.
 
 \subsection{Russia}
 Anche nel caso delle sequenze della Russia, come per il caso di New York, gli output ottenuti dai tre tool sono uguali.\\
-Sono presenti delle variazioni rispetto al reference comuni fra più sequenze:
+Sono presenti delle variazioni comuni fra più sequenze rispetto al reference:
 \begin{itemize}
 \item Nelle sequenze 5 e 6 in posizione 26749
 \item Nelle sequenze 2, 4, 5, 6 in posizione 28880
@@ -212,8 +212,8 @@ Sono presenti delle variazioni rispetto al reference comuni fra più sequenze:
 %in pos 0 cambiamento con solo N in seq 5 e 6, lo mettiamo?
 
 \subsection{Italia}
-L'esecuzione dei tre tool con le sequenze dell' Italia ha prodotti output con delle leggere differenze. Solo con Kalign viene evidenziata una mutazione nella posizione 29879 delle sequenze 3, 4 e 6, mentre solo con Clustal Omega e MAFFT sono evidenziati dei cambiamenti nelle posizioni 29890, 29898, 29899 rispettivamente nelle sequenze 3, 4 e 6.\\ %sono variazioni A con -, le scriviamo? 
-Con tutti e tre i tool vengono evidenziate le seguenti variazioni comuni:
+L'esecuzione dei tre tool con le sequenze dell'Italia ha prodotto output con delle leggere differenze. Solo Kalign evidenzia una mutazione nella posizione 29879 delle sequenze 3, 4 e 6, mentre Clustal Omega e MAFFT mostrano dei cambiamenti nelle posizioni 29890, 29898, 29899 rispettivamente nelle sequenze 3, 4 e 6.\\ %sono variazioni A con -, le scriviamo? 
+Tutti i tool evidenziano le seguenti variazioni comuni:
 \begin{itemize}
 \item In tutte le sequenze, esclusa la 1, in posizione 241, 3037, 14408, 23403
 \item Nelle sequenze 4, 7, 8 in posizione 2881 
@@ -223,7 +223,7 @@ Con tutti e tre i tool vengono evidenziate le seguenti variazioni comuni:
 
 
 \subsection{Spagna}
-Analizzando le sequenze della Spagna abbiamo ottenuto un risultato diverso dal tool Clustal Omega rispetto a quelli ottenuti con Kalign e MAFFT, che sono identici. \\
+L'analisi delle sequenze della Spagna denota un risultato diverso per Clustal Omega rispetto a Kalign e MAFFT, che al contrario producono risultati identici. \\
 In particolare, con Clustal Omega sono individuate delle mutazioni nelle posizioni  5175, 6353, 28882, 29687 e 29733 della sequenza 6 e nelle posizioni 8738, 18743 e 22892 della sequenza 7.
 Con Kalign e MAFFT invece si hanno delle variazioni nelle posizioni 8738, 18743 e 22892 della sesta sequenza e nelle posizioni 5175, 6353, 28882, 29687 e 29733 della settima.\\
 
@@ -239,7 +239,7 @@ Tutti i tool hanno però evidenziato questi cambiamenti comuni fra più sequenze
 
 \section{Analisi orizzontale}
 
-Nell'analisi orizzontale sono state selezionate le ultime sequenze considerate nelle analisi verticali dei singoli paesi, quindi le più recenti al momento della scelta, e sono state allineate sempre con la sequenza di riferimento. Anche questi risultati sono consultabili nell'appendice B della relazione.\\
+Nell'analisi orizzontale sono state selezionate le ultime sequenze considerate nelle analisi verticali dei singoli paesi, quindi le più recenti al momento della scelta, e sono state allineate sempre con la sequenza di riferimento. I risultati sono consultabili nell'appendice B della relazione.\\
 I tre tool hanno fornito risultati identici e sono presenti delle variazioni comuni fra sequenze di paesi differenti, in particolare:
 \begin{itemize}
 \item Nella sequenza russa e in quella spagnola si ha la stessa mutazione in posizione 20267
@@ -250,8 +250,8 @@ I tre tool hanno fornito risultati identici e sono presenti delle variazioni com
 \newpage
 
 \section{Appendice A - risultati confronto verticale}
-Di seguito sono riportati le variazioni delle sequenze selezionate divise per paese e a loro volta suddivise in base al tool utilizzato. In ogni tabella viene indicato l'ID della sequenza, la posizione nella quale avviene una variazione, la lunghezza di tale modifica,  la base (o la sequenza di basi nel caso si tratti di un cambiamento su più posizioni contigue) presente nella sequenza di riferimento e quella presente nella sequenza analizzata. \\
-È importante tener conto che in alcune sequenze sono presenti i caratteri N, W, K, S, Y, M. Se si ha una N vuol dire che non è stato possibile individuare la base presente, W (weak) che si ha una base debole (A o T), S (strong) che si ha una base forte (C o G), Y che si ha una pimiridina (C o T), M (amino) che si ha una base con gruppo amminico e K (keto) che si ha una base con gruppo chetonico (G o T) ma in tutti questi casi non si è stati in grado di determinare quale fosse la precisa base presente. \\
+Di seguito sono riportate le variazioni delle sequenze selezionate divise per paese e per tool utilizzato. In ogni tabella viene indicato l'ID della sequenza, la posizione nella quale avviene una variazione, la lunghezza di tale modifica, la base (o la sequenza di basi nel caso si tratti di un cambiamento su più posizioni contigue) presente nella sequenza di riferimento e quella presente nella sequenza analizzata. \\
+È importante tener conto che in alcune sequenze sono presenti i caratteri {N, W, K, S, Y, M}. \textit{N} identifica che non è stato possibile individuare la base presente, \textit{W (weak)} una base debole (A o T), \textit{S (strong)} una base forte (C o G), \textit{Y} una pimiridina (C o T), \textit{M (amino)} una base con gruppo amminico e \textit{K (keto)} una base con gruppo chetonico (G o T). In tutti questi casi non si è stati in grado di determinare quale fosse la precisa base presente. \\
 
 
 \subsection{New York (USA)}
