@@ -2,6 +2,7 @@ import Bio
 from Bio import AlignIO
 import csv
 import glob
+import collections
 
 s = ""
 r = ""
@@ -82,9 +83,8 @@ for f in glob.glob('Results/MAFFT/*.fasta'):
                     r = ""
                     l = 0
 
-
+"""
 print(len(k), len(c), len(m))
-
 for i in range(len(k)):
     if (k[i] != c[i]):
         print("Kalign: ", k[i], "Clustal Omega: ", c[i], "\n", file = open("tool-diff.txt", "a"))
@@ -92,3 +92,34 @@ for i in range(len(k)):
         print("MAFFT: ", k[i], "Clustal Omega: ", c[i], "\n", file = open("tool-diff.txt", "a"))
     if (m[i] != k[i]):
         print("MAFFT: ", k[i], "Kalign: ", c[i], "\n", file = open("tool-diff.txt", "a"))                
+"""
+
+# k, c e m sono list
+# print(k[0][0]) id sequenza k[0][0][2:] senza 0_
+# print(k[0][1]) pos
+# print(k[0][2]) length
+# print(k[0][3]) ref
+# print(k[0][4]) mut
+
+"""
+non funziona 
+
+k_clean = []
+it = []
+for i in range(len(k)):
+    if ("Italy" in k[i][0]):
+        it = k[0][1], k[0][2], k[0][3], k[0][4]
+        k_clean.append(it)
+print(k_clean)
+print([item for item, count in collections.Counter(k_clean).items() if count > 1], file = open("kalign-duplicates.txt", "a"))
+
+
+
+a = [1,2,3,2,1,5,6,5,5,5]
+
+import collections
+print([item for item, count in collections.Counter(a).items() if count > 1])
+
+## [1, 2, 5]
+"""
+     
