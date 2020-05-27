@@ -2,8 +2,14 @@ import Bio
 from Bio import AlignIO
 import csv
 import glob
-import collections
 
+# check differences in tool output 
+# check similarities in mutations (for the same country)
+# check similarities in horizontal alignment
+
+# create list instead of []
+
+# vertical 
 s = ""
 r = ""
 l = 0
@@ -29,7 +35,7 @@ for f in glob.glob('Results/Kalign/*.fasta'):
                     k.append(element)
                     s = ""
                     r = ""
-                    l = 0
+                    l = 0     
 
 s = ""
 r = ""
@@ -84,127 +90,14 @@ for f in glob.glob('Results/MAFFT/*.fasta'):
                     l = 0
 
 
-print(len(k), len(c), len(m))
-for i in range(len(k)):
-    if (k[i] != c[i]):
-        print("Kalign: ", k[i], "Clustal Omega: ", c[i], "\n", file = open("tool-diff.txt", "a"))
-    if (m[i] != c[i]):
-        print("MAFFT: ", k[i], "Clustal Omega: ", c[i], "\n", file = open("tool-diff.txt", "a"))
-    if (m[i] != k[i]):
-        print("MAFFT: ", k[i], "Kalign: ", c[i], "\n", file = open("tool-diff.txt", "a"))                
+tool_d = []
+
+if len(c) == len(k) == len(m):
+    for i in range(len(k)):
+        if not(k[i] == c[i] == m[i]): # elemento della lista non uguale
+            d = "K: ", k[i], "C: ", c[i], "M: ", m[i]
+            tool_d.append(d)
+
+print(tool_d, file = open("tool-diff.txt", "w")) # non sono sicura funzioni 
 
 
-# k, c e m sono list
-# print(k[0][0]) id sequenza k[0][0][2:] senza 0_
-# print(k[0][1]) pos
-# print(k[0][2]) length
-# print(k[0][3]) ref
-# print(k[0][4]) mut
-
-
-
-k_clean = []
-
-for i in range(len(k)):
-    if ("Italy" in k[i][0]):
-        it = k[i][1], k[i][2], k[i][3], k[i][4]
-        k_clean.append(it)
-
-print([item for item, count in collections.Counter(k_clean).items() if count > 1], file = open("kalign-duplicates.txt", "a"))
-
-for i in range(len(k)):
-    if k[]
-
-"""
-a = [1,2,3,2,1,5,6,5,5,5]
-
-import collections
-print([item for item, count in collections.Counter(a).items() if count > 1])
-
-## [1, 2, 5]
-"""
-     
-# horizontal alignment 
-"""
-s = ""
-r = ""
-l = 0
-hk = []
-haln = list(AlignIO.read("Results/Horizontal/aln-kalign-horizontal.fasta", "fasta"))
-for i in range(1, len(haln)):
-        for j in range(len(haln[i].seq)):
-            if haln[i].seq[j].upper() != haln[0].seq[j].upper():
-                s += haln[i].seq[j]
-                r += haln[0].seq[j]
-                l += 1
-                if (j == len(haln[i].seq)-1):
-                    element =  [haln[i].id.split('/')[0], j - l, l, r, s]
-                    hk.append(element)
-                    s = ""
-                    r = ""
-                    l = 0
-            else:
-                if s != "" and r != "":
-                    element =  [haln[i].id.split('/')[0], j - l, l, r, s]
-                    hk.append(element)
-                    s = ""
-                    r = ""
-                    l = 0
-
-s = ""
-r = ""
-l = 0
-hc = []
-haln = list(AlignIO.read("Results/Horizontal/aln-clustal-horizontal.fasta", "fasta"))
-for i in range(1, len(haln)):
-        for j in range(len(haln[i].seq)):
-            if haln[i].seq[j].upper() != haln[0].seq[j].upper():
-                s += haln[i].seq[j]
-                r += haln[0].seq[j]
-                l += 1
-                if (j == len(haln[i].seq)-1):
-                    element =  [haln[i].id.split('/')[0], j - l, l, r, s]
-                    hc.append(element)
-                    s = ""
-                    r = ""
-                    l = 0
-            else:
-                if s != "" and r != "":
-                    element =  [haln[i].id.split('/')[0], j - l, l, r, s]
-                    hc.append(element)
-                    s = ""
-                    r = ""
-                    l = 0
-
-
-s = ""
-r = ""
-l = 0
-hm = []
-haln = list(AlignIO.read("Results/Horizontal/aln-MAFFT-horizontal.fasta", "fasta"))
-for i in range(1, len(haln)):
-        for j in range(len(haln[i].seq)):
-            if haln[i].seq[j].upper() != haln[0].seq[j].upper():
-                s += haln[i].seq[j]
-                r += haln[0].seq[j]
-                l += 1
-                if (j == len(haln[i].seq)-1):
-                    element =  [haln[i].id.split('/')[0], j - l, l, r.upper(), s.upper()]
-                    hm.append(element)
-                    s = ""
-                    r = ""
-                    l = 0
-            else:
-                if s != "" and r != "":
-                    element =  [haln[i].id.split('/')[0], j - l, l, r.upper(), s.upper()]
-                    hm.append(element)
-                    s = ""
-                    r = ""
-                    l = 0
-
-print(len(hk), len(hc), len(hm))
-
-for i in len(hk):
-    ek = hk[i][1], hk[i][1]
-
-"""

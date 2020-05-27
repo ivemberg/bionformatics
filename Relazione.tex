@@ -195,45 +195,63 @@ Per raccogliere le differenze fra le sequenze, ed eventuali differenze nei risul
 Nell'analisi verticale abbiamo deciso di studiare singolarmente ogni stato, prendendo le sequenze scelte e confrontandole con quella di riferimento, effettuando l'allineamento con i 3 tool scelti. I risultati ottenuti sono visibili nell'appendice A della relazione.
 
 \subsection{New York (USA)}
-Nell'eseguire i tre tool non abbiamo ottenuto risultati differenti nonostante i tre approcci differenti di calcolo.\\ 
-
-Tutte le sequenze, tranne la numero 3, presentano la stessa variazione di carattere nelle posizioni 240, 1058, 14047, 23402 e 25562.\\
-La sequenza numero 3 è l'unica che presenta mutazioni differenti rispetto le altre.
+Nell'eseguire l'allineamento delle sequenze di New York con i tre tool abbiamo ottenuto, nonostante i diversi approcci, output identici.\\ 
+%tranne che nella seq 1 ci son modifiche in pos 0 MA tutte con N o -, la mettiamo?
+In tutte le sequenze, esclusa la numero 3, sono presenti le stesse variazioni nelle posizioni 240, 3036, 1058, 14047, 23402 e 25562.
+La terza sequenza, infatti, è l'unica che non presenta mutazioni rilevate anche nelle altre sequenze studiate.
 
 \subsection{Russia}
-La Russia, come New York, nonostante i diversi metodi di calcolo non presenta differenze negli output dei tre tool.\\
-
-Tutte le sequenze, a parte la numero cinque, presentano una variazione nella posizione 240.\\
-Alle posizioni 3036 e 14407 tutte le sequenze presentano dei cambiamenti.\\
+Anche nel caso delle sequenze della Russia, come per il caso di New York, gli output ottenuti dai tre tool sono uguali.\\
+Sono presenti delle variazioni rispetto al reference comuni fra più sequenze:
+\begin{itemize}
+\item Nelle sequenze 5 e 6 in posizione 26749
+\item Nelle sequenze 2, 4, 5, 6 in posizione 28880
+\item Nelle sequenze 1, 2, 3, 4, 6, 7 in posizione 240
+\item In tutte le sequenze nelle posizioni 3036, 14407, 23402
+\end{itemize}
+%in pos 0 cambiamento con solo N in seq 5 e 6, lo mettiamo?
 
 \subsection{Italia}
-L'esecuzione dei tre tool con le sequenze dell' Italia ha prodotti output praticamete identici trane per alcune parti.\\
+L'esecuzione dei tre tool con le sequenze dell' Italia ha prodotti output con delle leggere differenze. Solo con Kalign viene evidenziata una mutazione nella posizione 29879 delle sequenze 3, 4 e 6, mentre solo con Clustal Omega e MAFFT sono evidenziati dei cambiamenti nelle posizioni 29890, 29898, 29899 rispettivamente nelle sequenze 3, 4 e 6.\\ %sono variazioni A con -, le scriviamo? 
+Con tutti e tre i tool vengono evidenziate le seguenti variazioni comuni:
+\begin{itemize}
+\item In tutte le sequenze, esclusa la 1, in posizione 241, 3037, 14408, 23403
+\item Nelle sequenze 4, 7, 8 in posizione 2881 
+\end{itemize}
 
-Tutte le sequenze a parte la numero uno variano il carattere nella posizione 241, stesso discorso accade alla posizione 14408\\
-In tutte le sequenze avviene un cambio di carattere nella stessa posizione, la 23403.\\
-Clustal e e Mafft presentano sequenze con variazioni di carattere nelle posizioni 29890 della sequenza 3, 29898 della sequenza 4 e 29899 della sequenza 6.\\
-Per Kalign invece si hanno dei cambi di carattere nella posizone 29879 delle sequenze 3, 4 e 6.\\
+% 6866 e 6869 in 7 e 8 da A diventa W, che potrebbe essere A o T, scriviamo?
+
 
 \subsection{Spagna}
-Nell'eseguire l'analisi con i tre differenti tool abbiamo ottenuto dei risultati identici tranne nelle ultime due sequenze della Spagna.\\
+Analizzando le sequenze della Spagna abbiamo ottenuto un risultato diverso dal tool Clustal Omega rispetto a quelli ottenuti con Kalign e MAFFT, che sono identici. \\
+In particolare, con Clustal Omega sono individuate delle mutazioni nelle posizioni  5175, 6353, 28882, 29687 e 29733 della sequenza 6 e nelle posizioni 8738, 18743 e 22892 della sequenza 7.
+Con Kalign e MAFFT invece si hanno delle variazioni nelle posizioni 8738, 18743 e 22892 della sesta sequenza e nelle posizioni 5175, 6353, 28882, 29687 e 29733 della settima.\\
 
-Mentre Kalign e Mafft producono lo stesso output qualcosa cambia con Clustal.\\
-Nell'ouput di Clustal, nella sesta sequenza spagnola, troviamo dei cambi di carattere nell posizioni 5175, 6353, 28882, 29687 e 29733. Per quanto riguarda la sequenza sette, invece, si hanno dei cambi di carattere nelle posizioni 8738, 18743 e 22892.\\
-Con Kalign e Mafft, nella sequena sei, abbiamo dei cambi di caratteri nelle posizioni 8738, 18743 e 22892. Nella sequenza sette i cambi di carattere sono nelle posizioni 5175, 6353, 28882, 29687 e 29733.\\
-Inoltre abiamo notato che le prime tre sequenze presentanto tutte una variazione alla posizione 8781.\\
-Nel complesso, quindi, possiamo affermare che le sequenze spagnole sono quelle che sono risultate più differenti fra di loro, avendo tra una sequenza e un'altra cambiamenti in molte posizioni diverse.\\ 
-\newpage
+Tutti i tool hanno però evidenziato questi cambiamenti comuni fra più sequenze:
+
+\begin{itemize}
+\item Nelle sequenze 2 e 3 nelle posizioni 9476, 14804, 25978, 28143, 28656, 28862
+\item Nelle sequenze 1, 2 e 3 in posizione 8781
+\item Nelle sequenze 4, 7 e 6 in posizione 20267
+\item Nelle sequenze 1, 4, 5, 6, 7 nelle posizioni 240, 3036, 14407, 23402
+\end{itemize}
+
 
 \section{Analisi orizzontale}
-Nell'analisi verticale abbiamo, invece, deciso di confrontare le ultime sequenze che erano disponibili con quella di riferimento. Anche questi risultati sono consultabili nell'appendice B della relazione\\
-Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le sequenze hanno subito gli stessi cambiamenti nonostante si trovassere in aree giografiche diverse. Questo risultato ottenuto in base alle sequenze da noi scelte, sottolinea come nonostante il virus sia molto mutevole, questo potrebbero non dipendere dal clima o il luogo in cui si trova.
+
+Nell'analisi orizzontale sono state selezionate le ultime sequenze considerate nelle analisi verticali dei singoli paesi, quindi le più recenti al momento della scelta, e sono state allineate sempre con la sequenza di riferimento. Anche questi risultati sono consultabili nell'appendice B della relazione.\\
+I tre tool hanno fornito risultati identici e sono presenti delle variazioni comuni fra sequenze di paesi differenti, in particolare:
+\begin{itemize}
+\item Nella sequenza russa e in quella spagnola si ha la stessa mutazione in posizione 20267
+\item In tutte le sequenze si ha la stessa mutazione nelle posizioni 240, 3036, 14407 e 23402
+\end{itemize}
 
 
 \newpage
 
 \section{Appendice A - risultati confronto verticale}
 Di seguito sono riportati le variazioni delle sequenze selezionate divise per paese e a loro volta suddivise in base al tool utilizzato. In ogni tabella viene indicato l'ID della sequenza, la posizione nella quale avviene una variazione, la lunghezza di tale modifica,  la base (o la sequenza di basi nel caso si tratti di un cambiamento su più posizioni contigue) presente nella sequenza di riferimento e quella presente nella sequenza analizzata. \\
-È importante tener conto che in alcune sequenze sono presenti i caratteri N, W, K, S, Y, M. Se si ha una N vuol dire non è stato possibile individuare la base presente, W (weak) che si ha una base debole (A o T), S (strong) che si ha una base forte (C o G), Y che si ha una pimiridina (C o T), M (amino) che si ha una base con gruppo amminico e K (keto) che si ha una base con gruppo chetonico (G o T) ma in tutti questi casi non si è stati in grado di determinare quale fosse la precisa base presente.
+È importante tener conto che in alcune sequenze sono presenti i caratteri N, W, K, S, Y, M. Se si ha una N vuol dire non è stato possibile individuare la base presente, W (weak) che si ha una base debole (A o T), S (strong) che si ha una base forte (C o G), Y che si ha una pimiridina (C o T), M (amino) che si ha una base con gruppo amminico e K (keto) che si ha una base con gruppo chetonico (G o T) ma in tutti questi casi non si è stati in grado di determinare quale fosse la precisa base presente. \\
 
 
 \subsection{New York (USA)}
