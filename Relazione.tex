@@ -105,7 +105,7 @@ Al 25 maggio 2020, ci sono stati 5.428.605 casi confermati totali di infezione d
 \newpage
 
 \section{Obiettivo del progetto}
-L'obiettivo del nostro progetto è eseguire un allineamento multiplo di sequenze (compresa la reference che utlizziamo come riferimento per i confronti) con dei tool a nostra, e produrre in output le variazioni individuate documentandole appositamente. \\
+L'obiettivo del nostro progetto è eseguire un allineamento multiplo di sequenze (compresa la reference che utlizziamo come riferimento per i confronti) con dei tool a nostra scelta, producendo in output le variazioni individuate documentandole appositamente. \\
 Per poter raggiungere questo obiettivo, abbiamo deciso di dividere la nostra analisi in due parti:\\ 
 \begin{itemize}
 \item Nella prima parte eseguiamo un'analisi verticale fra la sequenza di riferimento (ossia la prima sequenza che presente nella banca dati raccolta a Wuhan) e delle sequenze prese rispettivamente da Italia, New York, Spagna e Russia. Le sequenze dei singoli paesi sono state prese seguendo un ordine temporale crescente, in modo tale da poter denotare attraverso il confronto delle mutazioni nel tempo.
@@ -125,6 +125,19 @@ Abbiamo deciso di selezionare alcuni dei paesi con il più alto numero di casi d
 \textbf{Spagna}      & 235.823   \\ \hline
 \end{tabular}
 \caption{Casi di COVID19 al 25 Maggio 2020}
+\end{table}
+La sequenza di reference è stata presa dal sito NCI, ed è la prima sequenza registrata nel database raccolta a Wuhan nel dicembre del 2019.
+
+\begin{table}[H]
+\centering
+\resizebox{.5\textwidth}{!}{%
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{PAESE}& \textbf{ACCESSION ID} & \textbf{COLLECTION DATE} \\ \hline
+China & NC\_045512 & 2019-12 \\ \hline
+\end{tabular}%
+}
+\caption{Sequenza di reference presa dal sito  \textcolor{black}{\href{https://www.ncbi.nlm.nih.gov/genbank/sars-cov-2-seqs/}{NCI}}}
 \end{table}
 
 Le sequenze analizzate sono state prese dal sito GISAID. Per ogni paese abbiamo preso solo sequenze complete (con più di 29000 basi) e su pazienti tutti di sesso maschile. Abbiamo cercato inoltre di seguire una linea temporale che partisse dalla prima sequenza presente nel database fino all'ultima, con in mezzo sequenze che si distanziavano tra di loro di una settimana.
@@ -167,7 +180,7 @@ Spagna & hCoV-19/Spain/Barcelona\_VH7773/2020 & EPI\_ISL\_444976 & 06/04/2020 \\
 Spagna & hCoV-19/Spain/Barcelona\_VH1407/2020 & EPI\_ISL\_444975 & 10/04/2020 \\ \hline
 \end{tabular}%
 }
-\caption{Sequenze selezionate dal sito GISAID}
+\caption{Sequenze selezionate dal sito  \textcolor{black}{\href{https://www.gisaid.org/}{GSAID}}}
 \end{table}
 
 \section{Tool}
@@ -195,13 +208,16 @@ Alle posizioni 3036 e 14407 tutte le sequenze presentano dei cambiamenti.\\
 
 \subsection{Italia}
 L'esecuzione dei tre tool con le sequenze dell' Italia ha prodotti output praticamete identici trane per alcune parti.\\
+
 Tutte le sequenze a parte la numero uno variano il carattere nella posizione 241, stesso discorso accade alla posizione 14408\\
 In tutte le sequenze avviene un cambio di carattere nella stessa posizione, la 23403.\\
 Clustal e e Mafft presentano sequenze con variazioni di carattere nelle posizioni 29890 della sequenza 3, 29898 della sequenza 4 e 29899 della sequenza 6.\\
 Per Kalign invece si hanno dei cambi di carattere nella posizone 29879 delle sequenze 3, 4 e 6.\\
 
 \subsection{Spagna}
-Nell'eseguire l'analisi con i tre differenti tool abbiamo ottenuto dei risultati identici tranne nelle ultime due sequenze della Spagna. Mentre Kalign e Mafft producono lo stesso output qualcosa cambia con Clustal.\\
+Nell'eseguire l'analisi con i tre differenti tool abbiamo ottenuto dei risultati identici tranne nelle ultime due sequenze della Spagna.\\
+
+Mentre Kalign e Mafft producono lo stesso output qualcosa cambia con Clustal.\\
 Nell'ouput di Clustal, nella sesta sequenza spagnola, troviamo dei cambi di carattere nell posizioni 5175, 6353, 28882, 29687 e 29733. Per quanto riguarda la sequenza sette, invece, si hanno dei cambi di carattere nelle posizioni 8738, 18743 e 22892.\\
 Con Kalign e Mafft, nella sequena sei, abbiamo dei cambi di caratteri nelle posizioni 8738, 18743 e 22892. Nella sequenza sette i cambi di carattere sono nelle posizioni 5175, 6353, 28882, 29687 e 29733.\\
 Inoltre abiamo notato che le prime tre sequenze presentanto tutte una variazione alla posizione 8781.\\
