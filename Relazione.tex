@@ -1,7 +1,8 @@
 \documentclass[a4paper,10pt]{article}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
 \usepackage{float}
 \usepackage{graphicx}
+\usepackage{xcolor}
 \usepackage{listings}
 \usepackage[utf8]{inputenc}
 \usepackage{changepage}
@@ -9,7 +10,11 @@
 \usepackage{geometry}
 \usepackage{booktabs}
 \usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{ctable}
+\usepackage{changepage}
 \renewcommand*\contentsname{Indice}
+\renewcommand*\tablename{Tabella}
 
 \makeatletter
 \patchcmd\l@section{%
@@ -78,7 +83,7 @@
 \newpage
 
 \section{SARS-CoV-2}
-I coronavirus sono una famiglia di virus RNA a filamento positivo con aspetto simile a una corona se esaminati al microscopio elettronico (da cui il nome) e noti per causare malattie che vanno dal comune raffreddore a patologie più gravi come la Sindrome respiratoria mediorientale (MERS) o la Sindrome respiratoria acuta grave (SARS). \\
+I coronavirus sono una famiglia di virus RNA a filamento positivo, motivo per il quale viene inserito direttamente ai ribosomi per la sintesi proteica delle strutture del virus stesso e l'attività di demolizione della cellula ospite è più immediata. Hanno un aspetto simile a una corona se esaminati al microscopio elettronico (da cui il nome) e noti per causare malattie che vanno dal comune raffreddore a patologie più gravi come la Sindrome respiratoria mediorientale (MERS) o la Sindrome respiratoria acuta grave (SARS). \\
 Nel Dicembre 2019 a Wuhan, in Cina, è stato isolato un nuovo ceppo di coronavirus, denominato SARS-CoV-2 (\textit{Severe Acute Respiratory Syndrome - Coronavirus - 2}), la cui sequenza virale ha un'omologia del 76\% con il virus che causò la pandemia della Sars nel 2002.La malattia respiratoria causata da questo nuovo coronavirus è stata chiamata COVID-19.
 
 \begin{figure}[H]
@@ -100,11 +105,11 @@ Al 25 maggio 2020, ci sono stati 5.428.605 casi confermati totali di infezione d
 \newpage
 
 \section{Obiettivo del progetto}
-L'obiettivo del nostro progetto è riuscire ad allineare le sequenze scaricate (compresa quella che utlizziamo come riferimento per i confronti) con i tool scelti, e produrre in output le variazioni delle sequenze scaricate rispetto alla sequenza di riferimento e creare un'apposita documentazione. \\
+L'obiettivo del nostro progetto è eseguire un allineamento multiplo di sequenze (compresa la reference che utlizziamo come riferimento per i confronti) con dei tool a nostra, e produrre in output le variazioni individuate documentandole appositamente. \\
 Per poter raggiungere questo obiettivo, abbiamo deciso di dividere la nostra analisi in due parti:\\ 
 \begin{itemize}
-\item nella prima parte eseguiamo un'analisi verticale fra la sequenza di riferimento (ossia la prima sequenza che presente nella banca dati raccolta a Wuhan) e delle sequenze prese rispettivamente da Italia, New York, Spagna e Russia. Le sequenze dei singoli paesi sono state prese seguendo un ordine temporale crescente, in modo tale da poter denotare attraverso il confronto delle mutazioni nel tempo.
-\item nella seconda parte, invece, effettuiamo un confronto orizzontale tra le ultime sequenze raccolte dei vari paesi scelti, in modo da poter individuare la presenza di eventuali mutazioni nello stato corrente del virus, sempre tenedo come riferimanto la prima sequenze presente nella banca dati. 
+\item Nella prima parte eseguiamo un'analisi verticale fra la sequenza di riferimento (ossia la prima sequenza che presente nella banca dati raccolta a Wuhan) e delle sequenze prese rispettivamente da Italia, New York, Spagna e Russia. Le sequenze dei singoli paesi sono state prese seguendo un ordine temporale crescente, in modo tale da poter denotare attraverso il confronto delle mutazioni nel tempo.
+\item Nella seconda parte, invece, effettuiamo un confronto orizzontale tra le ultime sequenze raccolte dei vari paesi scelti, in modo da poter individuare la presenza di eventuali mutazioni nello stato corrente del virus, sempre tenedo come riferimanto la prima sequenze presente nella banca dati. 
 \end{itemize}
 
 \section{Sequenze}
@@ -114,34 +119,79 @@ Abbiamo deciso di selezionare alcuni dei paesi con il più alto numero di casi d
 \centering
 \begin{tabular}{|l|l|}
 \hline
-\textbf{Stati Uniti} & 1,678,477 \\ \hline
-\textbf{Russia}      & 353,427   \\ \hline
-\textbf{Spagna}      & 235,823   \\ \hline
-\textbf{Italia}      & 229,858   \\ \hline
+\textbf{Stati Uniti} & 1.678.477 \\ \hline
+\textbf{Russia}      & 353.427   \\ \hline
+\textbf{Italia}      & 229.858   \\ \hline
+\textbf{Spagna}      & 235.823   \\ \hline
 \end{tabular}
+\caption{Casi di COVID19 al 25 Maggio 2020}
 \end{table}
 
 Le sequenze analizzate sono state prese dal sito GISAID. Per ogni paese abbiamo preso solo sequenze complete (con più di 29000 basi) e su pazienti tutti di sesso maschile. Abbiamo cercato inoltre di seguire una linea temporale che partisse dalla prima sequenza presente nel database fino all'ultima, con in mezzo sequenze che si distanziavano tra di loro di una settimana.
 
+\begin{table}[H]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|l|c|c|}
+\hline
+\textbf{PAESE} & \textbf{SEQUENZA} & \textbf{ACCESSION ID} & \textbf{COLLECTION DATE} \\ \hline
+USA & hCoV-19/USA/NY\_2929/2020 & EPI\_ISL\_420793 & 02/03/2020 \\ \hline
+USA & hCoV-19/USA/NY-Wadsworth-11717-01/2020 & EPI\_ISL\_426291 & 08/03/2020 \\ \hline
+USA & hCoV-19/USA/NY-PV08148/2020 & EPI\_ISL\_421365 & 14/03/2020 \\ \hline
+USA & hCoV-19/USA/NY-PV09019/2020 & EPI\_ISL\_421594 & 21/03/2020 \\ \hline
+USA & hCoV-19/USA/NY-Wadsworth-32104-01/2020 & EPI\_ISL\_426309 & 28/03/2020 \\ \hline
+USA & hCoV-19/USA/NY-NYUMC253/2020 & EPI\_ISL\_428767 & 05/04/2020 \\ \hline
+USA & hCoV-19/USA/NY-NYUMC390/2020 & EPI\_ISL\_430417 & 13/04/2020 \\ \hline
+USA & hCoV-19/USA/NY-NYUMC455/2020 & EPI\_ISL\_435521 & 20/04/2020 \\ \hline
+USA & hCoV-19/USA/NY-NYUMC482/2020 & EPI\_ISL\_435547 & 24/04/2020 \\ \hline
+Russia & hCoV-19/Russia/Moscow-62505/2020 & EPI\_ISL\_428860 & 11/03/2020 \\ \hline
+Russia & hCoV-19/Russia/Moscow\_PMVL-1/2020 & EPI\_ISL\_421275 & 18/03/2020 \\ \hline
+Russia & hCoV-19/Russia/StPetersburg-RII4326S/2020 & EPI\_ISL\_427337 & 25/03/2020 \\ \hline
+Russia & hCoV-19/Russia/Moscow-35I/2020 & EPI\_ISL\_428852 & 02/04/2020 \\ \hline
+Russia & hCoV-19/Russia/StPetersburg-RII4726S/2020 & EPI\_ISL\_427334 & 07/04/2020 \\ \hline
+Russia & hCoV-19/Russia/StPetersburg-RII5643S/2020 & EPI\_ISL\_430096 & 14/04/2020 \\ \hline
+Russia & hCoV-19/Russia/StPetersburg-RII6061S/2020 & EPI\_ISL\_430108 & 15/04/2020 \\ \hline
+Italia & hCoV-19/Italy/SPL1/2020 & EPI\_ISL\_412974 & 29/01/2020 \\ \hline
+Italia & hCoV-19/Italy/CDG1/2020 & EPI\_ISL\_412973 & 20/02/2020 \\ \hline
+Italia & hCoV-19/Italy/FVG-ICGEB\_S9/2020 & EPI\_ISL\_417423 & 01/03/2020 \\ \hline
+Italia & hCoV-19/Italy/TE4880/2020 & EPI\_ISL\_418256 & 14/03/2020 \\ \hline
+Italia & hCoV-19/Italy/INMI6/2020 & EPI\_ISL\_419254 & 23/03/2020 \\ \hline
+Italia & hCoV-19/Italy/FVG-ICGEB\_S18/2020 & EPI\_ISL\_428854 & 30/03/2020 \\ \hline
+Italia & hCoV-19/Italy/TE13858/2020 & EPI\_ISL\_435152 & 09/04/2020 \\ \hline
+Italia & hCoV-19/Italy/TE26643/2020 & EPI\_ISL\_436729 & 27/04/2020 \\ \hline
+Spagna & hCoV-19/Spain/Madrid201105/2020 & EPI\_ISL\_418251 & 25/02/2020 \\ \hline
+Spagna & hCoV-19/Spain/PaisVasco201607/2020 & EPI\_ISL\_419240 & 03/03/2020 \\ \hline
+Spagna & hCoV-19/Spain/Valencia21/2020 & EPI\_ISL\_419685 & 10/03/2020 \\ \hline
+Spagna & hCoV-19/Spain/Valencia206/2020 & EPI\_ISL\_436301 & 17/03/2020 \\ \hline
+Spagna & hCoV-19/Spain/Valencia229/2020 & EPI\_ISL\_436324 & 24/03/2020 \\ \hline
+Spagna & hCoV-19/Spain/Barcelona\_VH7773/2020 & EPI\_ISL\_444976 & 06/04/2020 \\ \hline
+Spagna & hCoV-19/Spain/Barcelona\_VH1407/2020 & EPI\_ISL\_444975 & 10/04/2020 \\ \hline
+\end{tabular}%
+}
+\caption{Sequenze selezionate dal sito GISAID}
+\end{table}
+
 \section{Tool}
-Tra i tool messi a disposizione abbiamo scelto di utilizzare Clustal Omega, Kalign e MAFFT.\\
+Tra i tool messi a disposizione da EMBL-EBI abbiamo scelto di utilizzare Clustal Omega, Kalign e MAFFT.
 Abbiamo scelto Clustal Omega poichè sfrutta il modello probabilistico Profilo HMM (Hidden Markov Model), il quale è in grado di incapsulare i cambiamenti evolutivi che si sono verificati in una serie di sequenze correlate ed inoltre questo tool risultava ottimale per sequenze molto lunghe.\\
 Kalign è stato scelto poichè è un tool che si concentra sulle regioni locali e lavora molto velocemente, motivo per il quale ci sembrava particolarmente adatto per le analisi sui singoli stati che volevamo svolgere.\\
 Infine abbiamo scelto MAFFT poichè attraverso l'algoritmo della trasformata di Fourier veloce ottimizza gli allineamenti in base alle proprietà fisiche, utilizzando sia un allineamento progressivo che iterativo. Anche esso risulta essere ottimale per sequenze di lunghezza medio-grandi.\\
-%Manca la parte di codice
+
+Per raccogliere le differenze fra le sequenze, ed eventuali differenze nei risultati ottenuti dai tre tool, è stato scritto uno script Python, sfruttando la libreria Biopython per poter gestire al meglio i file di allineamento. Il codice è consultabile presso la \textcolor{blue}{\href{https://gitlab.com/i.bettini/bioinformatic}{repository GitLab}}.
 
 \section{Analisi verticale}
-Nell' analisi verticale abbiamo deciso di studiare singolarmente ogni stato, prendendo le sequenze scelte e confrontandole con quella di riferimento. I risultati ottenuti sono visibile nell'appendice A della relazione.
+Nell'analisi verticale abbiamo deciso di studiare singolarmente ogni stato, prendendo le sequenze scelte e confrontandole con quella di riferimento, effettuando l'allineamento con i 3 tool scelti. I risultati ottenuti sono visibili nell'appendice A della relazione.
+
 \subsection{New York (USA)}
-Nell'eseguire i tre tool non abbiamo ottenuto risultati differenti nonostante i tre approcci differenti di calcolo.\\ %Forse qualcosa a livello di caratteri che cambiano da sottolineare??
-Tutte le sequenze, tranne la sequenza numero tre, presentano variaziobe di carattere nelle posizioni 240, 1058, 14047, 23402 e 25562.\\
-La sequenza numero tre risulta essere quella più particolare, in quanto è l'unica che presenta mutazioni differenti rispetto le altre.\\
+Nell'eseguire i tre tool non abbiamo ottenuto risultati differenti nonostante i tre approcci differenti di calcolo.\\ 
+
+Tutte le sequenze, tranne la numero 3, presentano la stessa variazione di carattere nelle posizioni 240, 1058, 14047, 23402 e 25562.\\
+La sequenza numero 3 è l'unica che presenta mutazioni differenti rispetto le altre.
 
 \subsection{Russia}
-La Russia, come New York, nonostante i diversi metodi di calcolo non presenta differenze negli output dei tre tool.\\ %Stesso quesito di sopra
+La Russia, come New York, nonostante i diversi metodi di calcolo non presenta differenze negli output dei tre tool.\\
+
 Tutte le sequenze, a parte la numero cinque, presentano una variazione nella posizione 240.\\
 Alle posizioni 3036 e 14407 tutte le sequenze presentano dei cambiamenti.\\
-La sequenza numero 5 è l'unica a presentare una variazione (abbastanza lunga) di caratteri a partire dalla posizione 75.\\
 
 \subsection{Italia}
 L'esecuzione dei tre tool con le sequenze dell' Italia ha prodotti output praticamete identici trane per alcune parti.\\
@@ -155,7 +205,8 @@ Nell'eseguire l'analisi con i tre differenti tool abbiamo ottenuto dei risultati
 Nell'ouput di Clustal, nella sesta sequenza spagnola, troviamo dei cambi di carattere nell posizioni 5175, 6353, 28882, 29687 e 29733. Per quanto riguarda la sequenza sette, invece, si hanno dei cambi di carattere nelle posizioni 8738, 18743 e 22892.\\
 Con Kalign e Mafft, nella sequena sei, abbiamo dei cambi di caratteri nelle posizioni 8738, 18743 e 22892. Nella sequenza sette i cambi di carattere sono nelle posizioni 5175, 6353, 28882, 29687 e 29733.\\
 Inoltre abiamo notato che le prime tre sequenze presentanto tutte una variazione alla posizione 8781.\\
-Nel complesso, quindi, possiamo affermare che le sequenze spagnole sono quelle che sono risultate più differenti fra di loro, avendo tra una sequenza e un'altra cambiamenti in molte posizioni diverse.\\ %gli spagnoli non so boni, bastardi!!
+Nel complesso, quindi, possiamo affermare che le sequenze spagnole sono quelle che sono risultate più differenti fra di loro, avendo tra una sequenza e un'altra cambiamenti in molte posizioni diverse.\\ 
+\newpage
 
 \section{Analisi orizzontale}
 Nell'analisi verticale abbiamo, invece, deciso di confrontare le ultime sequenze che erano disponibili con quella di riferimento. Anche questi risultati sono consultabili nell'appendice B della relazione\\
@@ -165,16 +216,14 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 \newpage
 
 \section{Appendice A - risultati confronto verticale}
+Di seguito sono riportati le variazioni delle sequenze selezionate divise per paese e a loro volta suddivise in base al tool utilizzato. In ogni tabella viene indicato l'ID della sequenza, la posizione nella quale avviene una variazione, la lunghezza di tale modifica,  la base (o la sequenza di basi nel caso si tratti di un cambiamento su più posizioni contigue) presente nella sequenza di riferimento e quella presente nella sequenza analizzata. \\
+È importante tener conto che in alcune sequenze sono presenti i caratteri N, W, K, S, Y, M. Se si ha una N vuol dire non è stato possibile individuare la base presente, W (weak) che si ha una base debole (A o T), S (strong) che si ha una base forte (C o G), Y che si ha una pimiridina (C o T), M (amino) che si ha una base con gruppo amminico e K (keto) che si ha una base con gruppo chetonico (G o T) ma in tutti questi casi non si è stati in grado di determinare quale fosse la precisa base presente.
 
-\newgeometry{left=0.5cm, top=0.3cm}
 
 \subsection{New York (USA)}
 \subsubsection{Clustal Omega}
 
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-% \usepackage{longtable}
-% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\setlength\LTleft{-2.3 cm}
 \begin{longtable}{@{}ccccc@{}}
 \toprule
 \textbf{ID\_SEQ} & \textbf{POS} & \textbf{LENGTH} & \textbf{REFERENCE} & \textbf{MUTATION} \\* \midrule
@@ -271,10 +320,7 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 \newpage
 \subsubsection{Kalign}
 
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-% \usepackage{longtable}
-% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\setlength\LTleft{-2.6 cm}
 \begin{longtable}{@{}ccccc@{}}
 \toprule
 \textbf{ID\_SEQ} & \textbf{POS} & \textbf{LENGTH} & \textbf{REFERENCE} & \textbf{MUTATION} \\* \midrule
@@ -371,10 +417,8 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 \newpage
 \subsubsection{MAFFT}
 
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-% \usepackage{longtable}
-% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+
+\setlength\LTleft{-2.4 cm}
 \begin{longtable}{@{}ccccc@{}}
 \toprule
 \textbf{ID\_SEQ} & \textbf{POS} & \textbf{LENGTH} & \textbf{REFERENCE} & \textbf{MUTATION} \\* \midrule
@@ -468,13 +512,12 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 9\_USA|EPI\_ISL\_435547 & 29901 & 1 & A & N \\* \bottomrule
 \end{longtable}
 
+\newpage
 \subsection{Russia}
 \subsubsection{Clustal Omega}
 
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-% \usepackage{longtable}
-% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+
+\setlength\LTleft{-2.2 cm}
 \begin{longtable}{@{}ccccc@{}}
 \toprule
 \textbf{ID\_SEQ} & \textbf{POS} & \textbf{LENGTH} & \textbf{REFERENCE} & \textbf{MUTATION} \\* \midrule
@@ -912,10 +955,8 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 \subsection{Spagna}
 \subsubsection{Clustal Omega}
 
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-% \usepackage{longtable}
-% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+
+\setlength\LTleft{-2.5 cm}
 \begin{longtable}{@{}ccccc@{}}
 \toprule
 \textbf{ID\_SEQ} & \textbf{POS} & \textbf{LENGTH} & \textbf{REFERENCE} & \textbf{MUTATION} \\* \midrule
@@ -999,10 +1040,7 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 \newpage
 \subsubsection{Kalign}
 
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-% \usepackage{longtable}
-% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\setlength\LTleft{-1 cm}
 \begin{longtable}{@{}ccccc@{}}
 \toprule
 \textbf{ID\_SEQ} & \textbf{PO} & \textbf{LENGTH} & \textbf{REFERENCE} & \textbf{MUTATION} \\* \midrule
@@ -1086,10 +1124,8 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 \newpage
 \subsubsection{MAFFT}
 
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-% \usepackage{longtable}
-% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+
+\setlength\LTleft{-2 cm}
 \begin{longtable}{@{}ccccc@{}}
 \toprule
 \textbf{ID\_SEQ} & \textbf{POS} & \textbf{LENGTH} & \textbf{REFERENCE} & \textbf{MUTATION} \\* \midrule
@@ -1171,13 +1207,13 @@ Il risultato che abbiamo ottenuto  non differisce fra i tre tool, tutte le seque
 \end{longtable}
 
 \newpage
-\section{Appendice B - risultati confronto orizzontale}
+\section{Appendice B - Risultati confronto orizzontale}
+Di seguito sono riportati le variazioni delle sequenze selezionate, l'ultima individuata per ogni paese analizzato nel confronto verticale, suddivise per il tool utilizzato. In ogni tabella viene indicato l'ID della sequenza, la posizione nella quale avviene una variazione, la lunghezza di tale modifica,  la base (o la sequenza di basi nel caso si tratti di un cambiamento su più posizioni contigue) presente nella sequenza di riferimento e quella presente nella sequenza analizzata. \\
+Come specificato per i risultati del confronto verticale, anche in questo caso in alcune sequenze sono presenti i caratteri N, W, K, S, Y, M. 
+
 \subsection{Clustal Omega}
 
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-% \usepackage{longtable}
-% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\setlength\LTleft{-2.3 cm}
 \begin{longtable}{@{}ccccc@{}}
 \toprule
 \textbf{ID\_SEQ} & \textbf{POS} & \textbf{LENGTH} & \textbf{REFERENCE} & \textbf{MUTATION} \\* \midrule
@@ -1238,10 +1274,7 @@ USA|EPI\_ISL\_435547 & 29901 & 1 & A & N \\* \bottomrule
 \newpage
 \subsection{Kalign}
 
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-% \usepackage{longtable}
-% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+
 \begin{longtable}{@{}ccccc@{}}
 \toprule
 \textbf{ID\_SEQ} & \textbf{POS} & \textbf{LENGTH} & \textbf{REFERENCE} & \textbf{MUTATION} \\* \midrule
@@ -1302,10 +1335,8 @@ USA|EPI\_ISL\_435547 & 29901 & 1 & A & N \\* \bottomrule
 \newpage
 \subsection{MAFFT}
 
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-% \usepackage{longtable}
-% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+
+\setlength\LTleft{-1.3 cm}
 \begin{longtable}{@{}ccccc@{}}
 \toprule
 \textbf{ID\_SEQ} & \textbf{POS} & \textbf{LENGTH} & \textbf{REFERENCE} & \textbf{MUTATION} \\* \midrule
@@ -1363,5 +1394,4 @@ USA|EPI\_ISL\_435547 & 29539 & 1 & G & A \\* \midrule
 USA|EPI\_ISL\_435547 & 29901 & 1 & A & N \\* \bottomrule
 \end{longtable}
 
-\restoregeometry
 \end{document}
