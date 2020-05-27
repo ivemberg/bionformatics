@@ -83,7 +83,7 @@
 \newpage
 
 \section{SARS-CoV-2}
-I coronavirus sono una famiglia di virus RNA a filamento positivo, motivo per il quale viene inserito direttamente ai ribosomi per la sintesi proteica delle strutture del virus stesso e l'attività di demolizione della cellula ospite è più immediata. Hanno un aspetto simile a una corona se esaminati al microscopio elettronico (da cui il nome) e noti per causare malattie che vanno dal comune raffreddore a patologie più gravi come la Sindrome respiratoria mediorientale (MERS) o la Sindrome respiratoria acuta grave (SARS). \\
+I coronavirus sono una famiglia di virus RNA a filamento positivo, motivo per il quale viene indirizzato direttamente ai ribosomi per la sintesi proteica delle strutture del virus stesso e ciò rende più immediata la demolizione della cellula ospite. Hanno un aspetto simile a una corona se esaminati al microscopio elettronico (da cui il nome) e noti per causare malattie che vanno dal comune raffreddore a patologie più gravi come la Sindrome respiratoria mediorientale (MERS) o la Sindrome respiratoria acuta grave (SARS). \\
 Nel Dicembre 2019 a Wuhan, in Cina, è stato isolato un nuovo ceppo di coronavirus, denominato SARS-CoV-2 (\textit{Severe Acute Respiratory Syndrome - Coronavirus - 2}), la cui sequenza virale ha un'omologia del 76\% con il virus che causò la pandemia della Sars nel 2002.La malattia respiratoria causata da questo nuovo coronavirus è stata chiamata COVID-19.
 
 \begin{figure}[H]
@@ -108,8 +108,8 @@ Al 25 maggio 2020, ci sono stati 5.428.605 casi confermati totali di infezione d
 L'obiettivo del progetto è eseguire un allineamento multiplo di sequenze utilizzando alcuni tra i vari tool di allineamento, scelti in base ai requisiti del progetto e alle sequenze utilizzate. Le variazioni individuate in output sono state documente appositamente. \\
 Per poter raggiungere questo obiettivo, l'analisi è stata divisa in due parti:\\ 
 \begin{itemize}
-\item Nella prima parte è eseguita un'analisi verticale fra la sequenza di riferimento (la prima sequenza raccolta presente a database, Wuhan - Dicembre 2019) e le sequenze prese rispettivamente da Italia, New York, Spagna e Russia. Le sequenze dei singoli paesi sono state scelte seguendo un ordine temporale crescente, in modo tale da individuare eventuali mutazioni nel tempo.
-\item Nella seconda parte, invece, avviene un confronto orizzontale tra le ultime sequenze raccolte dei vari paesi scelti, in modo da poter individuare la presenza di eventuali mutazioni nello stato corrente del virus, sempre tenedo come riferimanto la prima sequenze presente nella banca dati. 
+\item Nella prima parte è eseguita un'analisi verticale fra la sequenza di riferimento (la prima sequenza raccolta presente a database, Wuhan - Dicembre 2019) e le sequenze prese rispettivamente da Italia, New York, Spagna e Russia. Le sequenze dei singoli paesi sono state scelte seguendo un ordine temporale consecutivo, in modo tale da individuare eventuali modifiche avvenute nel tempo.
+\item Nella seconda parte, invece, avviene un confronto orizzontale tra le ultime sequenze raccolte dei vari paesi scelti, in modo da poter individuare la presenza di eventuali mutazioni nello stato corrente del virus, sempre tenendo come riferimento la prima sequenze presente nella banca dati NCI. 
 \end{itemize}
 
 \section{Sequenze}
@@ -134,13 +134,13 @@ La sequenza di reference proviene dal database NCI, ed è la prima sequenza regi
 \begin{tabular}{|c|c|c|}
 \hline
 \textbf{PAESE}& \textbf{ACCESSION ID} & \textbf{COLLECTION DATE} \\ \hline
-China & NC\_045512 & 2019-12 \\ \hline
+Cina & NC\_045512 & 2019-12 \\ \hline
 \end{tabular}%
 }
 \caption{Sequenza di reference presa dal sito  \textcolor{black}{\href{https://www.ncbi.nlm.nih.gov/genbank/sars-cov-2-seqs/}{NCI}}}
 \end{table}
 
-Le sequenze analizzate provengono dal database GISAID. Per ogni paese abbiamo preso solo sequenze complete (con più di 29000 basi) e su pazienti tutti di sesso maschile. Abbiamo cercato inoltre di seguire una linea temporale che partisse dalla prima sequenza presente nel database fino all'ultima, con in mezzo sequenze che si distanziavano tra di loro di una settimana.
+Le sequenze analizzate provengono dal database GISAID. Per ogni paese abbiamo preso solo sequenze complete (con più di 29000 basi) e su pazienti tutti di sesso maschile, genere che è risultato più colpito, per avere dati più omogenei. Abbiamo cercato inoltre di seguire una linea temporale che partisse dalla prima sequenza presente nel database fino all'ultima, con in mezzo sequenze che si distanziavano tra di loro di una settimana.
 
 \begin{table}[H]
 \resizebox{\textwidth}{!}{%
@@ -251,7 +251,7 @@ I tre tool hanno fornito risultati identici e sono presenti delle variazioni com
 
 \section{Appendice A - risultati confronto verticale}
 Di seguito sono riportati le variazioni delle sequenze selezionate divise per paese e a loro volta suddivise in base al tool utilizzato. In ogni tabella viene indicato l'ID della sequenza, la posizione nella quale avviene una variazione, la lunghezza di tale modifica,  la base (o la sequenza di basi nel caso si tratti di un cambiamento su più posizioni contigue) presente nella sequenza di riferimento e quella presente nella sequenza analizzata. \\
-È importante tener conto che in alcune sequenze sono presenti i caratteri N, W, K, S, Y, M. Se si ha una N vuol dire non è stato possibile individuare la base presente, W (weak) che si ha una base debole (A o T), S (strong) che si ha una base forte (C o G), Y che si ha una pimiridina (C o T), M (amino) che si ha una base con gruppo amminico e K (keto) che si ha una base con gruppo chetonico (G o T) ma in tutti questi casi non si è stati in grado di determinare quale fosse la precisa base presente. \\
+È importante tener conto che in alcune sequenze sono presenti i caratteri N, W, K, S, Y, M. Se si ha una N vuol dire che non è stato possibile individuare la base presente, W (weak) che si ha una base debole (A o T), S (strong) che si ha una base forte (C o G), Y che si ha una pimiridina (C o T), M (amino) che si ha una base con gruppo amminico e K (keto) che si ha una base con gruppo chetonico (G o T) ma in tutti questi casi non si è stati in grado di determinare quale fosse la precisa base presente. \\
 
 
 \subsection{New York (USA)}
