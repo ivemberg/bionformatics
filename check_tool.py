@@ -109,9 +109,11 @@ for i in range(len(k)):
     if ("Italy" in k[i][0]):
         it = k[i][1], k[i][2], k[i][3], k[i][4]
         k_clean.append(it)
-print(k_clean)
+
 print([item for item, count in collections.Counter(k_clean).items() if count > 1], file = open("kalign-duplicates.txt", "a"))
 
+for i in range(len(k)):
+    if k[]
 
 """
 a = [1,2,3,2,1,5,6,5,5,5]
