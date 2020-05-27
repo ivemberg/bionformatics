@@ -105,15 +105,15 @@ Al 25 maggio 2020, ci sono stati 5.428.605 casi confermati totali di infezione d
 \newpage
 
 \section{Obiettivo del progetto}
-L'obiettivo del nostro progetto è eseguire un allineamento multiplo di sequenze (compresa la reference che utlizziamo come riferimento per i confronti) con dei tool a nostra scelta, producendo in output le variazioni individuate documentandole appositamente. \\
-Per poter raggiungere questo obiettivo, abbiamo deciso di dividere la nostra analisi in due parti:\\ 
+L'obiettivo del progetto è eseguire un allineamento multiplo di sequenze utilizzando alcuni tra i vari tool di allineamento, scelti in base ai requisiti del progetto e alle sequenze utilizzate. Le variazioni individuate in output sono state documente appositamente. \\
+Per poter raggiungere questo obiettivo, l'analisi è stata divisa in due parti:\\ 
 \begin{itemize}
-\item Nella prima parte eseguiamo un'analisi verticale fra la sequenza di riferimento (ossia la prima sequenza che presente nella banca dati raccolta a Wuhan) e delle sequenze prese rispettivamente da Italia, New York, Spagna e Russia. Le sequenze dei singoli paesi sono state prese seguendo un ordine temporale crescente, in modo tale da poter denotare attraverso il confronto delle mutazioni nel tempo.
-\item Nella seconda parte, invece, effettuiamo un confronto orizzontale tra le ultime sequenze raccolte dei vari paesi scelti, in modo da poter individuare la presenza di eventuali mutazioni nello stato corrente del virus, sempre tenedo come riferimanto la prima sequenze presente nella banca dati. 
+\item Nella prima parte è eseguita un'analisi verticale fra la sequenza di riferimento (la prima sequenza raccolta presente a database, Wuhan - Dicembre 2019) e le sequenze prese rispettivamente da Italia, New York, Spagna e Russia. Le sequenze dei singoli paesi sono state scelte seguendo un ordine temporale crescente, in modo tale da individuare eventuali mutazioni nel tempo.
+\item Nella seconda parte, invece, avviene un confronto orizzontale tra le ultime sequenze raccolte dei vari paesi scelti, in modo da poter individuare la presenza di eventuali mutazioni nello stato corrente del virus, sempre tenedo come riferimanto la prima sequenze presente nella banca dati. 
 \end{itemize}
 
 \section{Sequenze}
-Abbiamo deciso di selezionare alcuni dei paesi con il più alto numero di casi di COVID-19, ossia Stati Uniti (per il quale ci siamo concentrati su uno degli stati a sua volta più colpito, quello di New York), Russia,  Spagna e Italia. I casi, al 25 Maggio 2020, sono riportati nella tabella seguente:
+I paesi scelti sono quelli con il più alto numero di casi di COVID-19, ossia Stati Uniti (in particolare il suo stato più colpito, New York), Russia, Spagna e Italia. I casi, al 25 Maggio 2020, sono riportati nella tabella seguente:
 
 \begin{table}[H]
 \centering
@@ -126,7 +126,7 @@ Abbiamo deciso di selezionare alcuni dei paesi con il più alto numero di casi d
 \end{tabular}
 \caption{Casi di COVID19 al 25 Maggio 2020}
 \end{table}
-La sequenza di reference è stata presa dal sito NCI, ed è la prima sequenza registrata nel database raccolta a Wuhan nel dicembre del 2019.
+La sequenza di reference proviene dal database NCI, ed è la prima sequenza registrata nel database (Wuhan, Dicembre 2019).
 
 \begin{table}[H]
 \centering
@@ -140,7 +140,7 @@ China & NC\_045512 & 2019-12 \\ \hline
 \caption{Sequenza di reference presa dal sito  \textcolor{black}{\href{https://www.ncbi.nlm.nih.gov/genbank/sars-cov-2-seqs/}{NCI}}}
 \end{table}
 
-Le sequenze analizzate sono state prese dal sito GISAID. Per ogni paese abbiamo preso solo sequenze complete (con più di 29000 basi) e su pazienti tutti di sesso maschile. Abbiamo cercato inoltre di seguire una linea temporale che partisse dalla prima sequenza presente nel database fino all'ultima, con in mezzo sequenze che si distanziavano tra di loro di una settimana.
+Le sequenze analizzate provengono dal database GISAID. Per ogni paese abbiamo preso solo sequenze complete (con più di 29000 basi) e su pazienti tutti di sesso maschile. Abbiamo cercato inoltre di seguire una linea temporale che partisse dalla prima sequenza presente nel database fino all'ultima, con in mezzo sequenze che si distanziavano tra di loro di una settimana.
 
 \begin{table}[H]
 \resizebox{\textwidth}{!}{%
