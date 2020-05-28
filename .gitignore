@@ -31,6 +31,7 @@ build/
 *.aux
 *.gz
 *.log
+*.toc
 
 # OS generated files #
 ######################
