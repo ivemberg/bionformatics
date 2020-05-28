@@ -184,7 +184,7 @@ Spagna & hCoV-19/Spain/Barcelona\_VH1407/2020 & EPI\_ISL\_444975 & 10/04/2020 \\
 \end{table}
 
 \section{Tool}
-Tra i tool messi a disposizione da EMBL-EBI sono stati utilizzati Clustal Omega, Kalign e MAFFT.
+Tra i tool messi a disposizione da EMBL-EBI sono stati utilizzati Clustal Omega, Kalign e MAFFT.\\
 \textbf{\textit{Clustal Omega}} sfrutta il modello probabilistico Profilo HMM (Hidden Markov Model), il quale è in grado di incapsulare i cambiamenti evolutivi che si sono verificati in una serie di sequenze correlate. Scelto in quanto ottimale per sequenze molto lunghe e per la provata efficenza in molteplici scenari.\\
 \textbf{\textit{Kalign}} è un tool che si concentra sulle regioni locali e lavora molto velocemente, scelto in quanto particolarmente adatto per le analisi svolte sui singoli stati.\\
 Infine \textbf{\textit{MAFFT}} è stato scelto poichè attraverso l'algoritmo della trasformata di Fourier veloce ottimizza gli allineamenti in base alle proprietà fisiche, utilizzando sia un allineamento progressivo che iterativo. Anch'esso risulta ottimale per sequenze di lunghezza medio-grandi.\\
@@ -192,11 +192,11 @@ Infine \textbf{\textit{MAFFT}} è stato scelto poichè attraverso l'algoritmo de
 Per raccogliere le differenze fra le sequenze, ed eventuali differenze nei risultati ottenuti dai tre tool, è stato scritto uno script Python, sfruttando la libreria Biopython per poter gestire al meglio i file di allineamento. Il codice è consultabile presso la \textcolor{blue}{\href{https://gitlab.com/i.bettini/bioinformatic}{repository GitLab}}.
 
 \section{Analisi verticale}
-Nell'analisi verticale viene studiato singolarmente ogni paese, prendendo le sequenze scelte e confrontandole con quella di riferimento, effettuando l'allineamento con i 3 tool scelti. I risultati ottenuti sono visibili nell'appendice A della relazione.
+Nell'analisi verticale viene studiato singolarmente ogni paese, prendendo le sequenze scelte e confrontandole con quella di riferimento, effettuando l'allineamento con i tre tool scelti. I risultati ottenuti sono visibili nell'appendice A della relazione.
 
 \subsection{New York (USA)}
 L'allineamento delle sequenze di New York con i tre tool produce, nonostante i diversi approcci, output identici.\\ 
-%tranne che nella seq 1 ci son modifiche in pos 0 MA tutte con N o -, la mettiamo?
+%tranne che nella seq 1 ci son modifiche in pos 0 MA tutte con N o -, la mettiamo? no by ivo
 In tutte le sequenze, esclusa la numero 3, sono presenti le stesse variazioni nelle posizioni 240, 3036, 1058, 14047, 23402 e 25562.
 La terza sequenza, infatti, è l'unica che non presenta mutazioni rilevate anche nelle altre sequenze studiate.
 
@@ -212,14 +212,14 @@ Sono presenti delle variazioni comuni fra più sequenze rispetto al reference:
 %in pos 0 cambiamento con solo N in seq 5 e 6, lo mettiamo?
 
 \subsection{Italia}
-L'esecuzione dei tre tool con le sequenze dell'Italia ha prodotto output con delle leggere differenze. Solo Kalign evidenzia una mutazione nella posizione 29879 delle sequenze 3, 4 e 6, mentre Clustal Omega e MAFFT mostrano dei cambiamenti nelle posizioni 29890, 29898, 29899 rispettivamente nelle sequenze 3, 4 e 6.\\ %sono variazioni A con -, le scriviamo? 
+L'esecuzione dei tre tool con le sequenze dell'Italia ha prodotto output con delle leggere differenze. Solo Kalign evidenzia una mutazione nella posizione 29879 delle sequenze 3, 4 e 6, mentre Clustal Omega e MAFFT mostrano dei cambiamenti nelle posizioni 29890, 29898, 29899 rispettivamente nelle sequenze 3, 4 e 6.\\ %sono variazioni A con -, le scriviamo? forse meglio di no
 Tutti i tool evidenziano le seguenti variazioni comuni:
 \begin{itemize}
 \item In tutte le sequenze, esclusa la 1, in posizione 241, 3037, 14408, 23403
 \item Nelle sequenze 4, 7, 8 in posizione 2881 
 \end{itemize}
 
-% 6866 e 6869 in 7 e 8 da A diventa W, che potrebbe essere A o T, scriviamo?
+% 6866 e 6869 in 7 e 8 da A diventa W, che potrebbe essere A o T, scriviamo? why not
 
 
 \subsection{Spagna}
