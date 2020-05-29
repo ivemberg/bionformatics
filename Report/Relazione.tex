@@ -109,7 +109,7 @@ L'obiettivo del progetto è eseguire un allineamento multiplo di sequenze utiliz
 Per poter raggiungere questo obiettivo, l'analisi è stata divisa in due parti:
 \begin{itemize}
 \item Nella prima parte viene eseguita un'analisi verticale fra la sequenza di riferimento (la prima sequenza raccolta presente a database, Wuhan - Dicembre 2019) e le sequenze prese rispettivamente da Italia, New York, Spagna e Russia. Le sequenze dei singoli paesi sono state scelte seguendo un ordine temporale consecutivo, in modo tale da individuare eventuali modifiche avvenute nel tempo.
-\item Nella seconda parte, invece, avviene un confronto orizzontale tra le ultime sequenze raccolte dei vari paesi scelti, in modo da poter evidenziare la presenza di eventuali mutazioni nello stato corrente del virus, sempre tenendo come riferimento la prima sequenze presente nella banca dati NCI. 
+\item Nella seconda parte, invece, avviene un confronto orizzontale tra le ultime sequenze raccolte dei vari paesi scelti, in modo da poter evidenziare la presenza di eventuali mutazioni nello stato corrente del virus, sempre tenendo come riferimento la prima sequenza presente nella banca dati NCI. 
 \end{itemize}
 
 \section{Sequenze}
@@ -140,7 +140,7 @@ Cina & NC\_045512 & 2019-12 \\ \hline
 \caption{Sequenza di reference presa dal sito  \textcolor{black}{\href{https://www.ncbi.nlm.nih.gov/genbank/sars-cov-2-seqs/}{NCI}}}
 \end{table}
 
-Le sequenze analizzate provengono dal database GISAID. Per ogni paese sono studiate solo sequenze complete (con più di 29000 basi) provenienti da pazienti di sesso maschile, genere che è risultato più colpito, per avere dati più omogenei. Queste coprono una linea temporale che parte dalla prima sequenza presente nel database fino all'ultima, ciascuna a distanza di una settima dall'altra.
+Le sequenze analizzate provengono dal database GISAID. Per ogni paese sono state studiate solo sequenze complete (con più di 29000 basi) provenienti da pazienti di sesso maschile, genere che è risultato più colpito, per avere dati più omogenei. Queste coprono una linea temporale che parte dalla prima sequenza presente nel database fino all'ultima, ciascuna a distanza di una settima dall'altra.
 
 \begin{table}[H]
 \resizebox{\textwidth}{!}{%
@@ -249,7 +249,7 @@ I tre tool hanno fornito risultati identici e sono presenti delle variazioni com
 \section{Appendice A - risultati confronto verticale}
 Di seguito sono riportate le variazioni delle sequenze selezionate divise per paese e per tool utilizzato. In ogni tabella viene indicato l'ID della sequenza, la posizione nella quale avviene una variazione, la lunghezza di tale modifica, la base (o la sequenza di basi nel caso si tratti di un cambiamento su più posizioni contigue) presente nella sequenza di riferimento e quella presente nella sequenza analizzata. \\
 È importante tener conto che in alcune sequenze sono presenti i caratteri {N, W, K, S, Y, M}. \textit{N} identifica che non è stato possibile individuare la base presente, \textit{W (weak)} una base debole (A o T), \textit{S (strong)} una base forte (C o G), \textit{Y} una pimiridina (C o T), \textit{M (amino)} una base con gruppo amminico e \textit{K (keto)} una base con gruppo chetonico (G o T). In tutti questi casi non si è stati in grado di determinare quale fosse la precisa base presente. \\
-Come si può notare dall'assenza della base uracile (\textit{U}) è avvenuta la conversione da RNA a cDNA, che rappresenta DNA laboratoriale coincidente con i geni e non con il loro prodotto trascrizionale, quale è l'RNA.
+Come si può notare dall'assenza della base uracile (\textit{U}) è avvenuta la conversione da RNA a cDNA, che rappresenta DNA laboratoriale coincidente con i geni e non con il loro prodotto trascrizionale, qual è l'RNA.
 
 \subsection{New York (USA)}
 \subsubsection{Clustal Omega}
