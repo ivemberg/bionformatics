@@ -113,7 +113,7 @@ def main():
     r = ""
     k = []
     l=0
-    for f in glob.glob('Results/Kalign/aln-russia.fasta'):
+    for f in glob.glob('Results/Kalign/*.fasta'):
         aln = list(AlignIO.read(open(f), "fasta"))
         for i in range(1, len(aln)):
             for j in range(len(aln[i].seq)):
