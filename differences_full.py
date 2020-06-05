@@ -1,5 +1,5 @@
 import Bio
-from Bio import AlignIO
+from Bio import AlignIO, SeqIO, GenBank
 import csv
 import glob
 
