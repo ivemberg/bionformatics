@@ -22,11 +22,12 @@ def find_genes(b,ref,seq):
                     e = seq.id, b, features.qualifiers['db_xref'][0], cod, m_cod, min(features.location), max(features.location)
                     result.append(e)
     if result:
-        print(result)
+        return result
 
 
 def main():
     
+    """"
     for f in glob.glob('Results/Kalign/aln-russia.fasta'):
         aln = list(AlignIO.read(open(f), "fasta"))
         for i in range(1, len(aln)):
@@ -49,19 +50,26 @@ def main():
                     if (j == len(aln[i].seq)-1):
                         element =  [aln[i].id.split('/')[0], j - l, l, r, s]
                         k.append(element)
-                        find_genes(j-l, aln[0], aln[i])
                         s = ""
                         r = ""
                         l = 0
                 else:
                     if s != "" and r != "":
                         element =  [aln[i].id.split('/')[0], j - l, l, r, s]
+                        diffs = []
                         k.append(element)
-                        find_genes(j-l, aln[0], aln[i])
+                        for position in range(j - l, j+1) :
+                            if aln[i].seq[position].upper() != aln[0].seq[position].upper():
+                                diff = find_genes(position, aln[0], aln[i])
+                                if diff:
+                                    diffs.append(find_genes(position, aln[0], aln[i]))
+                        print(element)
+                        if diffs:
+                            print(diffs)
+                        print("")
                         s = ""
                         r = ""
                         l = 0
-"""
 
 if __name__ == "__main__":
 	main()
