@@ -5,6 +5,7 @@ from Bio.Data import CodonTable
 from Bio.Alphabet import generic_dna
 import csv
 import glob
+import pandas as pd
 
 
 def find_variations(tool):
@@ -31,29 +32,23 @@ def find_variations(tool):
                     if s != "" and r != "":
                         element =  [aln[i].id.split('/')[0], j - l, l, r, s]
                         diffs = []
-
                         for position in range(j - l, j+1) :
                             if aln[i].seq[position].upper() != aln[0].seq[position].upper():
                                 diff = find_genes(position, aln[0], aln[i])
                                 if diff and not isIn(diff, diffs):
                                     diffs.append(find_genes(position, aln[0], aln[i]))
-                        print(element)
-                        if diffs:                    
-                            print(diffs)
-                            print("")
-                        """
-                        else:
-                            print("Not found!")
-                            print("")
-                        """
+                        if diffs:
+                           for w in diffs:
+                               for q in w: #ottengo le singole tuple
+                                   print(q, file=open(tool+"-genes.txt", "a"))
                         k.append(element)
                         s = ""
                         r = ""
                         l = 0
-    if diffs:
-        with open(tool.lower() + '-genes-output.txt', 'w') as f:
-                                for item in diffs:
-                                    f.write("%s\n" % item) 
+    # differences lista con tutte le differenze
+    # column_names = ['seq', 'pos', 'gene id', 'original codon', 'original amino', 'modified codon', 'modified amino', 'start CDS', 'end CDS']
+    
+    
     """
     with open('Seq_differences/compact/' + tool.lower() + '-compact-output.txt', 'w') as f:
     for item in k:
@@ -104,7 +99,7 @@ def find_genes(b,ref,seq):
 
                     e = seq.id, positions, features.qualifiers['db_xref'][0], cod, translate(cod), m_cod, translate(m_cod), min(features.location), max(features.location)
                     result.append(e)
-    if result:
+    if result: 
         return result
 
 def isIn(item, listIn):
@@ -149,8 +144,8 @@ def translate(codon):
 
     seq_c = Seq(codon, generic_dna) # da stringa a codone
     cod = seq_c.complement() # complemento
-    rna_cod = cod.transcribe() # diventa RNA
-    
+    rna_cod = str(cod.transcribe()) # diventa RNA
+
     table = CodonTable.standard_rna_table.forward_table
 
     amino = table.get(rna_cod)
