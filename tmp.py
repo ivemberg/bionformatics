@@ -1,5 +1,8 @@
 import Bio
 from Bio import GenBank, SeqIO, AlignIO
+from Bio.Seq import  Seq
+from Bio.Data import CodonTable
+from Bio.Alphabet import generic_dna
 import csv
 import glob
 
@@ -34,10 +37,10 @@ def find_variations(tool):
                                 diff = find_genes(position, aln[0], aln[i])
                                 if diff and not isIn(diff, diffs):
                                     diffs.append(find_genes(position, aln[0], aln[i]))
-                        #print(element)
-                        #if diffs:                    
-                           # print(diffs)
-                           # print("")
+                        print(element)
+                        if diffs:                    
+                            print(diffs)
+                            print("")
                         """
                         else:
                             print("Not found!")
@@ -99,7 +102,7 @@ def find_genes(b,ref,seq):
                         if ref[b+1] != seq[b+1]:
                             positions.append(b+1)
 
-                    e = seq.id, positions, features.qualifiers['db_xref'][0], cod, m_cod, min(features.location), max(features.location)
+                    e = seq.id, positions, features.qualifiers['db_xref'][0], cod, translate(cod), m_cod, translate(m_cod), min(features.location), max(features.location)
                     result.append(e)
     if result:
         return result
@@ -143,27 +146,17 @@ def isIn(item, listIn):
     return False
 
 def translate(codon): 
-      
-    table = { 
-        'ATA':'I', 'ATC':'I', 'ATT':'I', 'ATG':'M', 
-        'ACA':'T', 'ACC':'T', 'ACG':'T', 'ACT':'T', 
-        'AAC':'N', 'AAT':'N', 'AAA':'K', 'AAG':'K', 
-        'AGC':'S', 'AGT':'S', 'AGA':'R', 'AGG':'R',                  
-        'CTA':'L', 'CTC':'L', 'CTG':'L', 'CTT':'L', 
-        'CCA':'P', 'CCC':'P', 'CCG':'P', 'CCT':'P', 
-        'CAC':'H', 'CAT':'H', 'CAA':'Q', 'CAG':'Q', 
-        'CGA':'R', 'CGC':'R', 'CGG':'R', 'CGT':'R', 
-        'GTA':'V', 'GTC':'V', 'GTG':'V', 'GTT':'V', 
-        'GCA':'A', 'GCC':'A', 'GCG':'A', 'GCT':'A', 
-        'GAC':'D', 'GAT':'D', 'GAA':'E', 'GAG':'E', 
-        'GGA':'G', 'GGC':'G', 'GGG':'G', 'GGT':'G', 
-        'TCA':'S', 'TCC':'S', 'TCG':'S', 'TCT':'S', 
-        'TTC':'F', 'TTT':'F', 'TTA':'L', 'TTG':'L', 
-        'TAC':'Y', 'TAT':'Y', 'TAA':'_', 'TAG':'_', 
-        'TGC':'C', 'TGT':'C', 'TGA':'_', 'TGG':'W', 
-    } 
-    return table[codon]   
 
+    seq_c = Seq(codon, generic_dna) # da stringa a codone
+    cod = seq_c.complement() # complemento
+    rna_cod = cod.transcribe() # diventa RNA
+    
+    table = CodonTable.standard_rna_table.forward_table
+
+    amino = table.get(rna_cod)
+    return amino
+    
+    
 def main():
     find_variations('Kalign')
     #find_variations('Clustal Omega')

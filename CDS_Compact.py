@@ -1,9 +1,22 @@
 import Bio
 from Bio import GenBank, SeqIO, AlignIO
+from Bio.Seq import  Seq
+from Bio.Data import CodonTable
+from Bio.Alphabet import generic_dna
 import glob
 
 def translate(codon): 
       
+    seq_c = Seq(codon, generic_dna) # da stringa a codone
+    cod = seq_c.complement() # complemento
+    rna_cod = cod.transcribe() # diventa RNA
+
+    table = CodonTable.standard_rna_table.forward_table
+
+    amino = table.get(rna_cod)
+    return amino
+
+    """
     table = { 
         'ATA':'I', 'ATC':'I', 'ATT':'I', 'ATG':'M', 
         'ACA':'T', 'ACC':'T', 'ACG':'T', 'ACT':'T', 
@@ -23,6 +36,9 @@ def translate(codon):
         'TGC':'C', 'TGT':'C', 'TGA':'_', 'TGG':'W', 
     } 
     return table[codon]
+    """
+
+    
 
 def find_genes(b,ref,seq):
     gb_file = "sequence.gb"
